@@ -1,0 +1,223 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* width: 100vw; */
+  /* overflow-x: hidden; */
+}
+.textWhite{
+  color: white;
+}
+
+.pinkBg{
+  background-color: #FADADA;
+}
+
+.redBorder{
+  border: 1px solid #dc0a0a;
+}
+.h-110{
+  height: 110px;
+}
+.site-header {
+  z-index: 10;
+  background: transparent;
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+.navLinks:hover {
+  border-bottom: 2px solid #dc0a0a;
+  text-decoration: none;
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Custom CSS */
+.redText {
+  color: #dc0a0a !important;
+}
+
+.redBg {
+  background-color: #dc0a0a !important;
+}
+.altBg {
+  background-color: #e8e8e8 !important;
+}
+
+.uxtheclass {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.29;
+}
+
+.navLinks {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  /* height: 18px; */
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.29;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("/assets/images/pattern@2x.jpg");
+  background-color: rgba(0, 0, 0, 0.72);
+  /* Set a specific height */
+  max-height: 620px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroOverlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 3; */
+}
+
+.bottomText {
+  bottom: 5%;
+  /* border: 2px solid red; */
+  left: 10%;
+  right: 10%;
+}
+
+
+/* .dropdownDiv .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  right: 0;
+  /* -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+.dropdownDiv:hover .dropdown-content {
+  display: block;
+}
+.dropdownDiv:hover .dropdownBtn, .dropdownBtn:hover {
+  color:black;
+}
+
+
+
+/* Create equal columns that floats next to each other */
+.column {
+  padding: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.dropdownRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=landingPage.css.map */
+
+.iconDesc {
+  width: 60px;
+  height: 60px;
+  /* opacity: 0.1; */
+  background-color: #e8e8e8;
+}
+
+.profImg {
+  width: 80px;
+  height: 80px;
+  /* opacity: 0.1; */
+  background-color: #e8e8e8;
+}
+
+.testimonials {
+  border-radius: 8px;
+  border: solid 1px rgba(33, 33, 33, 0.2);
+}
+.h-300, .testimonials {
+  height: 300px !important;
+}
+
+.borderedBtn {
+  border-radius: 20px;
+  width: max-content
+}
+
+
+.socialInstagram {
+  background-image: linear-gradient(57deg, #e49c10, #eb0c8a);
+}
+.socialLinkedIn {
+  background-color: #0b5987;
+}
+.socialTwitter {
+  background-color: #2680eb;
+}
+.socialFacebook {
+  background-color: #166ace;
+}
+.social {
+  height: 200px;
+  /* border-radius: 8px; */
+}
