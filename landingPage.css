@@ -145,7 +145,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("/assets/images/pattern@2x.jpg");
+  background-image: url("/images/pattern@2x.jpg");
   background-color: rgba(0, 0, 0, 0.72);
   max-height: 620px;
   background-position: center;
