@@ -23,10 +23,29 @@
     <link rel="stylesheet" href="landingPage.css" />
   </head>
   <body>
-    <div class="position-relative hero-image overflow-hidden text-center ">
-      <nav class="position-absolute w-100 py-1 site-header" id="bgWhite">
+    <div class="sidebar bg-white m-0 p-0 position-fixed h-100 overflow-auto d-md-none">
+      <div class="p-3 d-block bg-dark" href="#home"><span class="redText">UX</span
+        ><span class="darkOnHover textWhite">THECLASS</span></div>
+      <a class="p-3 d-block" href="#home">About Us</a>
+      <button class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block">Our Classes
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container bg-white redText">
+          <a class="p-3 d-block" href="#">UX Research/Design</a>
+          <a class="p-3 d-block" href="#">Branding & Graphic Design</a>
+          <a class="p-3 d-block" href="#">UI & Interaction Design</a>
+          <a class="p-3 d-block" href="#">Business of Design</a>
+        </div>
+      <a class="p-3 d-block" href="#contact">Career</a>
+      <a class="p-3 d-block" href="#about">Our Blog</a>
+      <a class="p-3 d-block" href="#about">FAQ & Help</a>
+      <a class="p-3 d-block" href="#about">Contact</a>
+    </div>
+
+    <div class="position-relative hero-image overflow-hidden text-center">
+      <nav class="position-absolute w-100 d-none d-md-block py-1 site-header" id="bgWhite">
         <div
-          class="container d-flex flex-column flex-md-row justify-content-around align-items-md-center"
+          class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
         >
           <a
             class="py-2 uxtheclass justify-content-start navbar-brand"
@@ -37,12 +56,12 @@
           </a>
           <div class="justify-content-between">
             <a
-              class="py-2 mx-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
               href="#"
               >About Us</a
             >
-            <div class="dropdownDiv py-2 mx-3 d-none d-md-inline-block">
-              <button class="textWhite dropdownBtn btn btn-link">
+            <div class="dropdownDiv py-2 mx-1 ml-lg-3 d-none d-md-inline-block">
+              <button class="textWhite navLinks dropdownBtn btn btn-link">
                 Our Classes
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -53,7 +72,7 @@
                       <h3><i class="fa fa-pencil"></i></h3>
                       <h5>UX Research/Design</h5>
                       <small>Research Process, Wireframing ...</small>
-                      <a href="#" class="mt-2 redText"
+                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
@@ -61,7 +80,7 @@
                       <h3><i class="fa fa-paint-brush"></i></h3>
                       <h5>Branding & Graphic Design</h5>
                       <small>Illustrations, Typography, Colors ...</small>
-                      <a href="#" class="mt-2 redText"
+                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
@@ -69,7 +88,7 @@
                       <h3><i class="fa fa-play-circle"></i></h3>
                       <h5>UI & Interaction Design</h5>
                       <small>Responsive web, Mobile design ...</small>
-                      <a href="#" class="mt-2 redText"
+                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
@@ -77,7 +96,7 @@
                       <h3><i class="fa fa-suitcase"></i></h3>
                       <h5>Business of Design</h5>
                       <small>Pricing Design brief, Portfolio ...</small>
-                      <a href="#" class="mt-2 redText"
+                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
@@ -86,25 +105,22 @@
               </div>
             </div>
             <a
-              class="py-2 mx-3 d-none d-md-inline-block navLinks textWhite"
-              href="#"
-              >Career</a
-            >
-            <a
-              class="py-2 mx-3 d-none d-md-inline-block navLinks textWhite"
-              href="#"
-              >Our Blog</a
-            >
-            <a
-              class="py-2 mx-3 d-none d-md-inline-block navLinks textWhite"
-              href="#"
-              >FAQ & Help</a
-            >
-            <a
-              class="py-2 mx-3 d-none d-md-inline-block navLinks textWhite"
-              href="#"
-              >Contact</a
-            >
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="#"
+            >Career</a
+          > <a
+          class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+          href="#"
+          >Our Blog</a
+        > <a
+        class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+        href="#"
+        >FAQ & Help</a
+      > <a
+      class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+      href="#"
+      >Contact</a
+    >
           </div>
 
           <div class="justify-content-end">
@@ -121,6 +137,7 @@
           </div>
         </div>
       </nav>
+      <button class="btn redBorder redBg d-block d-md-none z-10 position-absolute" id="openBtn"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></button>
       <img
         class="position-absolute heroOverlay"
         src="/assets/images/patternOverlay@2x.png"
@@ -135,12 +152,12 @@
           We are passionate about educating the next generation digital
           experience designers in creating meaningful and immersive platforms.
         </p>
-        <a class="btn redBg textWhite" href="#">See available classes</a>
-        <a class="btn btn-outline-light bg-transparent textWhite" href="#"
+        <a class="btn redBg my-2 textWhite" href="#">See available classes</a>
+        <a class="btn btn-outline-light my-2 bg-transparent textWhite" href="#"
           >Become a tutor</a
         >
       </div>
-
+      <!-- 
       <div class="bottomText container position-absolute">
         <div class="d-flex justify-content-between">
           <div class="text-muted d-flex textWhite flex-column">
@@ -157,8 +174,9 @@
             <small> Read the why <i class="fa fa-play-circle"></i> </small>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
+
     <!-- Our classes -->
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
@@ -166,16 +184,20 @@
         <h2>Our Classes</h2>
       </div>
       <div class="row">
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="card">
-            <img src="/assets/images/pattern.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/assets/images/pattern.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title">UX Research/Design</h5>
+                <h5 class="card-title-custom">UX Research/Design</h5>
                 <span>4 weeks</span>
               </div>
               <div class="mb-3">
-                <p class="">
+                <p class="card-text-custom">
                   Learn how to carry out professional research, create personas
                   and take your audience through your process.
                 </p>
@@ -190,16 +212,20 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="card">
-            <img src="/assets/images/pattern.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/assets/images/pattern.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title">UX Research/Design</h5>
+                <h5 class="card-title-custom">UX Research/Design</h5>
                 <span>4 weeks</span>
               </div>
               <div class="mb-3">
-                <p class="">
+                <p class="card-text-custom">
                   Learn how to carry out professional research, create personas
                   and take your audience through your process.
                 </p>
@@ -214,16 +240,20 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="card">
-            <img src="/assets/images/pattern.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/assets/images/pattern.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title">UX Research/Design</h5>
+                <h5 class="card-title-custom">UX Research/Design</h5>
                 <span>4 weeks</span>
               </div>
               <div class="mb-3">
-                <p class="">
+                <p class="card-text-custom">
                   Learn how to carry out professional research, create personas
                   and take your audience through your process.
                 </p>
@@ -238,16 +268,20 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="card">
-            <img src="/assets/images/pattern.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/assets/images/pattern.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title">UX Research/Design</h5>
+                <h5 class="card-title-custom">UX Research/Design</h5>
                 <span>4 weeks</span>
               </div>
               <div class="mb-3">
-                <p class="">
+                <p class="card-text-custom">
                   Learn how to carry out professional research, create personas
                   and take your audience through your process.
                 </p>
@@ -388,43 +422,45 @@
       </div>
     </section>
 
-    <!-- Our rock star tutors -->
+    <!-- Experience Working with these Companies -->
     <section class="py-md-5 py-3 bg-dark">
       <div class="container">
         <div class="mb-md-5 mb-3 textWhite">
           <small class="text-muted">Our rock star tutors</small>
           <h2>Experience Working With These Companies</h2>
         </div>
-        <div class="row my-5 align-items-center d-flex">
-          <div class="col-3"><img src="/assets/images/companies/Opera.png" alt="logo" /></div>
-          <div class="col-3">
+        <div class="row my-md-5 align-items-center d-flex">
+          <div class="col-6 col-sm-3">
+            <img src="/assets/images/companies/Opera.png" alt="logo" />
+          </div>
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/cregital.png" alt="logo" />
           </div>
-          <div class="col-3">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/interswitch.png" alt="logo" />
           </div>
-          <div class="col-3">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/team-apt.png" alt="logo" />
           </div>
         </div>
-        <div class="row mt-5 align-items-center d-flex">
-          <div class="col-3">
+        <div class="row mt-md-5 align-items-center d-flex">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/hotelsng.png" alt="logo" />
           </div>
-          <div class="col-3">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/Findworka.png" alt="logo" />
           </div>
-          <div class="col-3">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/TSLNigeria.png" alt="logo" />
           </div>
-          <div class="col-3">
+          <div class="col-6 my-2 my-md-0 col-sm-3">
             <img src="/assets/images/companies/Fourth-Canvas.png" alt="logo" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- We are not the others -->
+    <!-- You Can Trust Us -->
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">We are not the others</small>
@@ -638,127 +674,206 @@
       </div>
     </section>
 
-
-
-
-    <!-- Meet our tutors -->
- <section class="py-md-5 py-3 container">
-      <div class="mb-md-5 mb-3">
-        <small class="text-muted">Meet our tutors</small>
-        <h2>Our Superheroes</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-6">
-          <div class="card">
-            <img src="" class="ml-3 rounded-circle profImg" alt="..." />
-            <div class="card-body ">
-              <div class="mt-4 mb-2">
-                <h5 class="card-title">Leslie Wiliams</h5>
-              </div>
-              <div class="mb-5">
-                <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad
-                </p>
+    <!-- Best Graduating Project -->
+    <section style="" class="py-md-5 py-3 goldBg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="">
+            <div class="d-flex flex-column">
+              <div class="mb-3">
+                <small class="text-muted">From our May 2019 cohort</small>
+                <h2>Best Graduating Project</h2>
               </div>
 
-              <div class="d-inline-block">
-                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              <div class="mb-5 mt-4 d-flex">
+                <img src="" class="mr-3 rounded-circle iconDesc" alt="..." />
+                <div class="d-flex flex-column">
+                  <strong class="py-2">Emmanuel Yusufu</strong>
+                  <small class="text-capitalize"
+                    >Best graduating designer, may 2019 cohort</small
+                  >
+                </div>
               </div>
+              <div class="track">
+                <ul>
+                  <li class="mb-3">
+                    <div class="d-flex flex-column">
+                      <p class="mb-0">Project Industry</p>
+                      <strong class="mb-2">Career</strong>
+                      <i
+                        class="fa fa-briefcase goldText"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex flex-column">
+                      <strong class="mb-2">Project Objective</strong>
+                      <p class="w-md-50">
+                        Use of tech in improving access to jobs and workshops to
+                        prospective techies.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="redText noDeco"
+                >View Case Study<i
+                  class="ml-2 fa fa-caret-right"
+                  aria-hidden="true"
+                ></i
+              ></a>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="card">
-            <img src="" class="ml-3 rounded-circle profImg" alt="..." />
-            <div class="card-body">
-              <div class="mt-4 mb-2">
-                <h5 class="card-title">Abiodun Bada</h5>
-              </div>
-              <div class="mb-5">
-                <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad
-                </p>
-              </div>
 
-              <div class="d-inline-block">
-                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="card">
-            <img src="" class="ml-3 rounded-circle profImg" alt="..." />
-            <div class="card-body">
-              <div class="mt-4 mb-2">
-                <h5 class="card-title">Justice Etinosa</h5>
-              </div>
-              <div class="mb-5">
-                <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad
-                </p>
-              </div>
-
-              <div class="d-inline-block">
-                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="card">
-            <img src="" class="ml-3 rounded-circle profImg" alt="..." />
-            <div class="card-body">
-              <div class="mt-4 mb-2">
-                <h5 class="card-title">Leke Ojo</h5>
-              </div>
-              <div class="mb-5">
-                <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad
-                </p>
-              </div>
-
-              <div class="d-inline-block">
-                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
-              </div>
-              
+          <div class="col-md-6 mt-3 mt-md-1">
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                src="/assets/images/2.jpg"
+                class="img-fluid"
+                style="max-height:400px;"
+                alt="Graduates"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Our Superheroes-->
+    <section class="py-md-5 py-3 container">
+      <div class="mb-md-5 mb-3">
+        <small class="text-muted">Meet our tutors</small>
+        <h2>Our Superheroes</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div
+              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+            >
+              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+            </div>
+            <div class="card-body ">
+              <div class="mt-2 mb-2">
+                <h5 class="card-title-custom text-center">Leslie Wiliams</h5>
+              </div>
+              <div class="mb-5">
+                <p class="card-text-custom">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad
+                </p>
+              </div>
 
-    <!-- We are a socisl community -->
+              <div class="d-md-inline-block">
+                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div
+              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+            >
+              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="mt-2 mb-2">
+                <h5 class="card-title-custom text-center">Abiodun Bada</h5>
+              </div>
+              <div class="mb-5">
+                <p class="card-text-custom">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad
+                </p>
+              </div>
+
+              <div class="d-inline-block">
+                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div
+              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+            >
+              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="mt-2 mb-2">
+                <h5 class="card-title-custom text-center">Justice Etinosa</h5>
+              </div>
+              <div class="mb-5">
+                <p class="card-text-custom">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad
+                </p>
+              </div>
+
+              <div class="d-inline-block">
+                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div
+              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+            >
+              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="mt-2 mb-2">
+                <h5 class="card-title-custom text-center">Leke Ojo</h5>
+              </div>
+              <div class="mb-5">
+                <p class="card-text-custom">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad
+                </p>
+              </div>
+
+              <div class="d-inline-block">
+                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- We are a social community -->
     <section class="py-md-5 py-3 altBg">
       <div class="container">
         <div class="mb-md-5 mb-3">
-          <small class="text-muted">We are a socisl community</small>
+          <small class="text-muted">We are a social community</small>
           <h2>Find Us In Your Favorite platform</h2>
         </div>
         <div class="row">
-          <div class="col-md-3 rounded social socialFacebook ">
+          <div class="col-3 rounded social socialFacebook ">
             <div
               class="d-flex h-100 flex-column justify-content-center align-items-center"
             >
@@ -766,7 +881,7 @@
               <p class="font-weight-bold text-white">Facebook</p>
             </div>
           </div>
-          <div class="col-md-3 rounded social socialInstagram">
+          <div class="col-3 rounded social socialInstagram">
             <div
               class=" d-flex h-100 flex-column justify-content-center align-items-center"
             >
@@ -777,7 +892,7 @@
               <p class="font-weight-bold text-white">Instagram</p>
             </div>
           </div>
-          <div class="col-md-3 rounded social socialLinkedIn">
+          <div class="col-3 rounded social socialLinkedIn">
             <div
               class=" d-flex h-100 flex-column justify-content-center align-items-center"
             >
@@ -788,7 +903,7 @@
               <p class="font-weight-bold text-white">LinkedIn</p>
             </div>
           </div>
-          <div class="col-md-3 rounded social socialTwitter">
+          <div class="col-3 rounded social socialTwitter">
             <div
               class=" d-flex h-100 flex-column justify-content-center align-items-center"
             >
@@ -859,10 +974,10 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="card h-300 py-3">
+            <div class="card h-300">
               <div class="card-body">
-                <h2 class="card-title my-2">Enroll for a class</h2>
-                <p class="card-text h-110">
+                <h2 class="card-title-custom my-2">Enroll for a class</h2>
+                <p class="card-text-custom h-110">
                   Our curriculum is super amazing. Select from our well
                   structured classes and apply to either or combined to get
                   started.
@@ -874,10 +989,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card h-300 py-3">
+            <div class="card h-300">
               <div class="card-body">
-                <h2 class="card-title my-2">Become a tutor</h2>
-                <p class="card-text h-110">
+                <h2 class="card-title-custom my-2">Become a tutor</h2>
+                <p class="card-text-custom h-110">
                   Passionate about sharing your knowledge to other designers?
                   Join us in sharing your knowledge while earning as you do so.
                 </p>
@@ -889,10 +1004,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card h-300 py-3">
+            <div class="card h-300">
               <div class="card-body">
-                <h2 class="card-title my-2">Partner with us</h2>
-                <p class="card-text h-110">
+                <h2 class="card-title-custom my-2">Partner with us</h2>
+                <p class="card-text-custom h-110">
                   Like to partner with us, click on the "get started" button so
                   we can extend our collaboration.
                 </p>
@@ -1012,6 +1127,42 @@
           $(".navLinks, .darkOnHover").css("color", "white");
         });
       });
+    </script>
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      let dropdown = document.getElementsByClassName("dropdown-btn");
+let i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  let dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+$('.sidebar').hide();
+
+$('#closeBtn').click(function(){
+  $('.sidebar').hide();
+})
+$('#openBtn').click(function(){
+  $('.sidebar').toggleClass('showSidebar');
+  $('#openBtn').toggleClass('openBtn');
+  $('#openBtn').toggleClass('fa-bars');
+  // $('#openBtn').toggleClass('fa-close');
+})
     </script>
   </body>
 </html>
