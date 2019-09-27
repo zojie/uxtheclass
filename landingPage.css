@@ -1,8 +1,29 @@
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(/fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(/fonts/Gilroy-Bold.ttf);
+  font-weight: bold;
+}
+
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: Rubik-Regular;
 }
+
+.customBold {
+  font-family: Gilroy-Bold !important;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -104,6 +125,7 @@ body {
 }
 .social {
   height: 200px;
+  /* width: 100px; 150px; */ 
 }
 
 .iconDesc {
@@ -125,13 +147,13 @@ body {
 
 
 .uxtheclass {
-  width: -webkit-max-content;
+  /* width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-family: Gilroy;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.29;
+  line-height: 1.29; */
 }
 
 .navLinks {
@@ -159,7 +181,7 @@ body {
   height: 100%;
 }
 .bottomText {
-  bottom: 5%;
+  bottom: 3px;
   left: 10%;
   right: 10%;
 }
@@ -188,9 +210,8 @@ body {
   }
 }
 
-.h-300,
 .testimonials {
-  height: min-content !important;
+  height: 300px !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -202,18 +223,18 @@ body {
     font-size: 14px;
   }
 
-  .h-300 {
-    height: min-content !important;
-  }
-
   .social {
     height: 100px;
+    /* width: 100px; */
   }
 }
 
 @media screen and (max-width: 430px) {
   .mobileHeader {
     font-size: 16px;
+  }
+  .mobileFont {
+    font-size: 12px;
   }
 }
 
@@ -246,6 +267,70 @@ body {
     left: 250px;
   }
 
-  .showSidebar{
-    display: block !important;
+  
+  
+  
+  /* Footer */
+  .icons-foot {
+    height: 30px;
+    width: 20%;
+    padding-top: 8px;
   }
+  .nav-links-below a {
+  color: #fff;
+}
+.copy {
+  margin-top: 30px;
+}
+.lowest {
+  color: #6c757d;
+}
+.lowest a {
+  color: #6c757d;
+}
+.right {
+  width: 35%;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* .card-deck {
+  margin: 0 !important;
+} */
+
+/*MEDIA QUERIES TO HANDLE RESPONSIVENESS*/
+@media screen and (max-width: 1079px) {
+  .right {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.social-icons {
+    display: none;
+  }
+  div.end {
+    font-size: xx-small;
+  }
+  .left,
+  .right,
+  .copy {
+    width: max-content;
+    font-size: xx-small;
+  }
+  div.icons-foot {
+    width: 40%;
+  }
+  div.right a {
+    padding-left: 10px;
+  }
+  /* .hide-800Up {
+    display: block;
+  } 
+  .show-800Up {
+    display: none;
+  }  */
+}
+.showSidebar{
+  display: block !important;
+}

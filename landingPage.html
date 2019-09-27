@@ -16,52 +16,97 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="bootstrap.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="landingPage.css" />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="particle.css" />
   </head>
   <body>
-    <div class="sidebar bg-white m-0 p-0 position-fixed h-100 overflow-auto d-md-none">
-      <div class="p-3 d-block bg-dark" href="#home"><span class="redText">UX</span
-        ><span class="darkOnHover textWhite">THECLASS</span></div>
+    <div class="d-flex d-md-none align-items-center  mr-2">
+      <button class="btn d-block d-md-none z-10" id="openBtn">
+        <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class=" d-block ml-3 ml-md-5 mr-auto" href="#home">
+        <img
+          class=""
+          style="height:40px; max-width: 150px;"
+          src="/images/UXTHECLASS.png"
+          alt=""
+        />
+      </div>
+
+      <div class="d-inline-block">
+        <a class="mr-2 navLinks text-dark" href="#"
+          ><i class="fa fa-2x fa-shopping-cart" aria-hidden="true"></i
+        ></a>
+        <a class=" navLinks text-white btn redBg" href="#"
+          ><span><i class="fa fa-user"></i></span> Login</a
+        >
+      </div>
+    </div>
+    <div
+      class="sidebar d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
+    >
       <a class="p-3 d-block" href="#home">About Us</a>
-      <button class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block">Our Classes
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container bg-white redText">
-          <a class="p-3 d-block" href="#">UX Research/Design</a>
-          <a class="p-3 d-block" href="#">Branding & Graphic Design</a>
-          <a class="p-3 d-block" href="#">UI & Interaction Design</a>
-          <a class="p-3 d-block" href="#">Business of Design</a>
-        </div>
+      <button
+        class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block"
+      >
+        Our Classes
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container bg-white redText">
+        <a class="p-3 d-block" href="#">UX Research/Design</a>
+        <a class="p-3 d-block" href="#">Branding & Graphic Design</a>
+        <a class="p-3 d-block" href="#">UI & Interaction Design</a>
+        <a class="p-3 d-block" href="#">Business of Design</a>
+      </div>
       <a class="p-3 d-block" href="#contact">Career</a>
       <a class="p-3 d-block" href="#about">Our Blog</a>
       <a class="p-3 d-block" href="#about">FAQ & Help</a>
       <a class="p-3 d-block" href="#about">Contact</a>
+
+      <div class="justify-content-end">
+        <a
+          class="py-2 mr-5 d-none d-md-inline-block navLinks textWhite"
+          href="#"
+          ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+        ></a>
+        <a
+          class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+          href="#"
+          ><span><i class="fa fa-user"></i></span> Login</a
+        >
+      </div>
     </div>
 
     <div class="position-relative hero-image overflow-hidden text-center">
-      <nav class="position-absolute w-100 d-none d-md-block py-1 site-header" id="bgWhite">
+      <nav
+        class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
+        id="bgWhite"
+      >
         <div
           class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
         >
-          <a
-            class="py-2 uxtheclass justify-content-start navbar-brand"
-            href="#"
-          >
-            <span class="redText">UX</span
-            ><span class="darkOnHover textWhite">THECLASS</span>
-          </a>
+          <img
+            class=""
+            style="height:35px; max-width: 120px;"
+            src="/images/UXTHECLASS.png"
+            alt=""
+          />
           <div class="justify-content-between">
             <a
               class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
               href="#"
               >About Us</a
             >
-            <div class="dropdownDiv py-2 mx-1 ml-lg-3 d-none d-md-inline-block">
-              <button class="textWhite navLinks dropdownBtn btn btn-link">
+            <div class="dropdownDiv py-2 mx-1 ml-lg-2 d-none d-md-inline-block">
+              <button
+                class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link"
+              >
                 Our Classes
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -69,34 +114,46 @@
                 <div class="container py-3">
                   <div class="dropdownRow row">
                     <div class="column col-md-3">
-                      <h3><i class="fa fa-pencil"></i></h3>
+                      <h3 class="customBold"><i class="fa fa-pencil"></i></h3>
                       <h5>UX Research/Design</h5>
                       <small>Research Process, Wireframing ...</small>
-                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
+                      <a
+                        href="#"
+                        class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
                     <div class="column col-md-3">
-                      <h3><i class="fa fa-paint-brush"></i></h3>
+                      <h3 class="customBold">
+                        <i class="fa fa-paint-brush"></i>
+                      </h3>
                       <h5>Branding & Graphic Design</h5>
                       <small>Illustrations, Typography, Colors ...</small>
-                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
+                      <a
+                        href="#"
+                        class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
                     <div class="column col-md-3">
-                      <h3><i class="fa fa-play-circle"></i></h3>
+                      <h3 class="customBold">
+                        <i class="fa fa-play-circle"></i>
+                      </h3>
                       <h5>UI & Interaction Design</h5>
                       <small>Responsive web, Mobile design ...</small>
-                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
+                      <a
+                        href="#"
+                        class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
                     <div class="column col-md-3">
-                      <h3><i class="fa fa-suitcase"></i></h3>
+                      <h3 class="customBold"><i class="fa fa-suitcase"></i></h3>
                       <h5>Business of Design</h5>
                       <small>Pricing Design brief, Portfolio ...</small>
-                      <a href="#" class="mt-2 float-none d-block text-left p-2 redText"
+                      <a
+                        href="#"
+                        class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
@@ -105,22 +162,25 @@
               </div>
             </div>
             <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="#"
-            >Career</a
-          > <a
-          class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-          href="#"
-          >Our Blog</a
-        > <a
-        class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-        href="#"
-        >FAQ & Help</a
-      > <a
-      class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-      href="#"
-      >Contact</a
-    >
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="#"
+              >Career</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="#"
+              >Our Blog</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="#"
+              >FAQ & Help</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="#"
+              >Contact</a
+            >
           </div>
 
           <div class="justify-content-end">
@@ -137,15 +197,17 @@
           </div>
         </div>
       </nav>
-      <button class="btn redBorder redBg d-block d-md-none z-10 position-absolute" id="openBtn"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></button>
-      <img
+      <div class="position-absolute" id="particles-js"></div>
+      <!-- <img
         class="position-absolute heroOverlay"
         src="/images/patternOverlay@2x.png"
         alt="Image Overlay"
-      />
+      /> -->
+      <!-- <div class="position-absolute particles-js"></div> -->
+
       <div class="col-md-6 p-lg-5 mx-auto my-5">
         <span class="textWhite">Online design academy</span>
-        <h1 class="font-weight-normal textWhite">
+        <h1 class="customBold textWhite">
           Learn, Collaborate, Thrive
         </h1>
         <p class="font-weight-normal textWhite">
@@ -157,43 +219,43 @@
           >Become a tutor</a
         >
       </div>
-      <!-- 
-      <div class="bottomText container position-absolute">
+
+      <div class="bottomText position-absolute">
         <div class="d-flex justify-content-between">
           <div class="text-muted d-flex textWhite flex-column">
-            <small>
+            <small class="mobileFont">
               What we do in 30sec
             </small>
             <small> <i class="fa fa-play-circle"></i> Play video </small>
           </div>
 
           <div class="text-muted d-flex textWhite text-right flex-column">
-            <small>
+            <small class="mobileFont">
               Everything has a reason
             </small>
             <small> Read the why <i class="fa fa-play-circle"></i> </small>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- Our classes -->
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">What do we offer</small>
-        <h2>Our Classes</h2>
+        <h3 class="customBold" class="customBold">Our Classes</h3>
       </div>
       <div class="row">
-        <div class="col-md-3 col-sm-6 my-2">
-          <div class="card">
+        <div class="col-md-6 col-lg-3 my-2 ">
+          <div class="card h-100 w-100">
             <img
-              src="/images/pattern.jpg"
+              src="/images/landingPage/UXPic.png"
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body p-2 m-0">
+            <div style="border-bottom: 0;" class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title-custom">UX Research/Design</h5>
+                <h5 class="customBold card-title-custom">UX Research/Design</h5>
                 <span>4 weeks</span>
               </div>
               <div class="mb-3">
@@ -202,120 +264,135 @@
                   and take your audience through your process.
                 </p>
               </div>
-              <div>
+            </div>
+
+            <div style="border-top: 0;" class="card-footer  bg-white p-0">
+              <div class="mx-2">
                 <p>N12,999</p>
                 <small><strong>Level</strong>: Beginner & Intermediate</small>
               </div>
-            </div>
-            <div class="redBg textWhite text-center card-footer">
-              View course
+              <div class="redBg py-2 mt-2 textWhite text-center ">
+                View course
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
-          <div class="card">
+
+        <div class="col-md-6 col-lg-3 my-2 ">
+          <div class="card h-100 w-100">
             <img
-              src="/images/pattern.jpg"
+              src="/images/landingPage/BrandingPic.png"
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body p-2 m-0">
+            <div style="border-bottom: 0;" class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title-custom">UX Research/Design</h5>
-                <span>4 weeks</span>
+                <h5 class="customBold card-title-custom">
+                  Branding & Graphic Design
+                </h5>
+                <span>6 weeks</span>
               </div>
               <div class="mb-3">
                 <p class="card-text-custom">
-                  Learn how to carry out professional research, create personas
-                  and take your audience through your process.
+                  Be intentional with every line, color and typography used.
+                  Learn how to create designs that has the "wow" effect.
                 </p>
               </div>
-              <div>
+            </div>
+            <div style="border-top: 0;" class="card-footer  bg-white p-0">
+              <div class="mx-2">
                 <p>N12,999</p>
                 <small><strong>Level</strong>: Beginner & Intermediate</small>
               </div>
-            </div>
-            <div class="redBg textWhite text-center card-footer">
-              View course
+
+              <div class="redBg py-2 mt-2 textWhite text-center ">
+                View course
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
-          <div class="card">
+        <div class="col-md-6 col-lg-3 my-2 ">
+          <div class="card h-100 w-100">
             <img
-              src="/images/pattern.jpg"
+              src="/images/landingPage/UIPic.png"
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body p-2 m-0">
+            <div style="border-bottom: 0;" class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title-custom">UX Research/Design</h5>
-                <span>4 weeks</span>
+                <h5 class="customBold card-title-custom">
+                  UI & Interaction design
+                </h5>
+                <span>6 weeks</span>
               </div>
-              <div class="mb-3">
-                <p class="card-text-custom">
-                  Learn how to carry out professional research, create personas
-                  and take your audience through your process.
-                </p>
-              </div>
-              <div>
-                <p>N12,999</p>
+              <p class="card-text-custom">
+                Develop expertise in creating visually appealing designs with
+                seamless experience . Focus on good micro interaction.
+              </p>
+            </div>
+            <div style="border-top: 0;" class="card-footer  bg-white p-0">
+              <div class="mx-2">
+                <p>N14,999</p>
                 <small><strong>Level</strong>: Beginner & Intermediate</small>
               </div>
-            </div>
-            <div class="redBg textWhite text-center card-footer">
-              View course
+              <div class="redBg py-2 mt-2 textWhite text-center ">
+                View course
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
-          <div class="card">
+        <div class="col-md-6 col-lg-3 my-2 ">
+          <div class="card h-100 w-100">
             <img
-              src="/images/pattern.jpg"
+              src="/images/landingPage/BusinessPic.png"
               class="card-img-top"
               alt="..."
             />
-            <div class="card-body p-2 m-0">
+            <div style="border-bottom: 0;" class="card-body p-2 m-0">
               <div class="mb-2">
-                <h5 class="card-title-custom">UX Research/Design</h5>
-                <span>4 weeks</span>
+                <h5 class="customBold card-title-custom">Business of Design</h5>
+                <span>3 weeks</span>
               </div>
               <div class="mb-3">
                 <p class="card-text-custom">
-                  Learn how to carry out professional research, create personas
-                  and take your audience through your process.
+                  Position yourself with confidence in the design ecosystem as a
+                  freelancer or as a design lead,
                 </p>
               </div>
-              <div>
-                <p>N12,999</p>
+            </div>
+            <div style="border-top: 0;" class="card-footer  bg-white p-0">
+              <div class="mx-2">
+                <p>N10,999</p>
                 <small><strong>Level</strong>: Beginner & Intermediate</small>
               </div>
-            </div>
-            <div class="redBg textWhite text-center card-footer">
-              View course
+
+              <div class="redBg py-2 mt-2 textWhite text-center ">
+                View course
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Where do you fall? -->
+    <!-- There's Room for Everyone -->
     <section class="py-md-5 py-3 altBg">
       <div class="container">
         <div class="mb-md-5 mb-3">
           <small class="text-muted">Where do you fall?</small>
-          <h2>There's Room For Everyone</h2>
+          <h3 class="customBold">There's Room For Everyone</h3>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card h-300 py-3">
+          <div class="card-deck mx-2 mx-md-none">
+            <div class="my-2 col-md-4 px-0 card py-2">
               <div class="card-body">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle text-primary fa fa-user iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/ForIndividuals.png"
+                    alt="For Individuals"
+                  />
                 </div>
-                <h4 class="card-title my-2">For Individuals</h4>
+                <h4 class="customBold card-title my-2">For Individuals</h4>
                 <p class="card-text">
                   Forget every guess work and join our classes in learning from
                   top designers. Either you are starting as a freelancer or an
@@ -323,17 +400,16 @@
                 </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-300 py-3">
+            <div class="my-2 col-md-4 px-0 card py-2">
               <div class="card-body">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle fa fa-graduation-cap text-success iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/ForStudents.png"
+                    alt="ForStudents"
+                  />
                 </div>
-                <h4 class="card-title my-2">For Students/NYSC</h4>
+                <h4 class="customBold card-title my-2">For Students/NYSC</h4>
                 <p class="card-text">
                   Still in the university or secondary and would like to advance
                   your career? Our classes are built not to interfere with your
@@ -341,17 +417,16 @@
                 </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-300 py-3">
+            <div class="my-2 col-md-4 px-0 card py-2">
               <div class="card-body">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle fa fa-users-class iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/BecomeTutor.png"
+                    alt="Become a tutor"
+                  />
                 </div>
-                <h4 class="card-title my-2">Become a tutor</h4>
+                <h4 class="customBold card-title  my-2">Become a tutor</h4>
                 <p class="card-text">
                   Passionate about sharing your knowledge to other designers?
                   Join us in sharing your knowledge while earning as you do so.
@@ -368,18 +443,16 @@
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">Don't worry about timing</small>
-        <h2>Desined To Fit Your Schedule</h2>
+        <h3 class="customBold">Designed To Fit Your Schedule</h3>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle fa fa-clock-o iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img src="/images/landingPage/AtPace.png" alt="At your pace" />
               </div>
-              <h4 class="card-title">Access at your pace</h4>
+              <h4 class="customBold card-title">Access at your pace</h4>
               <p class="card-text">
                 Full time worker or student with less time? Don't worry as our
                 classes are built for your convenience.
@@ -391,11 +464,9 @@
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle fa fa-mobile-phone iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img src="/images/landingPage/AnyDevice.png" alt="Any device" />
               </div>
-              <h4 class="card-title">View on any device</h4>
+              <h4 class="customBold card-title">View on any device</h4>
               <p class="card-text">
                 Access the class from either your mobile phone, tab or a laptop.
                 All you need is internet.
@@ -407,11 +478,12 @@
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle fa fa-feed iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img
+                  src="/images/landingPage/TutorFeedback.png"
+                  alt="Tutor Feedback"
+                />
               </div>
-              <h4 class="card-title">Timely tutor feedback</h4>
+              <h4 class="customBold card-title">Timely tutor feedback</h4>
               <p class="card-text">
                 Get steady feedback from your tutor. One on one chat is enabled
                 for free communication.
@@ -427,7 +499,7 @@
       <div class="container">
         <div class="mb-md-5 mb-3 textWhite">
           <small class="text-muted">Our rock star tutors</small>
-          <h2>Experience Working With These Companies</h2>
+          <h3 class="customBold">Experience Working With These Companies</h3>
         </div>
         <div class="row my-md-5 align-items-center d-flex">
           <div class="col-6 col-sm-3">
@@ -464,18 +536,19 @@
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">We are not the others</small>
-        <h2>You Can Trust Us</h2>
+        <h3 class="customBold">You Can Trust Us</h3>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle fa fa-wallet iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img
+                  src="/images/landingPage/OnePayment.png"
+                  alt="One time payment"
+                />
               </div>
-              <h2 class="card-title">One Time Payment</h2>
+              <h4 class="customBold card-title">One Time Payment</h4>
               <p class="card-text">
                 How does forever sound like :) Just make a one time payment on
                 any class and receive updates.
@@ -487,11 +560,12 @@
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle fa fa-mobile-phone iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img
+                  src="/images/landingPage/Certificate.png"
+                  alt="Certificate"
+                />
               </div>
-              <h2 class="card-title">Course Certification</h2>
+              <h4 class="customBold card-title">Course Certification</h4>
               <p class="card-text">
                 After completing our class, you will receive our e-certificates
                 with a verifiable link o post on your profile..
@@ -503,11 +577,12 @@
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <i
-                  class="py-2 rounded-circle redText fa fa-question iconDesc d-flex justify-content-center align-items-center"
-                ></i>
+                <img
+                  src="/images/landingPage/247Support.png"
+                  alt="247 support"
+                />
               </div>
-              <h2 class="card-title">24/7 Support</h2>
+              <h4 class="customBold card-title">24/7 Support</h4>
               <p class="card-text">
                 Tell us anytime you have any questions or feedback during the
                 program. We reply timely.
@@ -523,23 +598,24 @@
       <div class="container">
         <div class="mb-md-5 mb-3">
           <small class="text-muted">What people say about us</small>
-          <h2>Told you we're awesome :)</h2>
+          <h3 class="customBold">Told you we're awesome :)</h3>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card testimonials py-3">
-              <div class="card-body">
+          <div class="card-deck mx-2 mx-md-0">
+            <div class="my-2 col-md-4 card py-1 px-0">
+              <div class="card-body pb-0">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text">
                     I was a beginner in design and had a lot of theoretical
                     knowledge. This program exposed me to practical knowledge to
                     go further in my product design journey.
                   </p>
-                  <div class="mb-2 mt-4 d-flex">
-                    <i
-                      class="py-2 mr-3 rounded-circle text-primary fa fa-user iconDesc d-flex justify-content-center align-items-center"
-                    ></i>
-                    <div class="d-flex flex-column">
+                  <div class="mb-2 mt-2 d-flex">
+                    <img
+                      src="/images/landingPage/EmmanuelYusufu.png"
+                      alt="testimonial image"
+                    />
+                    <div class="d-flex flex-column ml-2">
                       <strong class="py-2">Emmanuel Yusufu</strong>
                       <small>Abuja</small>
                     </div>
@@ -547,22 +623,21 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card testimonials py-3">
-              <div class="card-body">
+            <div class="my-2 col-md-4 card py-1 px-0">
+              <div class="card-body pb-0">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text">
                     It was really insightful for me. it opened my eyes to the
                     basics of design which I previously ignored giving me a
                     better head start into user interface and experience design.
                   </p>
-                  <div class="mb-2 mt-4 d-flex">
-                    <i
-                      class="py-2 mr-3 rounded-circle text-primary fa fa-user iconDesc d-flex justify-content-center align-items-center"
-                    ></i>
-                    <div class="d-flex flex-column">
+                  <div class="mb-2 mt-2 d-flex">
+                    <img
+                      src="/images/landingPage/AjiduahJessia.png"
+                      alt="testimonial image"
+                    />
+                    <div class="d-flex flex-column ml-2">
                       <strong class="py-2">Jessica Ajiduah</strong>
                       <small>Lagos</small>
                     </div>
@@ -570,21 +645,17 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card testimonials py-3">
-              <div class="card-body">
+            <div class="my-2 col-md-4 card py-1 px-0">
+              <div class="card-body pb-0">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text">
                     The program was awesome. It helped shaped my design
                     thinking.
                   </p>
-                  <div class="mb-2 mt-4 d-flex">
-                    <i
-                      class="py-2 mr-3 rounded-circle text-primary fa fa-user iconDesc d-flex justify-content-center align-items-center"
-                    ></i>
-                    <div class="d-flex flex-column">
+                  <div class="mb-2 mt-2 d-flex">
+                    <img src="/images/landingPage/AjiduahJessia.png" alt="" />
+                    <div class="d-flex flex-column ml-2">
                       <strong class="py-2">Egokinovo Oke-Davis</strong>
                       <small>Lagos</small>
                     </div>
@@ -597,28 +668,29 @@
       </div>
     </section>
 
-    <!-- This is an exciting industry -->
+    <!-- Why you need to know UX -->
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">This is an exciting industry</small>
-        <h2>Why you need to know UX</h2>
+        <h3 class="customBold">Why you need to know UX</h3>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="card h-300 border-0 h-300 py-3">
+          <div class="card border-0 h-100 py-3">
             <div class="card-body">
               <div class="d-flex h-100 flex-column">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle fa fa-smile-o iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/ExcitingJourney.png"
+                    alt="Exciting journey"
+                  />
                 </div>
-                <h2 class="card-title">Exciting Journey</h2>
+                <h4 class="customBold card-title">Exciting Journey</h4>
                 <p class="card-text" style="min-height: 72px;">
                   As a designer, we shape the experience of digital products and
                   so we shape our culture.
                 </p>
-                <div class="justify-content-end">
+                <div class="mt-auto">
                   <button class="btn borderedBtn p-2 altBg">
                     You are a problem solver
                   </button>
@@ -628,21 +700,22 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-300 border-0 h-300 py-3">
+          <div class="card border-0 h-100 py-3">
             <div class="card-body">
               <div class="d-flex h-100 flex-column">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle fa fa-line-chart iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/CareerGrowth.png"
+                    alt="Career growth"
+                  />
                 </div>
-                <h2 class="card-title">Career growth</h2>
+                <h4 class="customBold card-title">Career growth</h4>
                 <p class="card-text">
                   The search for amazing designer is so overwhelming from being
                   a freelancer, remote or in-house.
                 </p>
                 <button
-                  class="btn borderedBtn p-2 altBg mt-auto justify-content-end"
+                  class="btn borderedBtn p-2 altBg mt-auto mt-auto"
                 >
                   Position yourself
                 </button>
@@ -651,20 +724,21 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-300 border-0 py-3 h-300">
+          <div class="card border-0 h-100 py-3">
             <div class="card-body">
               <div class=" d-flex flex-column h-100">
                 <div class="my-2">
-                  <i
-                    class="py-2 rounded-circle fa fa-users iconDesc d-flex justify-content-center align-items-center"
-                  ></i>
+                  <img
+                    src="/images/landingPage/KnowYourUsers.png"
+                    alt="Know your users"
+                  />
                 </div>
-                <h2 class="card-title">Know your users</h2>
+                <h4 class="customBold card-title">Know your users</h4>
                 <p class="card-text">
                   Understand the psychology of your users, know what works and
                   learn how to build a better experience.
                 </p>
-                <button class="btn borderedBtn p-2 altBg justify-content-end">
+                <button class="btn borderedBtn p-2 altBg mt-auto">
                   Its about psychology
                 </button>
               </div>
@@ -675,18 +749,22 @@
     </section>
 
     <!-- Best Graduating Project -->
-    <section style="" class="py-md-5 py-3 goldBg">
+    <section class="py-md-5 py-3 goldBg">
       <div class="container">
         <div class="row">
-          <div class="col-md-6" style="">
+          <div class="col-md-6">
             <div class="d-flex flex-column">
               <div class="mb-3">
                 <small class="text-muted">From our May 2019 cohort</small>
-                <h2>Best Graduating Project</h2>
+                <h3 class="customBold">Best Graduating Project</h3>
               </div>
 
               <div class="mb-5 mt-4 d-flex">
-                <img src="" class="mr-3 rounded-circle iconDesc" alt="..." />
+                <img
+                  src="/images/landingPage/EmmanuelYusufu.png"
+                  class="mr-3 rounded-circle iconDesc"
+                  alt="Graduate"
+                />
                 <div class="d-flex flex-column">
                   <strong class="py-2">Emmanuel Yusufu</strong>
                   <small class="text-capitalize"
@@ -694,26 +772,39 @@
                   >
                 </div>
               </div>
+
+              <!-- <div class="timeline">
+                  <div class="container-timeline right">
+                    <div class="content">
+                     
+                    </div>
+                  </div>
+                  <div class="container-timeline right">
+                    <div class="content">
+                     
+                    </div>
+                  </div>
+              </div> -->
               <div class="track">
                 <ul>
                   <li class="mb-3">
-                    <div class="d-flex flex-column">
-                      <p class="mb-0">Project Industry</p>
-                      <strong class="mb-2">Career</strong>
-                      <i
-                        class="fa fa-briefcase goldText"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
+                      <div class="d-flex flex-column">
+                          <p class="mb-0">Project Industry</p>
+                          <strong class="mb-2">Career</strong>
+                          <i
+                            class="fa fa-briefcase goldText"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
                   </li>
                   <li>
-                    <div class="d-flex flex-column">
-                      <strong class="mb-2">Project Objective</strong>
-                      <p class="w-md-50">
-                        Use of tech in improving access to jobs and workshops to
-                        prospective techies.
-                      </p>
-                    </div>
+                      <div class="d-flex flex-column">
+                          <strong class="mb-2">Project Objective</strong>
+                          <p class="">
+                            Use of tech in improving access to jobs and workshops to
+                            prospective techies.
+                          </p>
+                        </div>
                   </li>
                 </ul>
               </div>
@@ -727,10 +818,10 @@
           </div>
 
           <div class="col-md-6 mt-3 mt-md-1">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="h-100 d-flex justify-content-center align-items-center">
               <img
                 src="/images/2.jpg"
-                class="img-fluid"
+                class="ml-2 img-fluid"
                 style="max-height:400px;"
                 alt="Graduates"
               />
@@ -744,57 +835,33 @@
     <section class="py-md-5 py-3 container">
       <div class="mb-md-5 mb-3">
         <small class="text-muted">Meet our tutors</small>
-        <h2>Our Superheroes</h2>
+        <h3 class="customBold">Our Superheroes</h3>
       </div>
       <div class="row">
-        <div class="col-md-3">
-          <div class="card">
+        <div class="card-deck mx-2 mx-md-0">
+          <div class="col-md-3 mx-1 px-0 my-2 card">
             <div
-              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+              class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
-              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+              <img
+                src="/images/landingPage/Leslie.png"
+                class="ml-2 mt-3 img-fluid rounded-circle profImg"
+                alt="Tutor"
+              />
             </div>
             <div class="card-body ">
-              <div class="mt-2 mb-2">
-                <h5 class="card-title-custom text-center">Leslie Wiliams</h5>
+              <div class="my-2">
+                <h5 class="customBold card-title-custom">Leslie Wiliams</h5>
               </div>
-              <div class="mb-5">
+              <div class="">
                 <p class="card-text-custom">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad
                 </p>
               </div>
-
-              <div class="d-md-inline-block">
-                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <div
-              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
-            >
-              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
-            </div>
-            <div class="card-body">
-              <div class="mt-2 mb-2">
-                <h5 class="card-title-custom text-center">Abiodun Bada</h5>
-              </div>
-              <div class="mb-5">
-                <p class="card-text-custom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad
-                </p>
-              </div>
-
+            <div style="border-top:none;" class="bg-white card-footer">
               <div class="d-inline-block">
                 <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
@@ -803,27 +870,30 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-3">
-          <div class="card">
+          <div class="col-md-3 mx-1 px-0 my-2 card">
             <div
-              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+              class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
-              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+              <img
+                src="/images/landingPage/Bada.png"
+                class="ml-2 mt-3 img-fluid rounded-circle profImg"
+                alt="Tutor"
+              />
             </div>
             <div class="card-body">
-              <div class="mt-2 mb-2">
-                <h5 class="card-title-custom text-center">Justice Etinosa</h5>
+              <div class="my-2">
+                <h5 class="customBold card-title-custom">Abiodun Bada</h5>
               </div>
-              <div class="mb-5">
+              <div class="">
                 <p class="card-text-custom">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad
                 </p>
               </div>
-
+            </div>
+            <div style="border-top:none;" class="bg-white card-footer">
               <div class="d-inline-block">
                 <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
@@ -832,27 +902,62 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-3">
-          <div class="card">
+          <div class="col-md-3 mx-1 px-0 my-2 card">
             <div
-              class="d-flex justify-content-center justify-content-md-start ml-md-3 align-items-center"
+              class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
-              <img src="" class="img-fluid rounded-circle profImg" alt="..." />
+              <img
+                src="/images/landingPage/Justice.png"
+                class="ml-2 mt-3 img-fluid rounded-circle profImg"
+                alt="Tutor"
+              />
             </div>
             <div class="card-body">
-              <div class="mt-2 mb-2">
-                <h5 class="card-title-custom text-center">Leke Ojo</h5>
+              <div class="my-2">
+                <h5 class="customBold card-title-custom">Justice Etinosa</h5>
               </div>
-              <div class="mb-5">
+              <div class="">
                 <p class="card-text-custom">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad
                 </p>
               </div>
+            </div>
+            <div style="border-top:none;" class="bg-white card-footer">
+              <div class="d-inline-block">
+                <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa mx-1 fa fa-behance-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-3 mx-1 px-0 my-2 card">
+            <div
+              class="d-flex justify-content-md-start ml-md-3 align-items-center"
+            >
+              <img
+                src="/images/landingPage/Leke.png"
+                class="ml-2 mt-3 img-fluid rounded-circle profImg"
+                alt="Tutor"
+              />
+            </div>
+            <div class="card-body">
+              <div class="my-2">
+                <h5 class="customBold card-title-custom">Leke Ojo</h5>
+              </div>
+              <div class="">
+                <p class="card-text-custom">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad
+                </p>
+              </div>
+            </div>
+            <div style="border-top:none;" class="bg-white card-footer">
               <div class="d-inline-block">
                 <i class="fa mx-1 fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa mx-1 fa fa-dribbble" aria-hidden="true"></i>
@@ -870,50 +975,66 @@
       <div class="container">
         <div class="mb-md-5 mb-3">
           <small class="text-muted">We are a social community</small>
-          <h2>Find Us In Your Favorite platform</h2>
+          <h3 class="customBold">Find Us In Your Favorite platform</h3>
         </div>
         <div class="row">
-          <div class="col-3 rounded social socialFacebook ">
+          <div class="col-6 social col-md-3  my-2 ">
             <div
-              class="d-flex h-100 flex-column justify-content-center align-items-center"
+              class="rounded socialFacebook d-flex h-100 flex-column justify-content-center align-items-center"
             >
               <i class="fa fa-facebook text-white fa-2x" aria-hidden="true"></i>
               <p class="font-weight-bold text-white">Facebook</p>
+              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+                >Join us
+                <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
-          <div class="col-3 rounded social socialInstagram">
+          <div class="col-6 social col-md-3  my-2 ">
             <div
-              class=" d-flex h-100 flex-column justify-content-center align-items-center"
+              class="rounded socialInstagram d-flex h-100 flex-column justify-content-center align-items-center"
             >
               <i
                 class="fa fa-instagram text-white fa-2x"
                 aria-hidden="true"
               ></i>
               <p class="font-weight-bold text-white">Instagram</p>
+              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+                >Join us
+                <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
-          <div class="col-3 rounded social socialLinkedIn">
+          <div class="col-6 social col-md-3  my-2 ">
             <div
-              class=" d-flex h-100 flex-column justify-content-center align-items-center"
+              class="rounded socialLinkedIn d-flex h-100 flex-column justify-content-center align-items-center"
             >
               <i
                 class="fa fa-linkedin-square text-white fa-2x"
                 aria-hidden="true"
               ></i>
               <p class="font-weight-bold text-white">LinkedIn</p>
+              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+                >Join us
+                <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
-          <div class="col-3 rounded social socialTwitter">
+          <div class="col-6 social col-md-3  my-2 ">
             <div
-              class=" d-flex h-100 flex-column justify-content-center align-items-center"
+              class="rounded socialTwitter d-flex h-100 flex-column justify-content-center align-items-center"
             >
               <i class="fa fa-twitter text-white fa-2x" aria-hidden="true"></i>
               <p class="font-weight-bold text-white">Twitter</p>
+              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+                >Join us
+                <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
         </div>
 
-        <div class="mb-md-5 mb-3">
+        <div class="mb-md-3 pt-2 mb-2">
           <small class="text-muted">Never miss on anything</small>
           <h5>Subscribe To Our Newsletter</h5>
         </div>
@@ -939,8 +1060,10 @@
                   required
                 />
                 <div class="input-group-prepend border-0 rounded">
-                  <span class="input-group-text redBg" id="inputGroupPrepend2"
-                    ><button class="redBg text-white border-0">
+                  <span
+                    class="input-group-text redBg rounded"
+                    id="inputGroupPrepend2"
+                    ><button class="redBg rounded text-white border-0">
                       Subscribe
                     </button></span
                   >
@@ -955,7 +1078,7 @@
               to know more about contact us here
             </p>
 
-            <div class="mt-5">
+            <div class="mt-3">
               <a href="#" class="redText">
                 Contact us <i class="fa fa-caret-right" aria-hidden="true"></i
               ></a>
@@ -970,48 +1093,61 @@
       <div class="container">
         <div class="mb-md-5 mb-3 redText">
           <small class="">Enough talking</small>
-          <h2>Let's Get Started</h2>
+          <h3 class="customBold">Let's Get Started</h3>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card h-300">
-              <div class="card-body">
-                <h2 class="card-title-custom my-2">Enroll for a class</h2>
-                <p class="card-text-custom h-110">
+          <div class="card-deck mx-2 mx-md-0">
+            <div class="col-md-4 my-2 card">
+              <div class="card-body pb-0 px-0">
+                <h4 class="customBold card-title-custom">
+                  Enroll for a class
+                </h4>
+                <p class="card-text-custom">
                   Our curriculum is super amazing. Select from our well
                   structured classes and apply to either or combined to get
                   started.
                 </p>
-
+              </div>
+              <div class="card-footer bg-white" style="border-top:none;">
                 <a href="" class="btn rounded redBg text-white">View classes</a>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-300">
-              <div class="card-body">
-                <h2 class="card-title-custom my-2">Become a tutor</h2>
-                <p class="card-text-custom h-110">
+            <div class="col-md-4 my-2 card">
+              <div class="card-body pb-0 px-0">
+                <h4 class="customBold card-title-custom">
+                  Become a tutor
+                </h4>
+                <p class="card-text-custom">
                   Passionate about sharing your knowledge to other designers?
                   Join us in sharing your knowledge while earning as you do so.
                 </p>
-                <a href="" class="btn rounded redBorder redText"
+              </div>
+              <div class="card-footer bg-white" style="border-top:none;">
+                <a
+                  href=""
+                  style="width: max-content;"
+                  class="btn rounded redBorder redText"
                   >Apply as a tutor</a
                 >
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-300">
-              <div class="card-body">
-                <h2 class="card-title-custom my-2">Partner with us</h2>
-                <p class="card-text-custom h-110">
+            <div class="col-md-4 my-2 card">
+              <div class="card-body pb-0 px-0">
+                <h4 class="customBold card-title-custom">
+                  Partner with us
+                </h4>
+                <p class="card-text-custom">
                   Like to partner with us, click on the "get started" button so
                   we can extend our collaboration.
                 </p>
-                <a href="" class="btn rounded redText"
+              </div>
+              <div class="card-footer bg-white" style="border-top:none;">
+                <a
+                  href=""
+                  style="width: max-content;"
+                  class="btn rounded redText"
                   >Get started
                   <i class="fa fa-caret-right" aria-hidden="true"></i
                 ></a>
@@ -1023,76 +1159,49 @@
     </section>
 
     <!-- footer -->
-    <footer class="container bg-dark py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="d-block mb-2"
-            role="img"
-            viewBox="0 0 24 24"
-            focusable="false"
-          >
-            <title>Product</title>
-            <circle cx="12" cy="12" r="10" />
-            <path
-              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-            />
-          </svg>
-          <small class="d-block mb-3 text-muted"
-            >&copy; 2017-{{ site.time | date: "%Y" }}</small
-          >
+
+    <footer class="bg-dark">
+      <div class="py-md-3 py-3 container">
+        <div class="links-foot d-flex justify-content-between end">
+          <div class="brand textWhite">
+            <span class="redText">UX</span>THECLASS
+          </div>
+          <div class="nav-links-below">
+            <a href="#" class="mx-2">About Us</a>
+            <a href="#" class="mx-2">Classes</a>
+            <a href="#" class="mx-2">Career</a>
+            <a href="#" class="mx-2">FAQ</a>
+            <a href="#" class="mx-2">Contact</a>
+            <a href="#" class="ml-2 mr-0">Blog</a>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-          </ul>
+        <div class="icons-foot d-flex justify-content-between text-white">
+          <span class=""><i class="fa fa-facebook-square"></i></span>
+          <span class=""><i class="fa fa-instagram"></i></span>
+          <span class=""><i class="fa fa-youtube"></i></span>
+          <span class=""><i class="fa fa-twitter"></i></span>
+          <span class=""><i class="fa fa-linkedin"></i></span>
+          <span class=""><i class="fa fa-medium"></i></span>
         </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-          </ul>
+        <div class="copy d-flex justify-content-end text-white">
+          <p>&copy; 2019 | Lagos, Nigeria</p>
         </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-          </ul>
+        <div class="lowest d-flex justify-content-between">
+          <div class="left">
+            <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
+          </div>
+          <div class="right d-flex justify-content-between">
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Opt Out Privacy</a>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -1108,7 +1217,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
     <script>
       $(document).ready(function() {
         $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
@@ -1139,30 +1250,30 @@
       }
 
       let dropdown = document.getElementsByClassName("dropdown-btn");
-let i;
+      let i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  let dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-$('.sidebar').hide();
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      $(".sidebar").hide();
 
-$('#closeBtn').click(function(){
-  $('.sidebar').hide();
-})
-$('#openBtn').click(function(){
-  $('.sidebar').toggleClass('showSidebar');
-  $('#openBtn').toggleClass('openBtn');
-  $('#openBtn').toggleClass('fa-bars');
-  // $('#openBtn').toggleClass('fa-close');
-})
+      $("#closeBtn").click(function() {
+        $(".sidebar").hide();
+      });
+      $("#openBtn").click(function() {
+        $(".sidebar").toggleClass("showSidebar");
+        $("#openBtn").toggleClass("openBtn");
+        // $('#openBtn').toggleClass('fa-bars');
+        // $('#openBtn').toggleClass('fa-close');
+      });
     </script>
   </body>
 </html>
