@@ -277,6 +277,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .small-header {
+    font-size: 32px !important;
+  }
   div.social-icons {
     display: none;
   }
@@ -321,6 +324,13 @@ body {
     /* padding-top: 8px; */
   }
 
+    /* .hero-image {
+      background-color: rgba(0, 0, 0, 0.72);
+      min-height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
 }
 @media screen and (max-width: 992px) {
   .card-title-custom {
@@ -338,7 +348,7 @@ body {
 }
 @media screen and (max-width: 350px) {
   .small-header {
-    font-size: 32px !important;
+    font-size: 30px !important;
   }
   .iconImg{
     width: 120px !important;

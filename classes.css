@@ -1,66 +1,134 @@
 .check {
-    list-style: none;
+  list-style: none;
 }
-.check li{
-    position: relative;
-    padding-left: 2.5em;
+.check li {
+  position: relative;
+  padding-left: 2.5em;
 }
 
-.pl-25em{
-    padding-left: 2.5em;
+.pl-25em {
+  padding-left: 2.5em;
 }
 .checked {
-    color: orange;
-  }
+  color: orange;
+}
 .check li:before {
-    content: '✓';
-    position: absolute;
-    font-weight: bold;
-    left: 0;  /* place the SVG at the start of the padding */
-    width: 2em;
-    height: 2em;
+  content: "✓";
+  position: absolute;
+  font-weight: bold;
+  left: 0; /* place the SVG at the start of the padding */
+  width: 2em;
+  height: 2em;
+}
+
+.nav-item a.nav-link.active,
+.nav-item a.nav-link:hover {
+  border-bottom: 2px solid #dc0a0a !important;
+  color: #dc0a0a !important;
+}
+
+.squareBall {
+  width: 20px;
+  height: 20px;
+}
+
+.pieChart {
+  width: 100px;
+  height: 100px;
+  border: 10px solid powderblue;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fa-plus {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.bar {
+  position: relative;
+  width: 30%;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #e4e4e4;
+  z-index: 0;
+}
+.percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #707070;
+  height: 100%;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+@media screen and (max-width: 430px) {
+  h5 {
+    font-size: 16px !important;
+  }
+  .check li {
+    position: relative;
+    padding-left: 1.5em;
+  }
+  .pl-25em {
+    padding-left: 1em;
+  }
+  .check {
+    padding-left: 1em;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  .hero-image {
+    /* height: max-content; */
+  }
+}
+
+.gradientBg {
+  background-image: linear-gradient(
+    179.1deg,
+    rgb(162, 169, 180) -1.9%,
+    rgb(176, 181, 190) 44.9%,
+    rgb(150, 155, 165) 96.1%
+  );
+}
+.courseCard{
+    max-width: 255px;
+    min-width: 200px;
+}
+.bottom-20{
+  bottom:20px;
+}
+
+.classesBg {
+  background-image: url("/images/UIPage.png");
 }
 
 
-  .nav-item a.nav-link.active, .nav-item a.nav-link:hover {
-    background-color: #dc0a0a !important;
-    color: white !important;
+@media screen and (max-width: 576px) {
+.courseCard h4{
+    font-size: 16px;
+}
+
+.fs-12, .couponBtn{
+    font-size: 12px !important;
+}
+.hero-image {
+  height: max-content;
+}
+.nav-item a.nav-link {
+  font-size: 15px !important;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  span.fa,
+  .fs-14,
+  .ratings span {
+    font-size: 14px !important;
   }
-
-  .squareBall {
-      width: 20px;
-      height: 20px;
-  }
-
-  .pieChart {
-      width: 100px;
-      height: 100px;
-      border: 10px solid powderblue;
-  }
-
-  .fw-900{
-    font-weight: 900;
-  }
-
-  .fa-plus {
-      font-size: 1em;
-      font-weight: normal;
-  }
-
-  @media screen and (max-width: 430px) {
-    h5 {
-        font-size: 16px !important;
-    }
-    .check li{
-        position: relative;
-        padding-left: 1.5em;
-    }
-    .pl-25em{
-        padding-left: 1em;
-    }
-    .check{
-        padding-left: 1em;
-    }
-
-    .
 }
