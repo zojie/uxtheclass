@@ -11,8 +11,6 @@
   src: url(/fonts/Gilroy-Bold.ttf);
   font-weight: bold;
 }
-
-
 html,
 body {
   height: 100%;
@@ -20,10 +18,17 @@ body {
   font-family: Rubik-Regular;
 }
 
+/* Generic classes */
+
+.font-18 {
+  font-size: 18px;
+}
 .customBold {
   font-family: Gilroy-Bold !important;
 }
-
+.hide{
+  visibility: hidden;
+}
 .z-30 {
   z-index: 30;
 }
@@ -66,6 +71,10 @@ body {
   border-radius: 20px;
   width: max-content;
 }
+
+/* End of Generic classes */
+
+/* Start of Header */
 .site-header {
   z-index: 10;
   background: transparent;
@@ -93,6 +102,93 @@ body {
 .dropdownBtn:hover {
   color: black;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.navLinks {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.29;
+}
+
+.hero-image {
+  /* background-image: url("/images/pattern@2x.jpg"); */
+  background-color: rgba(0, 0, 0, 0.72);
+  max-height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heroOverlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.heroButtons {
+  /* bottom: 40px; */
+}
+.bottomText {
+  bottom: 3px;
+  left: 10%;
+  right: 10%;
+}
+.column {
+  padding: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.column a {
+  text-decoration: none;
+}
+.dropdownRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Sidebar */
+.showSidebar{
+  display: block !important;
+}
+.testimonials {
+  height: 300px !important;
+}
+.sidebar {
+  width: 250px;
+  z-index: 11;
+}
+.sidebar a, .dropdown-btn {
+  color: black;
+  text-decoration: none;
+}
+.sidebar a:hover, .dropdown-btn:hover {
+  color: white;
+  background-color: #dc0a0a !important;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #dc0a0a;
+  color: white;
+}
+.dropdown-container {
+  display: none;
+}
+.z-10{
+  z-index: 10;
+}
+.openBtn{
+  left: 250px;
+}
+
+/* End of Header section */
 
 .flex-equal > * {
   -ms-flex: 1;
@@ -108,25 +204,6 @@ body {
   }
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-.socialInstagram {
-  background-image: linear-gradient(57deg, #e49c10, #eb0c8a);
-}
-.socialLinkedIn {
-  background-color: #0b5987;
-}
-.socialTwitter {
-  background-color: #2680eb;
-}
-.socialFacebook {
-  background-color: #166ace;
-}
-.social {
-  height: 200px;
-  /* width: 100px; 150px; */ 
-}
 
 .iconDesc {
   width: 60px;
@@ -146,135 +223,33 @@ body {
 }
 
 
-.uxtheclass {
-  /* width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-family: Gilroy;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.29; */
+/* Social section */
+
+.socialInstagram {
+  background-image: linear-gradient(57deg, #e49c10, #eb0c8a);
+}
+.socialLinkedIn {
+  background-color: #0b5987;
+}
+.socialTwitter {
+  background-color: #2680eb;
+}
+.socialFacebook {
+  background-color: #166ace;
+}
+.social {
+  height: 200px;
+  /* width: 100px; 150px; */ 
 }
 
-.navLinks {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-family: Gilroy;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.29;
-}
 
-.hero-image {
-  background-image: url("/images/pattern@2x.jpg");
-  background-color: rgba(0, 0, 0, 0.72);
-  max-height: 620px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.heroOverlay {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.bottomText {
-  bottom: 3px;
-  left: 10%;
-  right: 10%;
-}
-
-.column {
-  padding: 10px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.column a {
-  text-decoration: none;
-}
-
-.dropdownRow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.testimonials {
-  height: 300px !important;
-}
-
-@media screen and (max-width: 992px) {
-  .card-title-custom {
-    font-size: 20px;
-  }
-
-  .card-text-custom {
-    font-size: 14px;
-  }
-
-  .social {
-    height: 100px;
-    /* width: 100px; */
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .mobileHeader {
-    font-size: 16px;
-  }
-  .mobileFont {
-    font-size: 12px;
-  }
-}
-
-  .sidebar {
-    width: 250px;
-    z-index: 11;
-  }
-  
-  .sidebar a, .dropdown-btn {
-    color: black;
-    text-decoration: none;
-  }
-  .sidebar a:hover, .dropdown-btn:hover {
-    color: white;
-    background-color: #dc0a0a !important;
-    text-decoration: none;
-  }
-  
-  .sidebar a.active {
-    background-color: #dc0a0a;
-    color: white;
-  }
-  .dropdown-container {
-    display: none;
-  }
-  .z-10{
-    z-index: 10;
-  }
-  .openBtn{
-    left: 250px;
-  }
-
-  
-  
-  
   /* Footer */
   .icons-foot {
-    height: 30px;
-    width: 20%;
-    padding-top: 8px;
+    /* height: 30px; */
+    width: 40%;
+    font-size: 1.5em;
+
+    /* padding-top: 8px; */
   }
   .nav-links-below a {
   color: #fff;
@@ -293,10 +268,6 @@ body {
   color: #6c757d;
   font-size: 14px;
 }
-
-/* .card-deck {
-  margin: 0 !important;
-} */
 
 /*MEDIA QUERIES TO HANDLE RESPONSIVENESS*/
 @media screen and (max-width: 1079px) {
@@ -324,13 +295,77 @@ body {
   div.right a {
     padding-left: 10px;
   }
-  /* .hide-800Up {
-    display: block;
-  } 
-  .show-800Up {
-    display: none;
-  }  */
+  .testimonialText{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .squareImage {
+    width: 40px;
+    height:40px;
+  }
+  .card-text-custom {
+    font-size: 14px !important;
+  }
 }
-.showSidebar{
-  display: block !important;
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+  .icons-foot {
+    /* height: 30px; */
+    width: 40%;
+    font-size: 1.5em;
+    /* padding-top: 8px; */
+  }
+
+}
+@media screen and (max-width: 992px) {
+  .card-title-custom {
+    font-size: 20px;
+  }
+
+  .card-text-custom {
+    font-size: 14px;
+  }
+
+  .social {
+    height: 100px;
+    /* width: 100px; */
+  }
+}
+@media screen and (max-width: 350px) {
+  .small-header {
+    font-size: 32px !important;
+  }
+  .iconImg{
+    width: 120px !important;
+    height: 27px;
+  }
+  .fa-bars{
+    font-size: 1.2em !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .mobileHeader {
+    font-size: 16px;
+  }
+  .mobileFont {
+    font-size: 12px;
+  }
+  .hero-image {
+    height: 70%;
+  }
+  .icons-foot {
+    /* height: 30px; */
+    width: 60% !important;
+    font-size: 1.3em;
+    /* padding-top: 8px; */
+  }
+
+  .nav-links{
+    font-size: 1.5em;
+  }
 }

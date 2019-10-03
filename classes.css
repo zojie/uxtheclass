@@ -1,0 +1,66 @@
+.check {
+    list-style: none;
+}
+.check li{
+    position: relative;
+    padding-left: 2.5em;
+}
+
+.pl-25em{
+    padding-left: 2.5em;
+}
+.checked {
+    color: orange;
+  }
+.check li:before {
+    content: '✓';
+    position: absolute;
+    font-weight: bold;
+    left: 0;  /* place the SVG at the start of the padding */
+    width: 2em;
+    height: 2em;
+}
+
+
+  .nav-item a.nav-link.active, .nav-item a.nav-link:hover {
+    background-color: #dc0a0a !important;
+    color: white !important;
+  }
+
+  .squareBall {
+      width: 20px;
+      height: 20px;
+  }
+
+  .pieChart {
+      width: 100px;
+      height: 100px;
+      border: 10px solid powderblue;
+  }
+
+  .fw-900{
+    font-weight: 900;
+  }
+
+  .fa-plus {
+      font-size: 1em;
+      font-weight: normal;
+  }
+
+  @media screen and (max-width: 430px) {
+    h5 {
+        font-size: 16px !important;
+    }
+    .check li{
+        position: relative;
+        padding-left: 1.5em;
+    }
+    .pl-25em{
+        padding-left: 1em;
+    }
+    .check{
+        padding-left: 1em;
+    }
+
+    .
+}
