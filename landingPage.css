@@ -115,7 +115,11 @@ body {
   font-weight: bold;
   line-height: 1.29;
 }
-
+.Gilroy{
+  font-weight: bold;
+  line-height: 1.29;
+  font-family: Gilroy;
+}
 .hero-image {
   /* background-image: url("/images/pattern@2x.jpg"); */
   background-color: rgba(0, 0, 0, 0.72);
@@ -125,6 +129,7 @@ body {
   background-size: cover;
 }
 .heroOverlay {
+  /* opacity: 0.9; */
   top: 0;
   left: 0;
   width: 100%;
