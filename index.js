@@ -2,14 +2,18 @@ $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
     $("#bgWhite").css("background-color", "white");
     $(".navLinks, .darkOnHover").css("color", "black");
+    $('#whiteLogo, #blackLogo').toggleClass('d-none');
   });
   $(".dropdown-content").mouseover(function() {
     $(".dropdownBtn").css("color", "black");
+    $('#whiteLogo, #blackLogo').toggleClass('d-none');
   });
   $(".dropdown-content").mouseout(function() {
+    $('#whiteLogo, #blackLogo').toggleClass('d-none');
     $(".dropdownBtn").css("color", "white");
   });
   $(".dropdownBtn, .dropdown-content").mouseout(function() {
+    $('#whiteLogo, #blackLogo').toggleClass('d-none');
     $("#bgWhite").css("background", "transpparent");
     $("#bgWhite").css("background", "none");
     $(".navLinks, .darkOnHover").css("color", "white");

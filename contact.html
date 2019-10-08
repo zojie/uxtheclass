@@ -22,8 +22,10 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="landingPage.css" />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="particle.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://kit.fontawesome.com/d9a8436209.js"></script> -->
+    <script src="https://kit.fontawesome.com/d9a8436209.js"></script>
   </head>
   <body>
     <!-- top -->
@@ -200,9 +202,10 @@
       />
       <!-- <div class="position-absolute particles-js"></div> -->
 
-      <div class="col-md-8 p-lg-5 mx-auto my-1 my-md-5">
+      <div class="cta-text col-md-8 p-lg-5">
+      <!-- <div class="col-md-8 p-lg-5 mx-auto my-1 my-md-5"> -->
         <!-- <span class="textWhite">Online design academy</span> -->
-        <small class="text-white">Have Something In Mind?</small>
+        <small class="text-muted">Have Something In Mind?</small>
         <h1 class="customBold small-header textWhite">
           Let's Discuss Over Virtual Coffee
         </h1>
@@ -257,46 +260,41 @@
       </div>
     </div>
 
-
-     <!-- footer -->
-     <footer class="bg-dark">
+    <!-- footer -->
+    <footer class="bg-dark">
       <div class="py-3 container">
         <div class="d-flex justify-content-between flex-column flex-sm-row end">
           <div class="brand textWhite">
-            <img
-            class=""
-            src="./images/uxtc-white.png"
-            alt=""
-          />
+            <img class="" src="./images/uxtc-white.png" alt="" />
           </div>
           <div class="nav-links-below mt-2">
             <a href="#" class="-2">About Us</a>
             <a href="#" class="ml-2">Classes</a>
             <a href="#" class="ml-2">Career</a>
-            <a href="/faq.html" class="ml-2">FAQ</a>
-            <a href="/contact.html" class="ml-2">Contact</a>
+            <a href="#" class="ml-2">FAQ</a>
+            <a href="#" class="ml-2">Contact</a>
             <a href="#" class="ml-2 mr-0">Blog</a>
           </div>
         </div>
         <div class=" icons-foot my-3 d-flex justify-content-between text-white">
-          <span class=""><i class="fa mr-2 fa-facebook-square"></i></span>
-          <span class=""><i class="fa mr-2 fa-instagram"></i></span>
-          <span class=""><i class="fa mr-2 fa-youtube"></i></span>
-          <span class=""><i class="fa mr-2 fa-twitter"></i></span>
-          <span class=""><i class="fa mr-2 fa-linkedin"></i></span>
-          <span class=""><i class="fa mr-2 fa-medium"></i></span>
+          <span class=""><i class="fab mr-2 fa-facebook-square"></i></span>
+          <span class=""><i class="fab mr-2 fa-instagram"></i></span>
+          <span class=""><i class="fab mr-2 fa-youtube"></i></span>
+          <span class=""><i class="fab mr-2 fa-twitter"></i></span>
+          <span class=""><i class="fab mr-2 fa-linkedin"></i></span>
+          <span class=""><i class="fab mr-2 fa-medium"></i></span>
         </div>
         <div class="copy d-flex justify-content-end text-white">
           <p>&copy; 2019 | Lagos, Nigeria</p>
         </div>
         <div class="lowest d-flex justify-content-between">
-          <div class="left" >
+          <div class="left">
             <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
           </div>
-          <div class="right d-flex justify-content-between" >
-            <a href="/terms&condition.html">Terms & Condition</a>
-            <a href="/terms&condition.html">Privacy Policy</a>
-            <a href="/terms&condition.html">Opt Out Privacy</a>
+          <div class="right d-flex justify-content-between">
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Opt Out Privacy</a>
           </div>
         </div>
       </div>
@@ -320,6 +318,63 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-<script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
+          $("#bgWhite").css("background-color", "white");
+          $(".navLinks, .darkOnHover").css("color", "black");
+        });
+        $(".dropdown-content").mouseover(function() {
+          $(".dropdownBtn").css("color", "black");
+        });
+        $(".dropdown-content").mouseout(function() {
+          $(".dropdownBtn").css("color", "white");
+        });
+        $(".dropdownBtn, .dropdown-content").mouseout(function() {
+          $("#bgWhite").css("background", "transpparent");
+          $("#bgWhite").css("background", "none");
+          $(".navLinks, .darkOnHover").css("color", "white");
+        });
+      });
+    </script>
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      let dropdown = document.getElementsByClassName("dropdown-btn");
+      let i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      $(".sidebar").hide();
+
+      $("#closeBtn").click(function() {
+        $(".sidebar").hide();
+      });
+      $("#openBtn").click(function() {
+        $(".sidebar").toggleClass("showSidebar");
+        $("#openBtn").toggleClass("openBtn");
+        // $('#openBtn').toggleClass('fa-bars');
+        // $('#openBtn').toggleClass('fa-close');
+      });
+    </script>
   </body>
 </html>

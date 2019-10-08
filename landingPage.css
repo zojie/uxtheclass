@@ -87,6 +87,10 @@ body {
   border-bottom: 2px solid #dc0a0a;
   text-decoration: none;
 }
+.h-90{
+  height: 90% !important;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -110,7 +114,6 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-family: Gilroy-Bold;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.29;
@@ -139,13 +142,11 @@ body {
   right: 10%;
 }
 .column {
-  padding: 10px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
 }
 .column a {
   text-decoration: none;
+  width: max-content;
 }
 .dropdownRow:after {
   content: "";
@@ -308,6 +309,11 @@ body {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .hero-image {
+    height: 55%;
+  }
+}
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -317,6 +323,7 @@ body {
     width: 40%;
     font-size: 1.5em;
   }
+
 }
 @media screen and (max-width: 992px) {
   .card-title-custom {
@@ -342,6 +349,9 @@ body {
   .fa-bars{
     font-size: 1.2em !important;
   }
+  .hero-image {
+    height: 70%;
+  }
 }
 @media screen and (max-width: 430px) {
   .mobileHeader {
@@ -360,5 +370,8 @@ body {
 
   .nav-links{
     font-size: 1.5em;
+  }
+  .max-content {
+    width: max-content;
   }
 }

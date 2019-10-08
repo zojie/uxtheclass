@@ -31,22 +31,23 @@
         <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <div class=" d-block ml-2 ml-sm-3 ml-md-5 mr-auto" href="#home">
-        <img
-          class="iconImg"
-          src="./images/uxtc-black.png"
-          alt=""
-        />
+        <img class="iconImg" src="./images/uxtc-black.png" alt="" />
       </div>
 
       <div class="d-inline-block">
         <a class="mr-2 navLinks text-dark" href="#"
-          ><i style="font-size: 1.5em;" class="fa fa-shopping-cart" aria-hidden="true"></i
+          ><i
+            style="font-size: 1.5em;"
+            class="fa fa-shopping-cart"
+            aria-hidden="true"
+          ></i
         ></a>
         <a class=" navLinks text-white btn redBg" href="#"
           ><span><i class="fa fa-user"></i></span> Login</a
         >
       </div>
     </div>
+
     <div
       class="sidebar d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
     >
@@ -84,16 +85,23 @@
 
     <div class="position-relative hero-image overflow-hidden text-center">
       <nav
-        class="position-absolute Gilroy w-100 d-none d-md-block show-800Up py-1 site-header"
+        class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
         id="bgWhite"
       >
         <div
           class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
         >
           <img
+            id="whiteLogo"
             class=""
             src="./images/uxtc-white.png"
-            alt=""
+            alt="White logo"
+          />
+          <img
+            id="blackLogo"
+            class="d-none"
+            src="./images/uxtc-black.png"
+            alt="Black logo"
           />
           <div class="justify-content-between">
             <a
@@ -110,50 +118,82 @@
               </button>
               <div class="dropdown-content">
                 <div class="container py-3">
-                  <div class="dropdownRow row">
-                    <div class="column col-md-3">
-                      <h3 class="customBold"><i class="fa fa-pencil"></i></h3>
-                      <h5>UX Research/Design</h5>
-                      <small>Research Process, Wireframing ...</small>
+                  <div class="dropdownRow row h-100">
+                    <div class="column col-md-3 flex-column align-items-start h-100">
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src="./images/DropDownIcons/UXDropDown.png"
+                          alt="UX logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2">
+                      <p class="Gilroy fw-900">UX Research/Design</p>
+                      <p class="small p-0 m-0">Research Process, Wireframing ...</p>
                       <a
                         href="#"
                         class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
-                    <div class="column col-md-3">
-                      <h3 class="customBold">
-                        <i class="fa fa-paint-brush"></i>
-                      </h3>
-                      <h5>Branding & Graphic Design</h5>
-                      <small>Illustrations, Typography, Colors ...</small>
+                    </div>
+                    <div class="column col-md-3 flex-column align-items-start h-100">
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src="./images/DropDownIcons/BrandingDropDown.png"
+                          alt="Branding and Graphic design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2">
+                      <p class="Gilroy fw-900">Branding & Graphic Design</p>
+                      <p class="small p-0 m-0">Illustrations, Typography, Colors ...</p>
                       <a
                         href="#"
                         class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
-                    <div class="column col-md-3">
-                      <h3 class="customBold">
-                        <i class="fa fa-play-circle"></i>
-                      </h3>
-                      <h5>UI & Interaction Design</h5>
-                      <small>Responsive web, Mobile design ...</small>
+                    </div>
+                    <div class="column col-md-3 flex-column align-items-start h-100">
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src="./images/DropDownIcons/UIDropDown.png"
+                          alt="UI logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2">
+                          <p class="Gilroy fw-900">UI & Interaction Design</p>
+                      <p class="small p-0 m-0">Responsive web, Mobile design ...</p>
                       <a
                         href="#"
                         class="mt-2 float-none d-block text-left p-2 redText"
                         >View Class <i class="fa fa-caret-right"></i
                       ></a>
                     </div>
-                    <div class="column col-md-3">
-                      <h3 class="customBold"><i class="fa fa-suitcase"></i></h3>
-                      <h5>Business of Design</h5>
-                      <small>Pricing Design brief, Portfolio ...</small>
-                      <a
-                        href="#"
-                        class="mt-2 float-none d-block text-left p-2 redText"
-                        >View Class <i class="fa fa-caret-right"></i
-                      ></a>
+                    </div>
+                    <div class="column col-md-3 flex-column align-items-start h-100">
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src="./images/DropDownIcons/BusinessDropDown.png"
+                          alt="Business of Design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2">
+                          <p class="Gilroy fw-900">Business of Design</p>
+                          <p class="small p-0 m-0">Pricing Design brief, Portfolio ...</p>
+                          <a
+                            href="#"
+                            class="mt-2 float-none d-block text-left p-2 redText"
+                            >View Class <i class="fa fa-caret-right"></i
+                          ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -203,21 +243,31 @@
       /> -->
       <!-- <div class="position-absolute particles-js"></div> -->
 
-      <div class="col-md-6 p-lg-5 mx-auto my-1 my-md-5">
-        <span class="textWhite">Online design academy</span>
+      <div
+        class="col-md-6 col-sm-10 p-lg-5 d-flex flex-column align-items-center justify-content-center h-90 mx-auto my-1 my-md-5"
+      >
+       <div>
+          <span class="textWhite">Online design academy</span>
         <h1 class="customBold small-header textWhite">
           Learn, Collaborate, Thrive
         </h1>
+       </div>
         <p class="mb-3 font-weight-normal textWhite">
           We are passionate about educating the next generation digital
           experience designers in creating meaningful and immersive platforms.
         </p>
-      <div class="mt-2 mt-sm-3 mt-md-5">
-          <a class="btn redBg my-2 textWhite" href="#">See available classes</a>
-        <a class="btn btn-outline-light my-2 bg-transparent textWhite" href="#"
-          >Become a tutor</a
-        >
-      </div>
+        <div class="mt-sm-3 mt-md-5 text-center align-items-center">
+          <a
+            class="btn mx-auto max-content redBg my-2 textWhite d-block d-sm-inline"
+            href="#"
+            >See available classes</a
+          >
+          <a
+            class="btn mx-auto max-content btn-outline-light my-2 bg-transparent textWhite d-block d-sm-inline"
+            href="#"
+            >Become a tutor</a
+          >
+        </div>
       </div>
 
       <div class="bottomText position-absolute">
@@ -383,8 +433,8 @@
           <h3 class="customBold">There's Room For Everyone</h3>
         </div>
         <div class="row">
-          <div class="card-deck mx-2 mx-md-none">
-            <div class="my-2 col-md-4 px-0 card py-2">
+          <div class="my-2 col-md-4 py-2">
+            <div class="card h-100">
               <div class="card-body">
                 <div class="my-2">
                   <img
@@ -401,8 +451,10 @@
               </div>
               <div style="border-top: 0;" class="card-footer  bg-white"></div>
             </div>
+          </div>
 
-            <div class="my-2 col-md-4 px-0 card py-2">
+          <div class="my-2 col-md-4 py-2">
+            <div class="card h-100">
               <div class="card-body">
                 <div class="my-2">
                   <img
@@ -418,11 +470,14 @@
                 </p>
               </div>
               <div style="border-top: 0;" class="card-footer  bg-white redText">
-              Apply 20% Off <i class="fa fa-caret-right" aria-hidden="true"></i>
+                Apply 20% Off
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
               </div>
             </div>
+          </div>
 
-            <div class="my-2 col-md-4 px-0 card py-2">
+          <div class="my-2 col-md-4 py-2">
+            <div class="h-100 card">
               <div class="card-body">
                 <div class="my-2">
                   <img
@@ -438,7 +493,8 @@
                 </p>
               </div>
               <div style="border-top: 0;" class="card-footer  bg-white redText">
-              Learn More <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                Learn More <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -470,7 +526,10 @@
           <div class="card border-0 py-3">
             <div class="card-body">
               <div class="my-2">
-                <img src="./images/landingPage/AnyDevice.png" alt="Any device" />
+                <img
+                  src="./images/landingPage/AnyDevice.png"
+                  alt="Any device"
+                />
               </div>
               <h4 class="customBold card-title">View on any device</h4>
               <p class="card-text">
@@ -607,20 +666,20 @@
           <h3 class="customBold">Told you we're awesome :)</h3>
         </div>
         <div class="row">
-          <div class="card-deck mx-2 mx-md-0">
-            <div class="my-2 col-md-4 card py-1 px-0">
-              <div class="card-body pb-0">
+          <div class="my-2 col-md-4 py-1">
+            <div class="card h-100">
+              <div class="card-body">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text testimonialText">
                     I was a beginner in design and had a lot of theoretical
                     knowledge. This program exposed me to practical knowledge to
                     go further in my product design journey.
                   </p>
-                  <div class="mb-2 mt-2 d-flex">
+                  <div class="mb-2 mt-2 ml-0 pl-0 d-flex justify-content-start">
                     <img
                       src="./images/landingPage/EmmanuelYusufu.png"
                       alt="testimonial image"
-                      class="squareImage m-auto"
+                      class="squareImage ml-0 pl-0"
                     />
                     <div class="d-flex flex-column ml-1">
                       <strong class="py-2">Emmanuel Yusufu</strong>
@@ -630,21 +689,22 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="my-2 col-md-4 card py-1 px-0">
-              <div class="card-body pb-0">
+          <div class="my-2 col-md-4 py-1">
+            <div class="card h-100">
+              <div class="card-body">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text testimonialText">
                     It was really insightful for me. it opened my eyes to the
                     basics of design which I previously ignored giving me a
                     better head start into user interface and experience design.
                   </p>
-                  <div class="mb-2 mt-2 d-flex">
+                  <div class="mb-2 mt-2 ml-0 pl-0 d-flex justify-content-start">
                     <img
                       src="./images/landingPage/AjiduahJessia.png"
                       alt="testimonial image"
-                      class="squareImage m-auto"
-
+                      class="squareImage ml-0 pl-0"
                     />
                     <div class="d-flex flex-column ml-1">
                       <strong class="py-2">Jessica Ajiduah</strong>
@@ -654,18 +714,22 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="my-2 col-md-4 card py-1 px-0">
-              <div class="card-body pb-0">
+          <div class="my-2 col-md-4 py-1">
+            <div class="card h-100">
+              <div class="card-body">
                 <div class="h-100 d-flex flex-column justify-content-between">
                   <p class="card-text testimonialText">
                     The program was awesome. It helped shaped my design
                     thinking.
                   </p>
-                  <div class="mb-2 mt-2 d-flex">
-                    <img src="./images/landingPage/AjiduahJessia.png"
-                    class="squareImage m-auto"
-                    alt="Testimonial image" />
+                  <div class="mb-2 mt-2 ml-0 pl-0 d-flex justify-content-start">
+                    <img
+                      src="./images/landingPage/AjiduahJessia.png"
+                      class="squareImage ml-0 pl-0"
+                      alt="Testimonial image"
+                    />
                     <div class="d-flex flex-column ml-1">
                       <strong class="py-2">Egokinovo Oke-Davis</strong>
                       <small>Lagos</small>
@@ -725,9 +789,7 @@
                   The search for amazing designer is so overwhelming from being
                   a freelancer, remote or in-house.
                 </p>
-                <button
-                  class="btn borderedBtn p-2 altBg mt-auto mt-auto"
-                >
+                <button class="btn borderedBtn p-2 altBg mt-auto mt-auto">
                   Position yourself
                 </button>
               </div>
@@ -799,23 +861,23 @@
               <div class="track">
                 <ul>
                   <li class="mb-3">
-                      <div class="d-flex flex-column">
-                          <p class="mb-0">Project Industry</p>
-                          <strong class="mb-2">Career</strong>
-                          <i
-                            class="fa fa-briefcase goldText"
-                            aria-hidden="true"
-                          ></i>
-                        </div>
+                    <div class="d-flex flex-column">
+                      <p class="mb-0">Project Industry</p>
+                      <strong class="mb-2">Career</strong>
+                      <i
+                        class="fa fa-briefcase goldText"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                   </li>
                   <li>
-                      <div class="d-flex flex-column">
-                          <strong class="mb-2">Project Objective</strong>
-                          <p class="">
-                            Use of tech in improving access to jobs and workshops to
-                            prospective techies.
-                          </p>
-                        </div>
+                    <div class="d-flex flex-column">
+                      <strong class="mb-2">Project Objective</strong>
+                      <p class="">
+                        Use of tech in improving access to jobs and workshops to
+                        prospective techies.
+                      </p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -849,8 +911,8 @@
         <h3 class="customBold">Our Superheroes</h3>
       </div>
       <div class="row">
-        <div class="card-deck mx-2 mx-md-0">
-          <div class="col-md-3 mx-1 px-0 my-2 card">
+        <div class="col-md-3 col-sm-6 my-2">
+          <div class="card h-100">
             <div
               class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
@@ -881,8 +943,10 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3 mx-1 px-0 my-2 card">
+        <div class="col-md-3 col-sm-6 my-2">
+          <div class="h-100 card">
             <div
               class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
@@ -913,8 +977,10 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3 mx-1 px-0 my-2 card">
+        <div class="col-md-3 col-sm-6 my-2">
+          <div class="h-100 card">
             <div
               class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
@@ -945,8 +1011,10 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3 mx-1 px-0 my-2 card">
+        <div class="col-md-3 col-sm-6 my-2">
+          <div class="h-100 card">
             <div
               class="d-flex justify-content-md-start ml-md-3 align-items-center"
             >
@@ -995,7 +1063,10 @@
             >
               <i class="fa fa-facebook text-white fa-2x" aria-hidden="true"></i>
               <p class="font-weight-bold text-white">Facebook</p>
-              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+              <a
+                href="#"
+                class="text-white position-absolute small"
+                style="bottom:5%"
                 >Join us
                 <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
               ></a>
@@ -1010,7 +1081,10 @@
                 aria-hidden="true"
               ></i>
               <p class="font-weight-bold text-white">Instagram</p>
-              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+              <a
+                href="#"
+                class="text-white position-absolute small"
+                style="bottom:5%"
                 >Join us
                 <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
               ></a>
@@ -1025,7 +1099,10 @@
                 aria-hidden="true"
               ></i>
               <p class="font-weight-bold text-white">LinkedIn</p>
-              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+              <a
+                href="#"
+                class="text-white position-absolute small"
+                style="bottom:5%"
                 >Join us
                 <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
               ></a>
@@ -1037,7 +1114,10 @@
             >
               <i class="fa fa-twitter text-white fa-2x" aria-hidden="true"></i>
               <p class="font-weight-bold text-white">Twitter</p>
-              <a href="#" class="text-white position-absolute small" style="bottom:5%"
+              <a
+                href="#"
+                class="text-white position-absolute small"
+                style="bottom:5%"
                 >Join us
                 <i class="fa fa-caret-right ml-1" aria-hidden="true"></i
               ></a>
@@ -1107,64 +1187,72 @@
           <h3 class="customBold">Let's Get Started</h3>
         </div>
         <div class="row">
-          <div class="card-deck mx-2 mx-md-0">
-            <div class="col-md-4 my-2 card">
-              <div class="card-body pb-0 px-0">
-                <h4 class="customBold card-title-custom">
-                  Enroll for a class
-                </h4>
-                <p class="card-text-custom">
-                  Our curriculum is super amazing. Select from our well
-                  structured classes and apply to either or combined to get
-                  started.
-                </p>
-              </div>
-              <div class="card-footer pl-0 bg-white text-left" style="border-top:none;">
-                <a href="" class="float-left btn rounded redBg text-white">View classes</a>
-              </div>
-            </div>
-
-            <div class="col-md-4 my-2 card">
-              <div class="card-body pb-0 px-0">
-                <h4 class="customBold card-title-custom">
-                  Become a tutor
-                </h4>
-                <p class="card-text-custom">
-                  Passionate about sharing your knowledge to other designers?
-                  Join us in sharing your knowledge while earning as you do so.
-                </p>
-              </div>
-              <div class="card-footer  pl-0 bg-white" style="border-top:none;">
-                <a
-                  href=""
-                  class="btn rounded redBorder redText"
-                  >Apply as a tutor</a
+            <div class="col-md-4 my-2">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="customBold card-title-custom">
+                    Enroll for a class
+                  </h4>
+                  <p class="card-text-custom">
+                    Our curriculum is super amazing. Select from our well
+                    structured classes and apply to either or combined to get
+                    started.
+                  </p>
+                </div>
+                <div
+                  class="card-footer bg-white text-left"
+                  style="border-top:none;"
                 >
+                  <a href="" class="float-left btn rounded redBg text-white"
+                    >View classes</a
+                  >
+                </div>
               </div>
             </div>
 
-            <div class="col-md-4 my-2 card">
-              <div class="card-body pb-0 px-0">
-                <h4 class="customBold card-title-custom">
-                  Partner with us
-                </h4>
-                <p class="card-text-custom">
-                  Like to partner with us, click on the "get started" button so
-                  we can extend our collaboration.
-                </p>
+            <div class="col-md-4 my-2">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="customBold card-title-custom">
+                    Become a tutor
+                  </h4>
+                  <p class="card-text-custom">
+                    Passionate about sharing your knowledge to other designers?
+                    Join us in sharing your knowledge while earning as you do
+                    so.
+                  </p>
+                </div>
+                <div class="card-footer  bg-white" style="border-top:none;">
+                  <a href="" class="btn rounded redBorder redText"
+                    >Apply as a tutor</a
+                  >
+                </div>
               </div>
-              <div class="card-footer  pl-0 bg-white" style="border-top:none;">
-                <a
-                  href=""
-                  style="width: max-content;"
-                  class="btn rounded pl-0 ml-0 redText"
-                  >Get started
-                  <i class="fa fa-caret-right" aria-hidden="true"></i
-                ></a>
+            </div>
+
+            <div class="col-md-4 my-2">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="customBold card-title-custom">
+                    Partner with us
+                  </h4>
+                  <p class="card-text-custom">
+                    Like to partner with us, click on the "get started" button
+                    so we can extend our collaboration.
+                  </p>
+                </div>
+                <div class="card-footer  bg-white" style="border-top:none;">
+                  <a
+                    href=""
+                    style="width: max-content;"
+                    class="btn rounded pl-0 ml-0 redText"
+                    >Get started
+                    <i class="fa fa-caret-right" aria-hidden="true"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -1173,11 +1261,7 @@
       <div class="py-3 container">
         <div class="d-flex justify-content-between flex-column flex-sm-row end">
           <div class="brand textWhite">
-            <img
-            class=""
-            src="./images/uxtc-white.png"
-            alt=""
-          />
+            <img class="" src="./images/uxtc-white.png" alt="" />
           </div>
           <div class="nav-links-below mt-2">
             <a href="#" class="-2">About Us</a>
@@ -1200,10 +1284,10 @@
           <p>&copy; 2019 | Lagos, Nigeria</p>
         </div>
         <div class="lowest d-flex justify-content-between">
-          <div class="left" >
+          <div class="left">
             <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
           </div>
-          <div class="right d-flex justify-content-between" >
+          <div class="right d-flex justify-content-between">
             <a href="/terms&condition.html">Terms & Condition</a>
             <a href="/terms&condition.html">Privacy Policy</a>
             <a href="/terms&condition.html">Opt Out Privacy</a>
