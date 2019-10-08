@@ -1,14 +1,14 @@
 @font-face {
   font-family: Rubik-Regular;
-  src: url(/fonts/Rubik-Regular.ttf);
+  src: url(./fonts/Rubik-Regular.ttf);
 }
 @font-face {
   font-family: Gilroy-Medium;
-  src: url(/fonts/Gilroy-Medium.ttf);
+  src: url(./fonts/Gilroy-Medium.ttf);
 }
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(/fonts/Gilroy-Bold.ttf);
+  src: url(./fonts/Gilroy-Bold.ttf);
   font-weight: bold;
 }
 html,
@@ -124,7 +124,7 @@ body {
   font-family: Gilroy-Bold !important;
 }
 .hero-image {
-  background-color: rgba(0, 0, 0, 0.72);
+  background-color: black;
   max-height: 620px;
   background-position: center;
   background-repeat: no-repeat;
