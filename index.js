@@ -4,6 +4,9 @@ $(document).ready(function() {
     $(".navLinks, .darkOnHover").css("color", "black");
     $('#whiteLogo, #blackLogo').toggleClass('d-none');
   });
+  $(".dropdownDiv,.dropdownBtn").click(function() {
+    $('#whiteLogo, #blackLogo').toggleClass('d-none');
+  });
   $(".dropdown-content").mouseover(function() {
     $(".dropdownBtn").css("color", "black");
     $('#whiteLogo, #blackLogo').toggleClass('d-none');
