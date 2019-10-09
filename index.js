@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
+  $(".dropdownDiv,.dropdownBtn, .dropdown-content").click(function() {
     $("#bgWhite").css("background-color", "white");
     $(".navLinks, .darkOnHover").css("color", "black");
     $('#whiteLogo, #blackLogo').toggleClass('d-none');
@@ -7,7 +7,7 @@ $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn").click(function() {
     $('#whiteLogo, #blackLogo').toggleClass('d-none');
   });
-  $(".dropdown-content").mouseover(function() {
+  $(".dropdown-content").click(function() {
     $(".dropdownBtn").css("color", "black");
     $('#whiteLogo, #blackLogo').toggleClass('d-none');
   });

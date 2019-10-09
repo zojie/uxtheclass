@@ -47,8 +47,8 @@ body {
 .textWhite {
   color: white;
 }
-.noDeco {
-  text-decoration: none;
+.noDeco, .noDeco:hover {
+  text-decoration: none !important;
 }
 .pinkBg {
   background-color: #fadada;
