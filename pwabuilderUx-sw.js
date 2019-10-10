@@ -1,15 +1,15 @@
 // This is the service worker with the Cache-first network
 
-const CACHE = "pwabuilderCacheUcTheClass";
+const CACHE = "pwabuilderCacheUxTheClass";
 const precacheFiles = [
-  "index.html",
-  "about.html",
-  "classes_BusinessDesign.html",
-  "classes_Branding.html",
-  "classes_UI&Design.html",
-  "classes_UXResearch.html",
-  "faq.html",
-  "contact.html",
+  "./index.html",
+  "./about.html",
+  "./classes_BusinessDesign.html",
+  "./classes_Branding.html",
+  "./classes_UI&Design.html",
+  "./classes_UXResearch.html",
+  "./faq.html",
+  "./contact.html",
 
   /* Add an array of files to precache for your app */
 ];
