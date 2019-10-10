@@ -55,7 +55,7 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
         } else {
           navigator.serviceWorker
             .register("pwabuilderUX-sw.js", {
-              scope: "/"
+              scope: "./"
             })
             .then(function (reg) {
               console.log("[PWA registered]");

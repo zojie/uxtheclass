@@ -4,12 +4,18 @@ const CACHE = "pwabuilderCacheUcTheClass";
 const precacheFiles = [
   "index.html",
   "about.html",
-  "classes.html",
+  "classes_BusinessDesign.html",
+  "classes_Branding.html",
+  "classes_UI&Design.html",
+  "classes_UXResearch.html",
   "faq.html",
   "contact.html",
 
   /* Add an array of files to precache for your app */
 ];
+// This is the service worker with the Cache-first network
+
+
 
 self.addEventListener("install", function (event) {
   console.log("[PWA Builder] Install Event processing");

@@ -4,8 +4,8 @@
   "theme_color": "#dc0a0a",
   "background_color": "#dc0a0a",
   "display": "standalone",
-  "Scope": "./",
-  "start_url": "./",
+  "Scope": "/",
+  "start_url": "https:zojie.github.io/uxtheclass/",
   "icons" : [
     {
         "src": "./images/icons/icon-72x72.png",
