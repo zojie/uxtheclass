@@ -44,8 +44,8 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="landingPage.css" />
-    <link rel="stylesheet" href="particle.css" />
+    <link rel="stylesheet" href="./landingPage.css" />
+    <link rel="stylesheet" href="./particle.css" />
     <script>
       if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
@@ -54,7 +54,7 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
           console.log("[PWA Builder] active service worker found, no need to register");
         } else {
           navigator.serviceWorker
-            .register("pwabuilderUX-sw.js", {
+            .register("./pwabuilderUX-sw.js", {
               scope: "./"
             })
             .then(function (reg) {
