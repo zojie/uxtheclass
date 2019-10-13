@@ -68,14 +68,14 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
   </head>
   <body>
    
-    <button id="installBtn" style="position: fixed; bottom:10px; right: 10px; width: 50px; height: 50px;" class="btn btn-info rounded-circle">
-        <i class="fa fa-download" aria-hidden="true"></i> </button>
+    <!-- <button id="installBtn" style="z-index:10000000; position: fixed; bottom:10px; right: 10px; width: 50px; height: 50px;" class="btn btn-info rounded-circle">
+        <i class="fa fa-download" aria-hidden="true"></i> </button> -->
     <div class="d-flex py-1 d-md-none align-items-center  mr-2">
       <button class="btn d-block d-md-none z-10" id="openBtn">
         <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <div class=" d-block ml-2 ml-sm-3 ml-md-5 mr-auto" href="#home">
-        <img class="iconImg" src="" data-src="./images/uxtc-black.png" alt="" />
+        <a href="./index.html" class=""><img class="iconImg" src="" data-src="./images/uxtc-black.png" alt="" /></a>
       </div>
 
       <div class="d-inline-block">
@@ -93,7 +93,7 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
     </div>
 
     <div
-      class="sidebar d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
+      class="sidebar d-none d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
     >
       <a class="p-3 d-block" href="./about.html">About Us</a>
       <button
@@ -282,13 +282,6 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
         </div>
       </nav>
       <div class="position-absolute" id="particles-js"></div>
-      <!-- <img
-        class="position-absolute heroOverlay"
-        src="" data-src="./images/patternOverlay@2x.png"
-        alt="Image Overlay"
-      /> -->
-      <!-- <div class="position-absolute particles-js"></div> -->
-
       <div
         class="col-md-6 col-sm-10 p-lg-5 d-flex flex-column align-items-center justify-content-center h-90 mx-auto my-1 my-md-5"
       >
@@ -329,7 +322,7 @@ content="design, UI, web, UX, Branding, User Experience, User Interaction, Tutor
             <small class="mobileFont">
               Everything has a reason
             </small>
-            <small> Read the why <i class="fa fa-play-circle"></i> </small>
+            <small> Read the why <img src="./images/landingPage/ReadTheWhy.png" alt="Icon" srcset=""> </small>
           </div>
         </div>
       </div>

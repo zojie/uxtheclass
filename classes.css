@@ -101,7 +101,16 @@
   bottom:20px;
 }
 
-.classesBg {
+.BrandingBg {
+  background-image: url("./images/BrandingLanding.png");
+}
+.BusinessBg {
+  background-image: url("./images/BusinessLanding.png");
+}
+.UXBg {
+  background-image: url("./images/UXLanding.png");
+}
+.UIBg {
   background-image: url("./images/UIPage.png");
 }
 

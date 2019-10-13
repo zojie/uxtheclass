@@ -29,7 +29,7 @@
       }
     }
     
-    $('#installBtn').click(install);
+    // $('#installBtn').click(install);
 
 $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
@@ -78,13 +78,13 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-$(".sidebar").hide();
+// $(".sidebar").hide();
 
-$("#closeBtn").click(function() {
-  $(".sidebar").hide();
-});
+// $("#closeBtn").click(function() {
+//   $(".sidebar").hide();
+// });
 $("#openBtn").click(function() {
-  $(".sidebar").toggleClass("showSidebar");
+  $(".sidebar").toggleClass("d-none");
   $("#openBtn").toggleClass("openBtn");
   // $('#openBtn').toggleClass('fa-bars');
   // $('#openBtn').toggleClass('fa-close');
