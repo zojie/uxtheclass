@@ -24,7 +24,8 @@
     />
     <link rel="stylesheet" href="landingPage.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d9a8436209.js"></script>
+    <link rel="stylesheet" href="select.css">
+    <!-- <script src="https://kit.fontawesome.com/d9a8436209.js"></script> -->
   </head>
   <body>
     <!-- top -->
@@ -242,7 +243,7 @@
       <!-- <div class="position-absolute" id="particles-js"></div> -->
       <img
         class="position-absolute heroOverlay"
-        src="" data-src="./images/AboutCareer/AboutUs.png"
+        src="" data-src="./images/partnerBG.png"
         alt="Image Overlay"
       />
       <!-- <div class="position-absolute particles-js"></div> -->
@@ -261,7 +262,7 @@
     </div>
 
     <div class="my-5 container">
-      <span><img src="images/AboutCareer/right-arrow_2019-10-03/right-arrow.png" alt="right-arrow"> &nbsp; &nbsp; <span class="customBold">Back To Career</span></span>
+      <span><img src="" data-src="images/AboutCareer/right-arrow_2019-10-03/right-arrow.png" alt="right-arrow"> &nbsp; &nbsp; <span class="customBold">Back To Career</span></span>
       <div class="row flex-column-reverse flex-md-row">
         <div class="mt-5 col-md-7">
           <p>UXTHECLASS is an online design academy aimed at impacting our knowledge to the next gen of designers. We are a fully remote team spread all over. Growth is deep rooted into our culture but most importantly, we just want a regular person come in and after completing our class becomes a pro designer.</p>
@@ -293,14 +294,45 @@
     <label for="portfolio" class="customBold">Please provide a link to your portfolio</label>
     <input type="text" class="form-control" id="portfolio" placeholder="">
   </div>
-    <div class="form-group">
-    <label for="discover" class="customBold">How did you discover us?</label>
-    <input type="text" class="form-control" id="discover" placeholder="">
+    <!-- <div class="form-group">
+      <input type="text" class="form-control" id="discover" placeholder="">
+    </div> -->
+    <div class="mb-2">
+        <label for="discover" class="customBold">How did you discover us?</label>
+      <div class="select-box form-group">
+          <div class="select-box__current" tabindex="1">
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">Instagram</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">Twitter</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">LinkedIn</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">Facebook</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">Others</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="5" value="6" name="Ben" checked="checked" />
+                  <p class="select-box__input-text">Select Options</p>
+              </div>
+              <img class="select-box__icon" src="" data-src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+          <ul class="select-box__list ">
+              <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">Instagram</label></li>
+              <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Twitter</label></li>
+              <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">LinkedIn</label></li>
+              <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">Facebook</label></li>
+              <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">Others</label></li>
+          </ul>
+      </div>
   </div>
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label for="message" class="customBold">What company do you admire most for their design and why?</label>
     <textarea class="form-control" id="message" rows="5"></textarea>
-  </div>
+  </div> -->
   <div class="form-group">
     <label for="state-country" class="customBold">State & Country</label>
     <input type="text" class="form-control" id="state-country" placeholder="">
