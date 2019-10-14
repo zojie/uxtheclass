@@ -38,6 +38,9 @@ body {
   color: #dc0a0a !important;
 }
 
+.blackBg {
+  background-color: black !important;
+}
 .redBg {
   background-color: #dc0a0a !important;
 }
@@ -278,10 +281,10 @@ body {
 
 /*MEDIA QUERIES TO HANDLE RESPONSIVENESS*/
 @media screen and (max-width: 1079px) {
-  .right {
-    /* width: 40%; */
-  }
-}
+  /* .right {
+    width: 40%;
+  } */
+} 
 
 @media screen and (max-width: 800px) {
   .small-header {
@@ -306,9 +309,9 @@ body {
   div.icons-foot {
     width: 40%;
   }
-  div.right a {
-    /* padding-left: 10px; */
-  }
+  /* div.right a {
+    /* padding-left: 10px;
+  } */
   .testimonialText{
     font-size: 14px;
     padding: 0;
@@ -322,7 +325,6 @@ body {
     font-size: 14px !important;
   }
 }
-
 @media screen and (max-width: 760px) {
   .hero-image {
     height: 55%;
