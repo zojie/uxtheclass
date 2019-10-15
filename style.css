@@ -94,6 +94,16 @@ div.text-left {
   background: #e8e8e8;
 }
 
+
+.partnerBg {
+  background-image: url("./images/partnerBG.png");
+}
+
+.studentBg {
+  background-image: url("./images/studentsBG.png");
+}
+
+
 /* Start Footer Section */
 footer {
   background: #212121;
