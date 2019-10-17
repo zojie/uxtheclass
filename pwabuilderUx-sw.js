@@ -4,10 +4,10 @@ const CACHE = "pwabuilderCacheUxTheClass";
 const precacheFiles = [
   "./index.html",
   "./about.html",
-  "./classes_BusinessDesign.html",
-  "./classes_Branding.html",
-  "./classes_UI&Design.html",
-  "./classes_UXResearch.html",
+  "./designbusiness.html",
+  "./graphicdesign.html",
+  "./uidesign.html",
+  "./uxresearch.html",
   "./faq.html",
   "./contact.html",
 
