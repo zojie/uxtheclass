@@ -24,7 +24,6 @@
     />
     <link rel="stylesheet" href="landingPage.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/d9a8436209.js"></script>
   </head>
   <body>
     <!-- top -->
@@ -824,13 +823,14 @@
                  
                     <div class="mb-3 mt-md-5 mt-3">
                         <h4 class="fw-900 text-capitalize customBold">Have something else you'd like to ask?</h4>
-          
-                        <div class="form-group">
-                          <label for=""></label>
-                          <textarea class="form-control" placeholder="Type message here" name="" id="" rows="4"></textarea>
-                        </div>
-          
-                        <button class="btn text-white redBg px-2 py-1 border-0"> Send Question</button>
+                     <form name="faq" action="" method="POST" data-netlify="true">
+                      <div class="form-group">
+                        <label for=""></label>
+                        <textarea class="form-control" placeholder="Type message here" name="" id="" rows="4"></textarea>
+                      </div>
+        
+                      <button class="btn text-white redBg px-2 py-1 border-0" type="submit"> Send Question</button>
+                     </form>
                       </div>
         </div>
       </div>
