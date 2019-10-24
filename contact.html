@@ -385,15 +385,15 @@
        <form name="contact"  method="POST" data-netlify="true">
   <div class="form-group">
     <label for="fullname" class="customBold">Full Name</label>
-    <input type="text" name="Fullname" class="form-control" id="fullname" aria-describedby="emailHelp" placeholder="John Doe">
+    <input required type="text" name="Fullname" class="form-control" id="fullname" aria-describedby="emailHelp" placeholder="John Doe">
   </div>
   <div class="form-group">
     <label for="email" class="customBold">Email</label>
-    <input type="email" name="Email" class="form-control" id="email" placeholder="Enter your email">
+    <input required type="email" name="Email" class="form-control" id="email" placeholder="Enter your email">
   </div>
   <div class="form-group">
     <label for="message" class="customBold">Message</label>
-    <textarea name="Message" class="form-control" id="message" rows="3"></textarea>
+    <textarea required name="Message" class="form-control" id="message" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-danger">Send Message</button>
         </form>
