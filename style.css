@@ -105,7 +105,7 @@ div.text-left {
 
 
 /* Start Footer Section */
-footer {
+/* footer {
   background: #212121;
 
   padding-top: 38px;
@@ -125,7 +125,6 @@ footer {
 }
 .icons-foot {
   height: 30px;
-  /* width: 20%; */
   display: flex;
   justify-content: space-between;
   color: white;
@@ -155,10 +154,10 @@ footer {
   justify-content: space-between;
   color: #6c757d;
   font-size: 14px;
-}
+} */
 
 @media screen and (max-width: 1079px) {
-  .foot {
+  /* .foot {
     width: 90%;
     display: flex;
     color: white;
@@ -169,7 +168,7 @@ footer {
     width: 40%;
     display: flex;
     justify-content: space-between;
-  }
+  } */
 }
 
 @media screen and (max-width: 1064px) {
@@ -190,13 +189,13 @@ footer {
 }
 
 @media screen and (max-width: 985px) {
-  .links {
+  /* .links {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-  }
+  } */
 }
 @media screen and (max-width: 767px) {
   div.social-icons {
@@ -208,17 +207,17 @@ footer {
   div.end {
     font-size: xx-small;
   }
-  .left,
+  /* .left,
   .right,
   .copy {
     width: max-content;
     font-size: xx-small;
-  }
+  } */
   div.icons-foot {
-    width: 40%;
+    /* width: 40%; */
   }
   div.right a {
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
 }
 @media screen and (max-width: 576px) {

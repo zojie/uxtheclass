@@ -59,7 +59,7 @@
       </button>
       <div class="dropdown-container bg-white redText">
         <a class="p-3 d-block" href="./uxresearch.html"
-          >UX Research/Design</a
+          >UX Research</a
         >
         <a class="p-3 d-block" href="./graphicdesign.html"
           >Branding & Graphic Design</a
@@ -145,7 +145,7 @@
                     />
                   </div>
                   <div class="mt-2 text-left">
-                    <p class="Gilroy fw-900">UX Research/Design</p>
+                    <p class="Gilroy fw-900">UX Research</p>
                     <p class="small p-0 m-0">
                       Research Process, Wireframing ...
                     </p>
@@ -291,13 +291,14 @@
 
     <div class="my-5 container">
       <a
+      class="noDeco"
       href="./index.html"
         ><img
           src=""
           data-src="images/AboutCareer/right-arrow_2019-10-03/right-arrow.png"
           alt="right-arrow"
         />
-        &nbsp; &nbsp; <span class="customBold">Back To Home Page</span></a
+        &nbsp; &nbsp; <span class="customBold text-dark">Back To Home Page</span></a
       >
       <div class="row flex-column-reverse flex-md-row">
         <div class="mt-5 col-md-7">
@@ -313,7 +314,7 @@
           </p>
 
           <div class="px-0 col-md-9">
-           <form name="student"  method="POST" data-netlify="true">
+           <form action="./student-1.html" name="student"  method="POST" data-netlify="true">
               <div class="form-group">
                 <label for="fullname" class="customBold">Full Name</label>
                 <input
@@ -511,16 +512,16 @@
           
               <div class="form-group">
                 <label for="class-interest" class="customBold"
-                  >Clas Interest</label
+                  >Class Interest</label
                 >
-                <input
-                required
-                  type="text"
-                  class="form-control"
-                  id="class-interest"
-                  name="Class Interest"
-                  placeholder=""
-                />
+                <select class="custom-selct form-control" name="Class of Interest" id="" required>
+                  <option id="" class="py-3" value="" selected>Select options</option>
+                  <option id="" class="py-3" value="UXResearch">UX Research</option>
+                  <option id="" class="py-3" value="GraphicDesign">Branding  & Graphic Design</option>
+                  <option id="" class="py-3" value="UIdesign">UI  and Interaction Design</option>
+                  <option id="" class="py-3" value="BusinesssDesign">Businesss of Design</option>
+                  <!-- <option id="" class="py-3" value="Others">Others</option> -->
+                </select>
               </div>
               <div class="form-group">
                 <label for="state-city" class="customBold"

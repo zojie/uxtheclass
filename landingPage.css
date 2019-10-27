@@ -226,8 +226,14 @@ body {
 }
 
 /* Font awesome */
-
-.fa {
+.fa-twitter,
+.fa-facebook-square,
+.fa-dribbble,
+.fa-linkedin,
+.fa-youtube,
+.fa-behance-square,
+.fa-medium,
+.fa-instagram {
   font-size: 1.5em !important;
 }
 
@@ -325,12 +331,8 @@ body {
   .hero-image {
     height: 55%;
   }
-  .fa-twitter,
-.fa-dribbble,
-.fa-linkedin-square,
-.fa-behance-square {
-  font-size: 1.5em !important;
-}
+
+
 }
 @media screen and (max-width: 600px) {
   .column {
@@ -402,5 +404,15 @@ body {
   }
   .max-content {
     width: max-content;
+  }
+  .fa-twitter,
+  .fa-facebook-square,
+  .fa-dribbble,
+  .fa-linkedin,
+  .fa-behance-square,
+  .fa-medium,
+  .fa-youtube,
+  .fa-instagram {
+    font-size: 1.2em !important;
   }
 }
