@@ -1,0 +1,720 @@
+<html lang="en">
+  <head>
+    <title>UXTHECLASS</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="landingPage.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top -->
+    <div class="d-flex py-1 d-md-none align-items-center  mr-2">
+      <button class="btn d-block d-md-none z-10" id="openBtn">
+        <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class=" d-block ml-2 ml-sm-3 ml-md-5 mr-auto" href="#home">
+        <a href="./index.html" class=""
+          ><img class="iconImg" src="" data-src="./images/uxtc-black.png" alt=""
+        /></a>
+      </div>
+
+      <div class="d-inline-block">
+        <a class="mr-2 navLinks text-dark" href="#"
+          ><i
+            style="font-size: 1.5em;"
+            class="fa fa-shopping-cart"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a class=" navLinks text-white btn redBg" href="#"
+          ><span><i class="fa fa-user"></i></span> Login</a
+        >
+      </div>
+    </div>
+
+    <div
+      class="sidebar d-none d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
+    >
+      <a class="p-3 d-block" href="./index.html">Home</a
+      ><a class="p-3 d-block" href="./about.html">About Us</a>
+      <button
+        class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block"
+      >
+        Our Classes
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container bg-white redText">
+        <a class="p-3 d-block" href="./uxresearch.html">UX Research/Design</a>
+        <a class="p-3 d-block" href="./graphicdesign.html"
+          >Branding & Graphic Design</a
+        >
+        <a class="p-3 d-block" href="./uidesign.html"
+          >UI & Interaction Design</a
+        >
+        <a class="p-3 d-block" href="./designbusiness.html"
+          >Business of Design</a
+        >
+      </div>
+      <a class="p-3 d-block" href="./career.html">Career</a>
+      <a class="p-3 d-block" href="https://medium.com/@uxtheclass">Our Blog</a>
+      <a class="p-3 d-block" href="./faq.html">FAQ & Help</a>
+      <a class="p-3 d-block" href="./contact.html">Contact</a>
+
+      <div class="justify-content-end">
+        <a
+          class="py-2 mr-5 d-none d-md-inline-block navLinks textWhite"
+          href="#"
+          ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+        ></a>
+        <a
+          class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+          href="#"
+          ><span><i class="fa fa-user"></i></span> Login</a
+        >
+      </div>
+    </div>
+
+    <div class="position-relative hero-image overflow-hidden text-center">
+      <nav
+        class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
+        id="bgWhite"
+      >
+        <div
+          class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
+        >
+          <a href="./index.html">
+            <img
+              id="whiteLogo"
+              class=""
+              src=""
+              data-src="./images/uxtc-white.png"
+              alt="White logo"
+            />
+            <img
+              id="blackLogo"
+              class="d-none"
+              src=""
+              data-src="./images/uxtc-black.png"
+              alt="Black logo"
+            />
+          </a>
+          <div class="justify-content-between">
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./about.html"
+              >About Us</a
+            >
+            <div class="dropdownDiv py-2 mx-1 ml-lg-2 d-none d-md-inline-block">
+              <button
+                class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link"
+              >
+                Our Classes
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="container py-3">
+                  <div class="dropdownRow row h-100">
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/UXDropDown.png"
+                          alt="UX logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">UX Research/Design</p>
+                        <p class="small p-0 m-0">
+                          Research Process, Wireframing ...
+                        </p>
+                        <a
+                          href="./uxresearch.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/BrandingDropDown.png"
+                          alt="Branding and Graphic design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">Branding & Graphic Design</p>
+                        <p class="small p-0 m-0">
+                          Illustrations, Typography, Colors ...
+                        </p>
+                        <a
+                          href="./graphicdesign.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/UIDropDown.png"
+                          alt="UI logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">UI & Interaction Design</p>
+                        <p class="small p-0 m-0">
+                          Responsive web, Mobile design ...
+                        </p>
+                        <a
+                          href="./uidesign.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/BusinessDropDown.png"
+                          alt="Business of Design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">Business of Design</p>
+                        <p class="small p-0 m-0">
+                          Pricing Design brief, Portfolio ...
+                        </p>
+                        <a
+                          href="./designbusiness.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./career.html"
+              >Career</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="https://medium.com/@uxtheclass"
+              >Our Blog</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./faq.html"
+              >FAQ & Help</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./contact.html"
+              >Contact</a
+            >
+          </div>
+
+          <div class="justify-content-end">
+            <a
+              class="py-2 mr-5 d-none d-md-inline-block navLinks textWhite"
+              href="#"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
+            <a
+              class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+              href="#"
+              ><span><i class="fa fa-user"></i></span> Login</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="position-absolute" id="particles-js"></div> -->
+      <img
+        class="position-absolute heroOverlay"
+        src=""
+        data-src="./images/PrivacyLanding.png"
+        alt="Image Overlay"
+      />
+      <!-- <div class="position-absolute particles-js"></div> -->
+      <!-- mx-auto my-1 my-md-5 -->
+      <div class="cta-text col-md-7 p-lg-5">
+        <!-- <span class="textWhite">Online design academy</span> -->
+        <small class="text-muted">Our Legal Documents</small>
+        <h1 class="customBold small-header textWhite">
+          We Care About Your Online Security
+        </h1>
+      </div>
+    </div>
+
+    <section class="py-md-5 py-3 container">
+      <nav class="nav">
+        <ul>
+          <li class="mr-2">
+            <a class="nav-link py-2  under-below " href="#"
+              >Terms & Condition</a
+            >
+          </li>
+
+          <li class="mx-2">
+            <a
+              class="nav-link py-2 active redText under-below"
+              href="./privacy.html"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="mb-md-5 my-5">
+        <!-- <small class="text-muted">How may we Help</small> -->
+        <h3 class="customBold">Overview</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            This policy is intended to inform you how we at UXTHECLASS Academy,
+            a Nigerian company, (hereinafter “UXTHECLASS” or “we/us/our”)
+            collect and use information provided by visitors to our website
+            (located at www.uxtheclass.com, hereinafter, our “Website”), by
+            people who register at our Website, by students who enroll in our
+            courses, by anyone who contracts for or purchases any of our
+            products or services, and by individuals who communicate with our
+            Website via e-mail or otherwise (collectively, “you/your”).
+          </p>
+
+          <p>
+            By visiting our Website, viewing its contents, registering on our
+            Website, enrolling in our courses, purchasing our services or
+            products and/or communicating with us via e-mail or otherwise, you
+            are consenting to the terms of this Privacy Policy along with the
+            terms of service set forth on our Terms & Conditions page (located
+            at www.uxtheclass.com/terms ).
+          </p>
+
+          <p>
+            All information and data that we receive from or about you, such as
+            (but not limited to) your name, address, geographic location, e-mail
+            address(es), IP address, user names, passwords, course selections,
+            product and service purchases, transaction and payment information
+            and communications are governed by this Privacy Policy.
+            <strong>
+              This Privacy Policy does not apply to third-party sites from which
+              you may access our Website or access any of the materials on our
+              Website.
+            </strong>
+          </p>
+
+          <p>
+            If you do not wish to consent to the terms of this Privacy Policy or
+            our Terms & Conditions, please do not use or otherwise visit our
+            Website, register on our Website, enroll in our courses, or purchase
+            any of our products or services.
+          </p>
+
+          <h5 class="customBold">
+            Collection of Information
+          </h5>
+          <p>
+            We may collect and process your personal data in the following
+            circumstances.
+          </p>
+
+          <p>
+            when you sign up / register for an account with us
+          </p>
+          <p>
+            when you sign up for our newsletter (by entering your e-mail
+            address)
+          </p>
+          <p>
+            when you order any products or services from uswhen you contact us
+            via e-mail or otherwise
+          </p>
+          <p>
+            when you provide us e-mail or other data in exchange for a free
+            download
+          </p>
+          <p>
+            when you enter any contests we may holdwhen you complete any surveys
+            we may conduct
+          </p>
+          <p>
+            when you visit our Website (via cookies or otherwise)
+          </p>
+          <p>
+            Not all of the information we collect may be personally
+            identifiable. We do, however, track and record user sessions to
+            improve the site experience for our users. We use Google analytics
+            tracking software. Such tracking software may change as technology
+            improves.
+          </p>
+          <p>
+            Our Website and the materials and services provided through our
+            Website are not intended for children or those under the age of 13.
+            If someone under the age of 13 wishes to use our Website, that
+            individual is responsible for obtaining the consent from that
+            individual’s parents or legal guardians.
+          </p>
+
+          <h5 class="customBold">
+            Use of Information
+          </h5>
+
+          <p>
+            We use information that we gather from you in the following ways:
+          </p>
+          <p>
+            To provide services and materials through our Website
+          </p>
+          <p>
+            To deliver information to you about the products, services and
+            materials provided through our Website
+          </p>
+          <p>
+            To fulfill our contractual obligations to you as part of any
+            transaction or order involving our products, services and/or
+            materials
+          </p>
+          <p>
+            To contact you about our products, services and Website
+          </p>
+          <p>
+            In additional manners that we may describe to you when you provide
+            information to us or when we notify you about new uses of
+            information provided by you
+          </p>
+          <p>
+            By visiting our website, providing us your e-mail address, signing
+            up for our newsletter, registering for an account, ordering products
+            or services from us or otherwise providing your personal information
+            to us, as set forth above (under Collection of Information), you are
+            consenting to receiving communications from us regarding our
+            services and materials.
+          </p>
+
+          <h5 class="customBold">
+            Sharing Information
+          </h5>
+
+          <p>
+            We do not sell, trade, rent or otherwise disseminate personal date
+            or information except as set forth below:
+          </p>
+          <p>
+            We transmit credit card and other payment data through the
+            appropriate credit card company and/or credit card payment
+            processing company or financial institutions to confirm payment for
+            products or services purchased on our Website.
+          </p>
+          <p>
+            If necessary for the provision of our services, we may disclose
+            information (such as name and contact information) to our
+            instructors or other providers of our services.
+          </p>
+          <p>
+            We will disclose information gathered from you or provided by you if
+            we are required to do so by law or legal process, or to cooperate
+            with a law enforcement investigation, or if we need to do so to
+            protect our rights, reputation, property, or the safety or us or
+            others, or to defend or enforce our rights or your obligations.
+          </p>
+          <p>
+            We will not disclose information to third parties with your prior
+            consent.
+          </p>
+          <p>
+            Not all of the information we collect may be personally
+            identifiable. We do, however, track and record user sessions to
+            improve the site experience for our users. We use various tracking
+            software to do so including Google Analytics. Such tracking software
+            may change as technology improves.
+          </p>
+          <p>
+            Our Website and the materials and services provided through our
+            Website are not intended for children or those under the age of 13.
+            If someone under the age of 13 wishes to use our Website, that
+            individual is responsible for obtaining the consent from that
+            individual’s parents or legal guardians.
+          </p>
+
+          <h5>
+            Deleting of Information
+          </h5>
+
+          <p>
+            You may ask us to delete some or all of the information you shared
+            with us, provided, however, that we are not required to maintain
+            that information as part of any commercial transaction or contract
+            entered into between us. For example, we may need to maintain
+            records of credit card transactions or products or services
+            purchased by you from us for a period of time in the event any
+            dispute or other occasion arises whereby that information may be
+            required by third-parties or government entities.
+          </p>
+          <p>
+            You may request that we delete information provided by you to us by
+            emailing support@uxtheclass.com
+          </p>
+          <p>
+            If you believe that we have inaccurate or incomplete information
+            about you, you may request an update to your information by emailing
+            support@uxtheclass.com
+          </p>
+          <p>
+            You may request that we limit the use of your information to only
+            that information required for us to conduct any transactions in
+            which you engage with us. For example, you may request that we
+            discontinue sending e-mails or newsletters to you about upcoming
+            courses or other information regarding our products and services.
+            You may opt-out from these communications by emailing
+            support@uxtheclass.com as well as following the instructions on the
+            communications themselves.
+          </p>
+          <p>
+            Unless you request that we delete information provided by you, we
+            will maintain that information for a reasonable period of time in
+            the event that you choose, in the future, to purchase our products
+            or services. For example, you may complete one of our courses, and
+            not find an additional course to be of interest to you at present;
+            however, we may introduce a course in the future in which you may
+            wish to enroll. By maintaining your information, we make the
+            enrollment process easier, as well as allowing us to provide a
+            history to you of courses in which you previously enrolled.
+          </p>
+          <p>
+            To maintain the integrity of our Website and the information you
+            provide to us, we may copy that information to a secondary
+            information storage device (AKA back-up). In the event that you
+            request that we delete your information, we will also delete it from
+            our back-up data storage to the extent that it is commercially
+            reasonable to do so. Nevertheless, we do not access our back-up
+            storage except under circumstances where data from our primary
+            storage has been compromised (such as may occur during power surges
+            or other situations where our primary storage may be damaged).
+          </p>
+
+          <h5>Cookies and Information</h5>
+          <p>
+            Our website uses cookies to enhance our users’ experience with our
+            website. Cookies are small packets of information placed on your
+            device when you visit our website and/or engage in transactions with
+            us. Cookies help us to tailor your experience to you as an
+            individual user, allow us to recognize you when you re-visit our
+            website, and assist us in keeping your account secure. By visiting
+            our site and engaging in our services and/or purchasing our
+            products, you are agreeing to the use of cookies and similar
+            technologies for the purposes set forth in this policy. You can
+            learn more about cookies by following these links:
+          </p>
+
+          <p>
+            <a href="https://www.whoishostingthis.com/resources/cookies-guide/"
+              >https://www.whoishostingthis.com/resources/cookies-guide/</a
+            >
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/HTTP_cookie"
+              >https://en.wikipedia.org/wiki/HTTP_cookie</a
+            >
+          </p>
+          <p>
+            <a href="http://www.whatarecookies.com"
+              >http://www.whatarecookies.com</a
+            >
+          </p>
+          <p>
+            <a href="http://www.allaboutcookies.org/cookies/"
+              >http://www.allaboutcookies.org/cookies/</a
+            >
+          </p>
+
+          <p>
+            Our website follows industry custom and practice with respect to the
+            types of cookies we use and the technology inherent in the cookies
+            we choose. The types of cookies we use will change as the technology
+            and utility behind them advance Our use of cookies allows us to
+            identify returning visitors to our website. We may also use cookies
+            to collect aggregate data to help us improve the products and
+            services we provide. We do not provide any of your personal
+            information to advertisers without your consent.
+          </p>
+          <p>
+            You may control the use of cookies by us and other websites through
+            your browser settings. Most browsers will allow you to turn off
+            cookies. Our website, however, may not function as intended or
+            provide you with as satisfying an experience should you choose to do
+            so. Most browsers will also allow you to review and delete cookies,
+            including those originating from our website. You should consult
+            with your browser’s setting and help page to learn how to control
+            cookies on your particular browser.
+          </p>
+
+          <h5>Updating Our Information Privacy Policy</h5>
+          <p>
+            Periodically we will update our Privacy Policy as technological,
+            business and regulatory changes occur. We will notify you of changes
+            to our Privacy Policy by posting the new Privacy Policy on our
+            Website, accessible on a link from our homepage, or directly at
+            https://uxtheclass.com/privacy. We will also send you an e-mail to
+            the e-mail address provided by you to us notifying you that an
+            updated Privacy Policy is available for review on our Website. You
+            consent to receive such e-mails and agree to keep us informed of any
+            changes to your preferred e-mail address.
+          </p>
+
+          <h5>Disputes Involving Information</h5>
+
+          <p>
+            In the unlikely event that you have a dispute with us regarding our
+            use of any of your information or in regards to our Privacy Policy,
+            our Terms & Conditions or Website, our products or our services or
+            otherwise (collectively, “Disputes”), and we are unable to resolve
+            that dispute through informal communications between us, you agree
+            that any such Disputes will be subject to the following dispute
+            resolution.
+          </p>
+          <p>
+            You further agree that this dispute resolution mechanism shall be
+            your sole means to seek a remedy for any Dispute and that you will
+            not engage in any class action or other collective action regarding
+            any Dispute you may have with us. You understand that by voluntarily
+            providing information to us, by using our Website or by otherwise
+            engaging in any transaction with us involving our products or
+            services, that you are waiving any rights to a trial by jury or to
+            join any collective or class action litigation involving any
+            Dispute.
+          </p>
+
+          <h5>
+            Contacting Us Regarding Information
+          </h5>
+
+          <p>
+            You may contact us at any time regarding you personal data and
+            information by emailing support@uxtheclass.com
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark">
+      <div class="pt-2 pb-3 container">
+        <div class="d-flex justify-content-between flex-column flex-sm-row end">
+          <div class="brand textWhite py-2">
+            <img class="" src="" data-src="./images/uxtc-white.png" alt="" />
+          </div>
+          <div class="nav-links-below my-2 py-2">
+            <a href="./about.html" class="">About Us</a>
+            <a href="#section-classes" class="ml-2">Classes</a>
+            <a href="./career.html" class="ml-2">Career</a>
+            <a href="./faq.html" class="ml-2">FAQ</a>
+            <a href="./contact.html" class="ml-2">Contact</a>
+            <a href="https://medium.com/@uxtheclass" class="ml-2 mr-0">Blog</a>
+          </div>
+        </div>
+        <div class=" icons-foot my-3 d-flex justify-content-between text-white">
+          <span class=""
+            ><a class="noDeco textWhite" href="https://facebook.com/uxtheclass"
+              ><i class="fa mr-2 fa-facebook-square"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://instagram.com/uxtheclass"
+              ><i class="fa mr-2 fa-instagram"></i></a
+          ></span>
+          <span class=""
+            ><a
+              class="noDeco textWhite"
+              href="https://www.youtube.com/channel/UC4qItphHJP2gqj6QVxQo3EA"
+              ><i class="fa mr-2 fa-youtube"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://twitter.com/uxtheclass"
+              ><i class="fa mr-2 fa-twitter"></i></a
+          ></span>
+          <span class=""
+            ><a
+              class="noDeco textWhite"
+              href="https://linkedIn.com/company/uxtheclass"
+              ><i class="fa mr-2 fa-linkedin"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://medium.com/@uxtheclass"
+              ><i class="fa mr-2 fa-medium"></i></a
+          ></span>
+        </div>
+        <div class="copy d-flex justify-content-end text-white">
+          <p>&copy; 2019 | Lagos, Nigeria</p>
+        </div>
+        <div class="lowest d-flex justify-content-between">
+          <div class="left">
+            <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
+          </div>
+          <div class="right d-flex justify-content-end">
+            <a class="mx-1" href="/terms.html">Terms & Condition</a>
+            <a class="mx-1" href="/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

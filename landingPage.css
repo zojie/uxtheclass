@@ -227,17 +227,12 @@ body {
 
 /* Font awesome */
 
-.fa-twitter,
-.fa-instagram,
-.fa-dribbble,
-.fa-linkedin-square,
-.fa-behance-square {
+.fa {
   font-size: 1.5em !important;
 }
 
 
 /* Social section */
-
 .socialInstagram {
   background-image: linear-gradient(57deg, #e49c10, #eb0c8a);
 }
