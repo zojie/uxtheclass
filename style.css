@@ -102,6 +102,9 @@ div.text-left {
 .studentBg {
   background-image: url("./images/studentsBG.png");
 }
+.careerBg {
+  background-image: url("./images/AboutCareer/AboutUs.png");
+}
 
 
 /* Start Footer Section */
