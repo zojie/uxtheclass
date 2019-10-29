@@ -1,9 +1,28 @@
 
-$("#subscribtion-form").submit(function(e) {
+// $("#subscribtion-form").submit(function(e) {
+//     e.preventDefault();
+//     var $form = $(this);
+//     $.post($form.attr("action"), $form.serialize()).then(function() {
+//       alert("Your have successfully subcribed to our news letter.Thank you!");
+//     });
+//   });
+let subForm = document.querySelector('#subscribtion-form');
+
+  subForm.addEventListener('submit', e => {
     e.preventDefault();
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
+    const formData = new FormData(subForm);
+    fetch(subForm.getAttribute('action'), {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(res => {
+      if (res) {
       alert("Your have successfully subcribed to our news letter.Thank you!");
+      }
     });
   });
 
