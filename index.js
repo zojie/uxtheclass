@@ -11,6 +11,7 @@
 //   "You've Successful Subscribed to our news letter!",
 //   'success');
 let subForm = document.querySelector('#subscribtion-form');
+let faqForm = document.querySelector('#faq-form');
 
   subForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -42,38 +43,35 @@ let subForm = document.querySelector('#subscribtion-form');
     });
   });
 
-
-    let deferredPrompt = null;
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      
-      e.preventDefault();
-      
-      deferredPrompt = e;
-    });
-    
-    async function install() {
-      console.log('installing');
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        console.log(deferredPrompt)
-        deferredPrompt.userChoice.then(function(choiceResult){
-    
-          if (choiceResult.outcome === 'accepted') {
-          console.log('Your PWA has been installed');
-        } else {
-          console.log('User chose to not install your PWA');
-        }
-    
-        deferredPrompt = null;
-    
-        });
-    
-     
+  faqForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(faqForm);
+    fetch(faqForm.getAttribute('action'), {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(res => {
+      if (res.ok) {
+        // console.log(res)
+        Swal.fire(
+          'Thanks!',
+          "Your message has been recorded successfully !",
+          'success'
+        );
       }
-    }
-    
-    
+      else{
+        Swal.fire(
+          'OOPS!',
+          "An error Occured! Try again",
+          'error'
+        );
+      }
+    });
+  });
 
 $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
