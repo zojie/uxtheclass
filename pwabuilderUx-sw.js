@@ -24,7 +24,7 @@ self.addEventListener("install", function (event) {
   self.skipWaiting();
 
   event.waitUntil(
-    caches.open(CACHE).then(function (cache) {
+    caches.open(CACHE).then(function (cache) { 
       console.log("[PWA Builder] Caching pages during install");
       return cache.addAll(precacheFiles);
     })

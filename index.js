@@ -2,9 +2,9 @@
     let deferredPrompt = null;
 
     window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      
       e.preventDefault();
-      // Stash the event so it can be triggered later.
+      
       deferredPrompt = e;
     });
     
@@ -29,7 +29,7 @@
       }
     }
     
-    // $('#installBtn').click(install);
+    
 
 $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
@@ -78,16 +78,16 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-// $(".sidebar").hide();
 
-// $("#closeBtn").click(function() {
-//   $(".sidebar").hide();
-// });
+
+
+
+
 $("#openBtn").click(function() {
   $(".sidebar").toggleClass("d-none");
   $("#openBtn").toggleClass("openBtn");
-  // $('#openBtn').toggleClass('fa-bars');
-  // $('#openBtn').toggleClass('fa-close');
+  
+  
 });
 $(".card-header a").click(function() {
     console.log(this.id);
@@ -96,7 +96,7 @@ $(".card-header a").click(function() {
 
 
 
-// Lazy load all images
+
   const images = document.querySelectorAll("img");
   let options = {};
 

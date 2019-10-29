@@ -23,14 +23,12 @@
 .nav-links-below {
   display: flex;
   justify-content: space-between;
-  /* width: 40%; */
 }
 .heroOverlay {
   opacity: 0.5;
 }
 .hero-image {
   min-height: 350px;
-  /* opacity: 0.2; */
 }
 .cta-text {
   text-align: center;
@@ -84,7 +82,6 @@ div.text-left {
 .iconDesc {
   width: 60px;
   height: 60px;
-
   background-color: #e8e8e8;
 }
 .ico span:nth-child(1) {
@@ -93,7 +90,6 @@ div.text-left {
 .Bg-aboveFooter {
   background: #e8e8e8;
 }
-
 
 .partnerBg {
   background-image: url("./images/partnerBG.png");
@@ -104,74 +100,6 @@ div.text-left {
 }
 .careerBg {
   background-image: url("./images/AboutCareer/AboutUs.png");
-}
-
-
-/* Start Footer Section */
-/* footer {
-  background: #212121;
-
-  padding-top: 38px;
-}
-.foot {
-  width: 80%;
-  margin: 0 auto;
-
-  display: flex;
-
-  color: white;
-  flex-direction: column;
-}
-.links-foot {
-  display: flex;
-  justify-content: space-between;
-}
-.icons-foot {
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  padding-top: 8px;
-}
-.nav-links-below a {
-  color: #fff;
-}
-.copy {
-  display: flex;
-  justify-content: flex-end;
-
-  color: white;
-  margin-top: 30px;
-}
-.lowest {
-  display: flex;
-  justify-content: space-between;
-  color: #6c757d;
-}
-.lowest a {
-  color: #6c757d;
-}
-.right {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-  color: #6c757d;
-  font-size: 14px;
-} */
-
-@media screen and (max-width: 1079px) {
-  /* .foot {
-    width: 90%;
-    display: flex;
-    color: white;
-    flex-direction: column;
-  }
-
-  .right {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-  } */
 }
 
 @media screen and (max-width: 1064px) {
@@ -190,16 +118,6 @@ div.text-left {
     padding-left: 20px;
   }
 }
-
-@media screen and (max-width: 985px) {
-  /* .links {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  } */
-}
 @media screen and (max-width: 767px) {
   div.social-icons {
     display: none;
@@ -209,18 +127,6 @@ div.text-left {
   }
   div.end {
     font-size: xx-small;
-  }
-  /* .left,
-  .right,
-  .copy {
-    width: max-content;
-    font-size: xx-small;
-  } */
-  div.icons-foot {
-    /* width: 40%; */
-  }
-  div.right a {
-    /* padding-left: 10px; */
   }
 }
 @media screen and (max-width: 576px) {
