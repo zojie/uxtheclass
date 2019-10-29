@@ -6,6 +6,10 @@
 //       alert("Your have successfully subcribed to our news letter.Thank you!");
 //     });
 //   });
+// Swal.fire(
+//   'Thanks!',
+//   "You've Successful Subscribed to our news letter!",
+//   'success');
 let subForm = document.querySelector('#subscribtion-form');
 
   subForm.addEventListener('submit', e => {
@@ -20,8 +24,20 @@ let subForm = document.querySelector('#subscribtion-form');
       body: new URLSearchParams(formData).toString()
     })
     .then(res => {
-      if (res) {
-      alert("Your have successfully subcribed to our news letter.Thank you!");
+      if (res.ok) {
+        // console.log(res)
+        Swal.fire(
+          'Thanks!',
+          "You've Successful Subscribed to our news letter!",
+          'success'
+        );
+      }
+      else{
+        Swal.fire(
+          'OOPS!',
+          "An error Occured! Try again",
+          'error'
+        );
       }
     });
   });
