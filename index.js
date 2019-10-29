@@ -1,4 +1,13 @@
 
+$("#subscribtion-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Your have successfully subcribed to our news letter.Thank you!");
+    });
+  });
+
+
     let deferredPrompt = null;
 
     window.addEventListener('beforeinstallprompt', (e) => {
