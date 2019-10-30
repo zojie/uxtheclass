@@ -10,68 +10,6 @@
 //   'Thanks!',
 //   "You've Successful Subscribed to our news letter!",
 //   'success');
-let subForm = document.querySelector('#subscribtion-form');
-let faqForm = document.querySelector('#faq-form');
-
-  subForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const formData = new FormData(subForm);
-    fetch(subForm.getAttribute('action'), {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-      },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(res => {
-      if (res.ok) {
-        // console.log(res)
-        Swal.fire(
-          'Thanks!',
-          "You've Successful Subscribed to our news letter!",
-          'success'
-        );
-      }
-      else{
-        Swal.fire(
-          'OOPS!',
-          "An error Occured! Try again",
-          'error'
-        );
-      }
-    });
-  });
-
-  faqForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const formData = new FormData(faqForm);
-    fetch(faqForm.getAttribute('action'), {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-      },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(res => {
-      if (res.ok) {
-        // console.log(res)
-        Swal.fire(
-          'Thanks!',
-          "Your message has been recorded successfully !",
-          'success'
-        );
-      }
-      else{
-        Swal.fire(
-          'OOPS!',
-          "An error Occured! Try again",
-          'error'
-        );
-      }
-    });
-  });
 
 $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
@@ -121,10 +59,6 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-
-
-
-
 $("#openBtn").click(function() {
   $(".sidebar").toggleClass("d-none");
   $("#openBtn").toggleClass("openBtn");
@@ -132,12 +66,9 @@ $("#openBtn").click(function() {
   
 });
 $(".card-header a").click(function() {
-    console.log(this.id);
+    // console.log(this.id);
     $(`#${this.id} .fa-plus, #${this.id}  .fa-minus`).toggleClass("d-none");
   });
-
-
-
 
   const images = document.querySelectorAll("img");
   let options = {};
