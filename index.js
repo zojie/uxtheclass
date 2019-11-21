@@ -1,16 +1,20 @@
+const msgModal = ` <div class="modal fade" id="exampleLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title bolder" id="exampleModalLabel">Oooops</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body ">
+        <span class="text-center bold redText">Enrollment begins January 13th 2020</span>
+    </div>
+  </div>
+</div>
+</div>`;
 
-// $("#subscribtion-form").submit(function(e) {
-//     e.preventDefault();
-//     var $form = $(this);
-//     $.post($form.attr("action"), $form.serialize()).then(function() {
-//       alert("Your have successfully subcribed to our news letter.Thank you!");
-//     });
-//   });
-// Swal.fire(
-//   'Thanks!',
-//   "You've Successful Subscribed to our news letter!",
-//   'success');
-
+$('body').append(msgModal);
 $(document).ready(function() {
   $(".dropdownDiv,.dropdownBtn, .dropdown-content").mouseover(function() {
     $("#bgWhite").css("background-color", "white");
@@ -83,7 +87,7 @@ $(".card-header a").click(function() {
     });
   };
 
-  observeImg = new IntersectionObserver(handleIntersectImg, options);
+  let observeImg = new IntersectionObserver(handleIntersectImg, options);
 
   images.forEach(image => {
   observeImg.observe(image);
