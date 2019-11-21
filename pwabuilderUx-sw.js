@@ -18,14 +18,14 @@ const precacheFiles = [
 
 
 self.addEventListener("install", function (event) {
-  console.log("[PWA Builder] Install Event processing");
+  // console.log("[PWA Builder] Install Event processing");
 
-  console.log("[PWA Builder] Skip waiting on install");
+  // console.log("[PWA Builder] Skip waiting on install");
   self.skipWaiting();
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) { 
-      console.log("[PWA Builder] Caching pages during install");
+      // console.log("[PWA Builder] Caching pages during install");
       return cache.addAll(precacheFiles);
     })
   );
@@ -33,7 +33,7 @@ self.addEventListener("install", function (event) {
 
 // Allow sw to control of current page
 self.addEventListener("activate", function (event) {
-  console.log("[PWA Builder] Claiming clients for current page");
+  // console.log("[PWA Builder] Claiming clients for current page");
   event.waitUntil(self.clients.claim());
 });
 
@@ -66,7 +66,7 @@ self.addEventListener("fetch", function (event) {
             return response;
           })
           .catch(function (error) {
-            console.log("[PWA Builder] Network request failed and no cache." + error);
+            // console.log("[PWA Builder] Network request failed and no cache." + error);
           });
       }
     )
