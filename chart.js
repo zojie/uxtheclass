@@ -36,10 +36,10 @@ let responsiveOptions = [
 ];
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  let activeTab = e.target // newly activated tab
-  if(activeTab.id = "tabs-requirement"){
+  // let activeTab = e.target // newly activated tab
+  // if(e.target.id = "tabs-requirement"){
     new Chartist.Pie("#chart1", data, chartOptions, responsiveOptions);
-  }
-  console.log(activeTab);
-  e.relatedTarget // previous active tab
+  // }
+  // console.log(activeTab);
+  // e.relatedTarget // previous active tab
 });
