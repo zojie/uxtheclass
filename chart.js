@@ -1,6 +1,6 @@
 let data = {
   labels: ["", ""],
-  series: [82, 18]
+  series: [80, 20]
 };
 
 let chartOptions = {
