@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <title>UXTHECLASS | Launch your design career</title>
+    <title>UXTHECLASS | Launch your design career</title>
 
-<link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -18,16 +18,20 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"/>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <link rel="stylesheet" href="landingPage.css" />
     <link rel="stylesheet" href="classes.css" />
   </head>
   <body>
-    <div class="d-flex py-1 d-md-none align-items-center fixed-top bg-light  pr-2">
+    <div
+      class="d-flex py-1 d-md-none align-items-center fixed-top bg-light  pr-2"
+    >
       <button class="btn d-block d-md-none z-10" id="openBtn">
         <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
       </button>
@@ -38,18 +42,22 @@
       </div>
 
       <div class="d-inline-block">
-      
-        <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
-              class=" navLinks text-white btn redBg"
-              ><span><i class="fa fa-user"></i></span> Login</button
-            >
+        <button
+          type="button"
+          data-toggle="modal"
+          data-target="#exampleLoginModal"
+          class=" navLinks text-white btn redBg"
+        >
+          <span><i class="fa fa-user"></i></span> Login
+        </button>
       </div>
     </div>
 
     <div
       class="sidebar d-none d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
     >
-      <a class="p-3 d-block" href="./index.html">Home</a><a class="p-3 d-block" href="./about.html">About Us</a>
+      <a class="p-3 d-block" href="./index.html">Home</a
+      ><a class="p-3 d-block" href="./about.html">About Us</a>
       <button
         class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block"
       >
@@ -57,9 +65,7 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-container bg-white redText">
-        <a class="p-3 d-block" href="./uxresearch.html"
-          >UX Research</a
-        >
+        <a class="p-3 d-block" href="./uxresearch.html">UX Research</a>
         <a class="p-3 d-block" href="./graphicdesign.html"
           >Branding & Graphic Design</a
         >
@@ -76,236 +82,257 @@
       <a class="p-3 d-block" href="./contact.html">Contact</a>
 
       <div class="justify-content-end">
-     
-        <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
-              class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
-              ><span><i class="fa fa-user"></i></span> Login</button
-            >
+        <button
+          type="button"
+          data-toggle="modal"
+          data-target="#exampleLoginModal"
+          class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+        >
+          <span><i class="fa fa-user"></i></span> Login
+        </button>
       </div>
     </div>
 
-
-    <div class="position-relative mt-5 mt-md-0 hero-image UIBg overflow-hidden text-center">
-      <nav
-      class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
-      id="bgWhite"
+    <div
+      class="position-relative mt-5 mt-md-0 hero-image UIBg overflow-hidden text-center"
     >
-      <div
-        class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
+      <nav
+        class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
+        id="bgWhite"
       >
-        <a href="./index.html">
-          <img
-            id="whiteLogo"
-            class=""
-            src=""
-            data-src="./images/uxtc-white.png"
-            alt="White logo"
-          />
-          <img
-            id="blackLogo"
-            class="d-none"
-            src=""
-            data-src="./images/uxtc-black.png"
-            alt="Black logo"
-          />
-        </a>
-        <div class="justify-content-between">
-          <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./about.html"
-            >About Us</a
-          >
-          <div class="dropdownDiv py-2 mx-1 ml-lg-2 d-none d-md-inline-block">
-            <button
-              class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link"
+        <div
+          class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
+        >
+          <a href="./index.html">
+            <img
+              id="whiteLogo"
+              class=""
+              src=""
+              data-src="./images/uxtc-white.png"
+              alt="White logo"
+            />
+            <img
+              id="blackLogo"
+              class="d-none"
+              src=""
+              data-src="./images/uxtc-black.png"
+              alt="Black logo"
+            />
+          </a>
+          <div class="justify-content-between">
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./about.html"
+              >About Us</a
             >
-              Our Classes
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div class="container py-3">
-                <div class="dropdownRow row h-100">
-                  <div
-                    class="column col-md-3 flex-column align-items-start h-100"
-                  >
-                    <div class="d-block my-1">
-                      <img
-                        class="d-block"
-                        src=""
-                        data-src="./images/DropDownIcons/UXDropDown.png"
-                        alt="UX logo"
-                        srcset=""
-                      />
+            <div class="dropdownDiv py-2 mx-1 ml-lg-2 d-none d-md-inline-block">
+              <button
+                class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link"
+              >
+                Our Classes
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="container py-3">
+                  <div class="dropdownRow row h-100">
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/UXDropDown.png"
+                          alt="UX logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">UX Research</p>
+                        <p class="small p-0 m-0">
+                          Research Process, Wireframing ...
+                        </p>
+                        <a
+                          href="./uxresearch.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
                     </div>
-                    <div class="mt-2 text-left">
-                      <p class="Gilroy fw-900">UX Research</p>
-                      <p class="small p-0 m-0">
-                        Research Process, Wireframing ...
-                      </p>
-                      <a
-                        href="./uxresearch.html"
-                        class="mt-2 float-none d-block text-left py-2 redText"
-                        >View Class <i class="fa fa-caret-right"></i
-                      ></a>
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/BrandingDropDown.png"
+                          alt="Branding and Graphic design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">Branding & Graphic Design</p>
+                        <p class="small p-0 m-0">
+                          Illustrations, Typography, Colors ...
+                        </p>
+                        <a
+                          href="./graphicdesign.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    class="column col-md-3 flex-column align-items-start h-100"
-                  >
-                    <div class="d-block my-1">
-                      <img
-                        class="d-block"
-                        src=""
-                        data-src="./images/DropDownIcons/BrandingDropDown.png"
-                        alt="Branding and Graphic design logo"
-                        srcset=""
-                      />
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/UIDropDown.png"
+                          alt="UI logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">UI & Interaction Design</p>
+                        <p class="small p-0 m-0">
+                          Responsive web, Mobile design ...
+                        </p>
+                        <a
+                          href="./uidesign.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
                     </div>
-                    <div class="mt-2 text-left">
-                      <p class="Gilroy fw-900">Branding & Graphic Design</p>
-                      <p class="small p-0 m-0">
-                        Illustrations, Typography, Colors ...
-                      </p>
-                      <a
-                        href="./graphicdesign.html"
-                        class="mt-2 float-none d-block text-left py-2 redText"
-                        >View Class <i class="fa fa-caret-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div
-                    class="column col-md-3 flex-column align-items-start h-100"
-                  >
-                    <div class="d-block my-1">
-                      <img
-                        class="d-block"
-                        src=""
-                        data-src="./images/DropDownIcons/UIDropDown.png"
-                        alt="UI logo"
-                        srcset=""
-                      />
-                    </div>
-                    <div class="mt-2 text-left">
-                      <p class="Gilroy fw-900">UI & Interaction Design</p>
-                      <p class="small p-0 m-0">
-                        Responsive web, Mobile design ...
-                      </p>
-                      <a
-                        href="./uidesign.html"
-                        class="mt-2 float-none d-block text-left py-2 redText"
-                        >View Class <i class="fa fa-caret-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div
-                    class="column col-md-3 flex-column align-items-start h-100"
-                  >
-                    <div class="d-block my-1">
-                      <img
-                        class="d-block"
-                        src=""
-                        data-src="./images/DropDownIcons/BusinessDropDown.png"
-                        alt="Business of Design logo"
-                        srcset=""
-                      />
-                    </div>
-                    <div class="mt-2 text-left">
-                      <p class="Gilroy fw-900">Business of Design</p>
-                      <p class="small p-0 m-0">
-                        Pricing Design brief, Portfolio ...
-                      </p>
-                      <a
-                        href="./designbusiness.html"
-                        class="mt-2 float-none d-block text-left py-2 redText"
-                        >View Class <i class="fa fa-caret-right"></i
-                      ></a>
+                    <div
+                      class="column col-md-3 flex-column align-items-start h-100"
+                    >
+                      <div class="d-block my-1">
+                        <img
+                          class="d-block"
+                          src=""
+                          data-src="./images/DropDownIcons/BusinessDropDown.png"
+                          alt="Business of Design logo"
+                          srcset=""
+                        />
+                      </div>
+                      <div class="mt-2 text-left">
+                        <p class="Gilroy fw-900">Business of Design</p>
+                        <p class="small p-0 m-0">
+                          Pricing Design brief, Portfolio ...
+                        </p>
+                        <a
+                          href="./designbusiness.html"
+                          class="mt-2 float-none d-block text-left py-2 redText"
+                          >View Class <i class="fa fa-caret-right"></i
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./career.html"
-            >Career</a
-          >
-          <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="https://medium.com/@uxtheclass"
-            >Our Blog</a
-          >
-          <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./faq.html"
-            >FAQ & Help</a
-          >
-          <a
-            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./contact.html"
-            >Contact</a
-          >
-        </div>
-
-        <div class="justify-content-end">
-      
-            <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
-              class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
-              ><span><i class="fa fa-user"></i></span> Login</button
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./career.html"
+              >Career</a
             >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="https://medium.com/@uxtheclass"
+              >Our Blog</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./faq.html"
+              >FAQ & Help</a
+            >
+            <a
+              class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+              href="./contact.html"
+              >Contact</a
+            >
+          </div>
+
+          <div class="justify-content-end">
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleLoginModal"
+              class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+            >
+              <span><i class="fa fa-user"></i></span> Login
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
       <img
         class="position-absolute heroOverlay"
-        src="" data-src="./images/class-overlay.png"
+        src=""
+        data-src="./images/class-overlay.png"
         alt="Image Overlay"
       />
       <!-- <div class="position-absolute particles-js"></div> -->
 
-
-   <div class="container h-100 z-10">
-    <div class="row">
-        <div class="col-lg-5 col-sm-7 flex-column flex-sm-row col-md-6 p-lg-5 py-md-5 text-left mt-4 my-md-5">
-          <h1 class="customBold small-header textWhite">
+      <div class="container h-100 z-10">
+        <div class="row">
+          <div
+            class="col-lg-5 col-sm-7 flex-column flex-sm-row col-md-6 p-lg-5 py-md-5 text-left mt-4 my-md-5"
+          >
+            <h1 class="customBold small-header textWhite">
               UI & Interaction design
-          </h1>
-        <div class="">
-            <p class="mb-3 font-weight-normal textWhite">
-                Get ready to start an amazing journey in designing smart experiences for digital platforms.
-            </p>
-            <div class="mt-2 mt-sm-3 mt-md-5 textWhite">
-              <p class="my-2 small" href="#">Tutor: Leslie Wiliams </p>
+            </h1>
+            <div class="">
+              <p class="mb-3 font-weight-normal textWhite">
+                Get ready to start an amazing journey in designing smart
+                experiences for digital platforms.
+              </p>
+              <div class="mt-2 mt-sm-3 mt-md-5 textWhite">
+                <p class="my-2 small" href="#">Tutor: Leslie Wiliams</p>
+              </div>
+              <p class="bottom-20 text-white position-md-absolute small">
+                <span class="bold">Level :</span> Beginner & Intermediate
+              </p>
             </div>
-            <p class="bottom-20 text-white position-md-absolute small"><span class="bold">Level :</span> Beginner & Intermediate</p>
-          
-        </div>
-        </div>
-        
-      <div class="col-lg-3 col-sm-5 col-md-4 ml-sm-auto py-md-5 mt-1 mb-3 my-md-5">
-          <div class="card gradientBg courseCard mx-auto">
+          </div>
+
+          <div
+            class="col-lg-3 col-sm-5 col-md-4 ml-sm-auto py-md-5 mt-1 mb-3 my-md-5"
+          >
+            <div class="card gradientBg courseCard mx-auto">
               <div class="card-body p-3 p-md-3 text-left">
                 <h4 class="pb-0 mb-0 text-white">N19,999</h4>
                 <small class="text-white fs-12">6 Weeks</small>
                 <p class="mt-1 fs-12">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span
-                    ><span class="bold fs-12 text-white ml-md-2">4.5 (16)</span>
-                  </p>
-    
-                  <button class="my-2 Gilroy py-2 btn redBg text-white w-100" type="button" data-toggle="modal" data-target="#exampleLoginModal">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span
+                  ><span class="bold fs-12 text-white ml-md-2">4.5 (16)</span>
+                </p>
+
+                <button
+                  class="my-2 Gilroy py-2 btn redBg text-white w-100"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#exampleLoginModal"
+                >
                   Enroll Class
                 </button>
-                  <button class="my-1 Gilroy py-2 btn btn-outline-dark text-white w-100">Apply Coupon Code</button>
-               
+                <button
+                  class="my-1 Gilroy py-2 btn btn-outline-dark text-white w-100"
+                >
+                  Apply Coupon Code
+                </button>
               </div>
             </div>
+          </div>
+        </div>
       </div>
-      </div>
-   </div>
     </div>
 
     <div class="mt-sm-5 mt-3">
@@ -315,7 +342,7 @@
             <a
               class="nav-link px-1 mx-2 active text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-about-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-about"
               role="tab"
               aria-controls="tabs-about"
@@ -327,7 +354,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-curriculum-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-curriculum"
               role="tab"
               aria-controls="tabs-curriculum"
@@ -339,7 +366,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-instructor-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-instructor"
               role="tab"
               aria-controls="tabs-instructor"
@@ -351,7 +378,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-requirement-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-requirement"
               role="tab"
               aria-controls="tabs-requirement"
@@ -363,7 +390,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-reviews-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-reviews"
               role="tab"
               aria-controls="tabs-reviews"
@@ -375,7 +402,7 @@
             <a
               class="custom-bold nav-link px-1 mx-2 border-0 text-dark font-weight-bolder"
               id="tabs-faq-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-faq"
               role="tab"
               aria-controls="tabs-faq"
@@ -398,34 +425,25 @@
             <p class="position-relative pl-25em">What you will learn</p>
             <ul class="check">
               <li class="w-75 my-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                praesentium dolore consequatur aspernatur, quis consequuntur
-                iusto accusamus nemo tempora ex! lpa.
+                Web and mobile design
               </li>
               <li class="w-75 my-3">
-                Officia doloribus eligendi accusantium laboriosam fugit!
-                Commodi, excepturi! Nulla ad deserunt beatae ea tenetur aut
-                suscipit, vel natus! Quasi, est cupiditatecto!
+                Responsive design for various screen sizes
               </li>
               <li class="w-75 my-3">
-                Ipsa autem harum ut, accusantium nam cum laborum culpa nesciunt
-                porro magni? Reprehenderit fugiat velit accusamus sequi!
-                Deleniti fugit eius amet saepe, uam!
+                Prototyping
               </li>
               <li class="w-75 my-3">
-                Amet repudiandae ducimus temporibus ex commodi odit blanditiis
-                dicta dolor, consequatur, error, aut enim eligendi. Incidunt
-                dolorum vel eos ut.
+                Layout and grid guides
               </li>
               <li class="w-75 my-3">
-                Veritatis officia dolores, eligendi quod delectus dignissimos
-                odio sapiente, at nemo perferendis eum illum harum excepturi
-                nostrum error soluta rem cum porro rum?
+                Design system creations and use
               </li>
               <li class="w-75 my-3">
-                Sunt minima eaque quam exercitationem enim dolor quaerat nisi
-                aspernatur quis, ex deserunt numquam fugiat minus quo quae
-                consequatur amet incidunt asi!
+                Cards, buttons, hireachy and overlay
+              </li>
+              <li class="w-75 my-3">
+                Check our "curriculum" to see many more
               </li>
             </ul>
           </section>
@@ -438,7 +456,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/AtPace.png"
+                        src=""
+                        data-src="./images/landingPage/AtPace.png"
                         alt="At your pace"
                       />
                     </div>
@@ -455,7 +474,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/AnyDevice.png"
+                        src=""
+                        data-src="./images/landingPage/AnyDevice.png"
                         alt="Any device"
                       />
                     </div>
@@ -472,7 +492,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/TutorFeedback.png"
+                        src=""
+                        data-src="./images/landingPage/TutorFeedback.png"
                         alt="Tutor Feedback"
                       />
                     </div>
@@ -489,7 +510,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/OnePayment.png"
+                        src=""
+                        data-src="./images/landingPage/OnePayment.png"
                         alt="One time payment"
                       />
                     </div>
@@ -506,7 +528,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/Certificate.png"
+                        src=""
+                        data-src="./images/landingPage/Certificate.png"
                         alt="Certificate"
                       />
                     </div>
@@ -524,7 +547,8 @@
                   <div class="card-body">
                     <div class="my-2">
                       <img
-                        src="" data-src="./images/landingPage/247Support.png"
+                        src=""
+                        data-src="./images/landingPage/247Support.png"
                         alt="247 support"
                       />
                     </div>
@@ -605,681 +629,701 @@
               <div class="mt-3 row flex-md-row flex-column-reverse">
                 <div class="col-md-7">
                   <div
-                  id="accordianId-curiculum"
-                  role="tablist"
-                  aria-multiselectable="true"
-                >
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="section1HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section1Id"
-                              href="#section1ContentId"
-                              aria-expanded="true"
-                              aria-controls="section1ContentId"
+                    id="accordianId-curiculum"
+                    role="tablist"
+                    aria-multiselectable="true"
+                  >
+                    <div class="my-1 card">
+                      <div
+                        class="card-header altBg"
+                        role="tab"
+                        id="section1HeaderId"
+                      >
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section1Id"
+                                href="#section1ContentId"
+                                aria-expanded="true"
+                                aria-controls="section1ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Basics and Overview
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Basics and Overview
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">3 Classes</p>
-                            <p class="ml-auto mb-0 pb-0"></p>
+                              <p class="mb-0 pb-0">3 Classes</p>
+                              <p class="ml-auto mb-0 pb-0"></p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section1ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section1HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section1ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section1HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Getting started</span>
+                                  <span>Getting started</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span
-                                  >Defining the scope of the project</span
-                                >
+                                  <span>Defining the scope of the project</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Getting Inspiration: Mood boards, Styles and themes</span>
+                                  <span
+                                    >Getting Inspiration: Mood boards, Styles
+                                    and themes</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="section2HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section2Id"
-                              href="#section2ContentId"
-                              aria-expanded="true"
-                              aria-controls="section2ContentId"
+                    <div class="my-1 card">
+                      <div
+                        class="card-header altBg"
+                        role="tab"
+                        id="section2HeaderId"
+                      >
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section2Id"
+                                href="#section2ContentId"
+                                aria-expanded="true"
+                                aria-controls="section2ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Developing brand guides and assets
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Developing brand guides and assets
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">4 Classes</p>
-                            <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                              <p class="mb-0 pb-0">4 Classes</p>
+                              <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section2ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section2HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section2ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section2HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Defining & Developing the game’s style</span>
+                                  <span
+                                    >Defining & Developing the game’s
+                                    style</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span
-                                  >Designing the Game Title</span
-                                >
+                                  <span>Designing the Game Title</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Brand assets</span>
+                                  <span>Brand assets</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Designing for dark & light themes</span>
+                                  <span>Designing for dark & light themes</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section3Id"
-                              href="#section3ContentId"
-                              aria-expanded="true"
-                              aria-controls="section3ContentId"
+                    <div class="my-1 card">
+                      <div class="card-header altBg" role="tab" id="HeaderId">
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section3Id"
+                                href="#section3ContentId"
+                                aria-expanded="true"
+                                aria-controls="section3ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Game Design
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Game Design
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">8 Classes</p>
-                            <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                              <p class="mb-0 pb-0">8 Classes</p>
+                              <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section3ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section3HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section3ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section3HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Defining and mapping out the user journey of the game</span>
+                                  <span
+                                    >Defining and mapping out the user journey
+                                    of the game</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Wireframing (Pen and Paper or any online tool)</span>
+                                  <span
+                                    >Wireframing (Pen and Paper or any online
+                                    tool)</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Creating how the Information Architecture works</span>
+                                  <span
+                                    >Creating how the Information Architecture
+                                    works</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span
-                                  >Introducing Adobe XD</span
-                                >
+                                  <span>Introducing Adobe XD</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Creating Blockframes</span>
+                                  <span>Creating Blockframes</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Creating Game assets (buttons, backgrounds etc)</span>
+                                  <span
+                                    >Creating Game assets (buttons, backgrounds
+                                    etc)</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Creating the Game Screens</span>
+                                  <span>Creating the Game Screens</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-file mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Using Adobe XD’s symbol system to automate and fast track the creation of Assets</span>
+                                  <span
+                                    >Using Adobe XD’s symbol system to automate
+                                    and fast track the creation of Assets</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">6 Pages</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">6 Pages</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="section4HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section4Id"
-                              href="#section4ContentId"
-                              aria-expanded="true"
-                              aria-controls="section4ContentId"
+                    <div class="my-1 card">
+                      <div
+                        class="card-header altBg"
+                        role="tab"
+                        id="section4HeaderId"
+                      >
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section4Id"
+                                href="#section4ContentId"
+                                aria-expanded="true"
+                                aria-controls="section4ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Responsive Web and mobile design
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Responsive Web and mobile design
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">2 Classes</p>
-                            <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                              <p class="mb-0 pb-0">2 Classes</p>
+                              <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section4ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section4HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section4ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section4HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Desktop design</span>
+                                  <span>Desktop design</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Responsive mobile/tablets view</span
-                                >
+                                  <span>Responsive mobile/tablets view</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="section7HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section7Id"
-                              href="#section7ContentId"
-                              aria-expanded="true"
-                              aria-controls="section7ContentId"
+                    <div class="my-1 card">
+                      <div
+                        class="card-header altBg"
+                        role="tab"
+                        id="section7HeaderId"
+                      >
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section7Id"
+                                href="#section7ContentId"
+                                aria-expanded="true"
+                                aria-controls="section7ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Mobile app design
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Mobile app design
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">2 Classes</p>
-                            <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                              <p class="mb-0 pb-0">2 Classes</p>
+                              <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section7ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section7HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section7ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section7HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Designing for Android</span>
+                                  <span>Designing for Android</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Designing for IOS</span>
+                                  <span>Designing for IOS</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="my-1 card">
-                    <div
-                      class="card-header altBg"
-                      role="tab"
-                      id="section8HeaderId"
-                    >
-                      <div class="row">
-                        <div class="mb-0 pb-0 col-md-7">
-                          <h5 class="mb-0 pb-0 custom-bold">
-                            <a
-                              data-toggle="collapse"
-                              class="text-dark"
-                              data-parent="#accordianId-curiculum"
-                              id="section8Id"
-                              href="#section8ContentId"
-                              aria-expanded="true"
-                              aria-controls="section8ContentId"
+                    <div class="my-1 card">
+                      <div
+                        class="card-header altBg"
+                        role="tab"
+                        id="section8HeaderId"
+                      >
+                        <div class="row">
+                          <div class="mb-0 pb-0 col-md-7">
+                            <h5 class="mb-0 pb-0 custom-bold">
+                              <a
+                                data-toggle="collapse"
+                                class="text-dark"
+                                data-parent="#accordianId-curiculum"
+                                id="section8Id"
+                                href="#section8ContentId"
+                                aria-expanded="true"
+                                aria-controls="section8ContentId"
+                              >
+                                <i
+                                  class="fa fa-minus d-none mr-2"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-plus mr-2"
+                                  aria-hidden="true"
+                                ></i
+                                >Prototyping and Mockup
+                              </a>
+                            </h5>
+                          </div>
+                          <div class="mb-0 pb-0 col-md-5">
+                            <div
+                              class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
                             >
-                              <i
-                                class="fa fa-minus d-none mr-2"
-                                aria-hidden="true"
-                              ></i>
-                              <i
-                                class="fa fa-plus mr-2"
-                                aria-hidden="true"
-                              ></i
-                              >Prototyping and Mockup
-                            </a>
-                          </h5>
-                        </div>
-                        <div class="mb-0 pb-0 col-md-5">
-                          <div
-                            class="mb-0 pb-0 ml-auto d-flex justify-content-between align-items-center"
-                          >
-                            <p class="mb-0 pb-0">4 Classes</p>
-                            <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                              <p class="mb-0 pb-0">4 Classes</p>
+                              <!-- <p class="ml-auto mb-0 pb-0">30:32</p> -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      id="section8ContentId"
-                      class="collapse in"
-                      role="tabpanel"
-                      aria-labelledby="section8HeaderId"
-                    >
-                      <div class="p-0 card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                      <div
+                        id="section8ContentId"
+                        class="collapse in"
+                        role="tabpanel"
+                        aria-labelledby="section8HeaderId"
+                      >
+                        <div class="p-0 card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Connecting the Game Screen artboards to create flows</span>
+                                  <span
+                                    >Connecting the Game Screen artboards to
+                                    create flows</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Creating animated Interations in-Game.</span>
+                                  <span
+                                    >Creating animated Interations
+                                    in-Game.</span
+                                  >
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Testing on Mobile devices</span>
+                                  <span>Testing on Mobile devices</span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                          <li class="list-group-item">
-                            <div
-                              class="d-flex justify-content-between align-items-center"
-                            >
-                              <div class="d-inline-block">
-                                <!-- <i
+                            </li>
+                            <li class="list-group-item">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="d-inline-block">
+                                  <!-- <i
                                   class="fa fa-play-circle mr-2"
                                   aria-hidden="true"
                                 ></i
                                 > -->
-                                <span>Handing off to Developers with Zeplin/Sympli </span>
+                                  <span
+                                    >Handing off to Developers with
+                                    Zeplin/Sympli
+                                  </span>
+                                </div>
+                                <!-- <p class="pb-0 mb-0">5:30</p> -->
                               </div>
-                              <!-- <p class="pb-0 mb-0">5:30</p> -->
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
                 </div>
                 <div class="ml-auto col-md-4">
                   <div class="card">
                     <img
                       class="card-img-top"
-                      src="" data-src="./images/lucas-lenzi-tFc4nWOt1kU-unsplash.jpg"
+                      src=""
+                      data-src="./images/lucas-lenzi-tFc4nWOt1kU-unsplash.jpg"
                       alt=""
                     />
                     <div class="card-body">
@@ -1354,7 +1398,8 @@
                     <img
                       width="150px"
                       height="150px"
-                      src="" data-src="./images/landingPage/Leslie.png"
+                      src=""
+                      data-src="./images/landingPage/Leslie.png"
                       alt=""
                       srcset=""
                     />
@@ -1368,28 +1413,71 @@
                         Leslie Williams
                       </h4>
                       <p class="">
-                          Leslie Williams Isah is a multidisciplinary designer with 13 years of professional experience, living in the beating
-                          heart of Lagos, Nigeria. I have a passion for helping people. understanding their needs behaviour and bringing their ideas to life.
-                          I believe good design should be usable, simple, and attractive, and is ultimately the result of a comprehensive understanding
-                          of the intended user. I love learning about new things while honing and expanding my craft, pushing myself to be better.
-                        </p>
-                          
-                          <p>
-                            I spend my days as the Creative Director for TeamApt working with engineering teams to produce amazing visual solutions to tough customer-centric problems while setting creative direction for the marketing & branding teams. From concept through
-                            to completion, I love getting my hands dirty - whether that's through talking with customers/stakeholders,crafting beautiful
-                            visual design, animating prototypes for engineers, or by mentoring others to achieve great results.
-                          </p>
+                        Leslie Williams Isah is a multidisciplinary designer
+                        with 13 years of professional experience, living in the
+                        beating heart of Lagos, Nigeria. I have a passion for
+                        helping people. understanding their needs behaviour and
+                        bringing their ideas to life. I believe good design
+                        should be usable, simple, and attractive, and is
+                        ultimately the result of a comprehensive understanding
+                        of the intended user. I love learning about new things
+                        while honing and expanding my craft, pushing myself to
+                        be better.
+                      </p>
 
-                          <p>
-                            When I'm not pushing pixels, I can be found managing Layrz (an Instagram page focused on curating the best of African
-                            creative work), helping designers get jobs with Design Jobcaster reading and cheering for Arsenal Football club.
-                          </p>
+                      <p>
+                        I spend my days as the Creative Director for TeamApt
+                        working with engineering teams to produce amazing visual
+                        solutions to tough customer-centric problems while
+                        setting creative direction for the marketing & branding
+                        teams. From concept through to completion, I love
+                        getting my hands dirty - whether that's through talking
+                        with customers/stakeholders,crafting beautiful visual
+                        design, animating prototypes for engineers, or by
+                        mentoring others to achieve great results.
+                      </p>
+
+                      <p>
+                        When I'm not pushing pixels, I can be found managing
+                        Layrz (an Instagram page focused on curating the best of
+                        African creative work), helping designers get jobs with
+                        Design Jobcaster reading and cheering for Arsenal
+                        Football club.
+                      </p>
                       <div>
                         <div class="d-inline-block mt-2">
-                            <a class="noDeco text-dark" href="https://twitter.com/isl3y"><i class="mx-1 fa fa-twitter" aria-hidden="true"></i></a>
-                            <a class="noDeco text-dark" href="http://dribbble.com/isl3y"><i class="mx-1 fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a class="noDeco text-dark" href="https://linkedin.com/in/leslieisaninja"><i class="mx-1 fa fa-linkedin-square" aria-hidden="true"></i></a>
-                            <a class="noDeco text-dark" href="http://behance.net/ndgfx"><i class="mx-1 fa fa-behance-square" aria-hidden="true"></i></a>
+                          <a
+                            class="noDeco text-dark"
+                            href="https://twitter.com/isl3y"
+                            ><i
+                              class="mx-1 fa fa-twitter"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                          <a
+                            class="noDeco text-dark"
+                            href="http://dribbble.com/isl3y"
+                            ><i
+                              class="mx-1 fa fa-dribbble"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                          <a
+                            class="noDeco text-dark"
+                            href="https://linkedin.com/in/leslieisaninja"
+                            ><i
+                              class="mx-1 fa fa-linkedin-square"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                          <a
+                            class="noDeco text-dark"
+                            href="http://behance.net/ndgfx"
+                            ><i
+                              class="mx-1 fa fa-behance-square"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
                         </div>
                       </div>
                     </div>
@@ -1440,44 +1528,31 @@
                 <div class="col-md-6">
                   <ul class="check">
                     <li class="my-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tenetur
+                      A laptop and access to internet
+                      
                     </li>
                     <li class="my-3">
-                      Officia doloribus eligendi accusantium laboriosam fugit!
-                    </li>
-                    <li class="my-3">
-                      Ipsa autem harum ut, accusantium nam cum laborum culpa
-                      nesciunt
-                    </li>
-                    <li class="my-3">
-                      Amet repudiandae ducimus temporibus ex commodi odit
-                      blanditiis
+                       Passion to learn and evolve :)
                     </li>
                   </ul>
                 </div>
 
-                <div class="col-md-4 ml-auto">
+               
+                <div class="col-md-5 col-lg-4 ml-auto">
                   <div class="ml-auto h-100 card border-0">
                     <div
                       class="d-flex flex-column flex-md-row justify-content-between align-items-md-center"
                     >
-                      <div class="my-2 donut-chart chart2">
-                        <div class="slice one"></div>
-                        <div class="slice two"></div>
-                        <div class="chart-center">
-                          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-                            <p class="font-weight-bold p-0 m-0">82.0%</p>
-                        <small class="text-center">More like you</small>
-                          </div>
-                        </div>
-                      </div>
+                      <div
+                      id="chart1"
+                      class="card-chart ct-chart ct-perfect-fourth img-fluid"
+                    ></div>
                       <div
                         class="d-flex h-50 my-2 flex-column justify-content-between align-items-md-center"
                       >
                         <div class="d-flex">
                           <div
-                            class="squareBall bg-primary rounded-circle text-primary"
+                            class="squareBall ct-series-a rounded-circle text-primary"
                           ></div>
                           <div class="ml-3">
                             <small>Percentage of no prior design skill.</small>
@@ -1485,7 +1560,7 @@
                         </div>
                         <div class="d-flex">
                           <div
-                            class="squareBall bg-info rounded-circle text-info"
+                            class="squareBall ct-series-b rounded-circle text-info"
                           ></div>
                           <div class="ml-3">
                             <small>Percentage with prior design skill. </small>
@@ -1500,168 +1575,175 @@
           </div>
         </div>
 
-                <!-- Reviews Section -->
-                <div
-                class="tab-pane fade"
-                id="tabs-reviews"
-                role="tabpanel"
-                aria-labelledby="tabs-reviews-tab"
-              >
-                <div class="container">
-                  <section class="py-md-5 py-3 container">
-                    <small>Our Testimomial</small>
-                    <h3 class="custom-bold text-capitalize fw-900">
-                      How Others have benefited
-                    </h3>
-      
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div class="row">
-                          <div class="col-md-6 my-2">
-                            <div class="row">
-                              <div class="col-md-10 col-9">
-                                <h5 class="card-title">
-                                  Jessica Ajiduah, <span>Lagos</span>
-                                </h5>
-                                <p class="fs-14">
-                                  It was really insightful for me. It opened up my eyes to the basics of design which i previously ignored and gave me better headstart into UI UX design.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="col-md-6 my-2">
-                            <div class="row">
-                              <div class="col-md-10 col-9">
-                                <h5 class="card-title">
-                                  Oreoluwa Antoine-Djoyi,, <span>Lagos</span>
-                                </h5>
-                                <p class="fs-14">
-                                  The academy has knowledgable tutors and the outlined courses were all taught.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="col-md-6 my-2">
-                            <div class="row">
-                              <div class="col-md-10 col-9">
-                                <h5 class="card-title">
-                                  Emmanuel Yusufu, <span>Abuja</span>
-                                </h5>
-                                <p class="fs-14">
-                                  I was a beginner in design and had a lot of theoretical knowlegde. This platform exposed me to practical knowledge from practising designers.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="col-md-6 my-2">
-                            <div class="row">
-                              <div class="col-md-10 col-9">
-                                <h5 class="card-title">
-                                  Somto Promise, <span>Rivers</span>
-                                </h5>
-                                <p class="fs-14">
-                                  I really learnt a lot that would be helping me in my design journey.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
+        <!-- Reviews Section -->
+        <div
+          class="tab-pane fade"
+          id="tabs-reviews"
+          role="tabpanel"
+          aria-labelledby="tabs-reviews-tab"
+        >
+          <div class="container">
+            <section class="py-md-5 py-3 container">
+              <small>Our Testimomial</small>
+              <h3 class="custom-bold text-capitalize fw-900">
+                How Others have benefited
+              </h3>
+
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-6 my-2">
+                      <div class="row">
+                        <div class="col-md-10 col-9">
+                          <h5 class="card-title">
+                            Jessica Ajiduah, <span>Lagos</span>
+                          </h5>
+                          <p class="fs-14">
+                            It was really insightful for me. It opened up my
+                            eyes to the basics of design which i previously
+                            ignored and gave me better headstart into UI UX
+                            design.
+                          </p>
                         </div>
                       </div>
-      
-                      <div class="col-md-4">
-                        <div class="ml-md-3 card border-0">
-                          <div class="card-body">
-                            <p class="bold mb-2">As Rated By Students</p>
-                            <div class="">
-                              <h1 class="custom-bold py-2">4.5</h1>
-                              <p class="card-text mt-1">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span
-                                ><span class="bold">16</span>(Last Cohort)
-                              </p>
-                            </div>
-      
-                            <div class="mt-3 ratings">
-                              <div class="d-flex align-items-center py-0 my-0 w-100">
-                                <div class="bar">
-                                  <div class="percent w-100"></div>
-                                </div>
-                                <div class="w-60 ml-auto">
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa mr-3 fa-star"></span
-                                  ><span class=" bold">75%</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center py-0 my-0 w-100">
-                                <div class="bar">
-                                  <div class="percent w-20"></div>
-                                </div>
-                                <div class="w-60 ml-auto">
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa mr-3 fa-star"></span
-                                  ><span class=" bold">20%</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center py-0 my-0 w-100">
-                                <div class="bar">
-                                  <div class="percent w-5"></div>
-                                </div>
-                                <div class="w-60 ml-auto">
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa mr-3 fa-star"></span
-                                  ><span class=" bold">5%</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center py-0 my-0 w-100">
-                                <div class="bar">
-                                  <div class="percent"></div>
-                                </div>
-                                <div class="w-60 ml-auto">
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa mr-3 fa-star"></span
-                                  ><span class=" bold">0%</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center py-0 my-0 w-100">
-                                <div class="bar">
-                                  <div class="percent"></div>
-                                </div>
-                                <div class="w-60 ml-auto">
-                                  <span class="fa fa-star "></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa mr-3 fa-star"></span
-                                  ><span class=" bold">0%</span>
-                                </div>
-                              </div>
-                            </div>
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                      <div class="row">
+                        <div class="col-md-10 col-9">
+                          <h5 class="card-title">
+                            Oreoluwa Antoine-Djoyi,, <span>Lagos</span>
+                          </h5>
+                          <p class="fs-14">
+                            The academy has knowledgable tutors and the outlined
+                            courses were all taught.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                      <div class="row">
+                        <div class="col-md-10 col-9">
+                          <h5 class="card-title">
+                            Emmanuel Yusufu, <span>Abuja</span>
+                          </h5>
+                          <p class="fs-14">
+                            I was a beginner in design and had a lot of
+                            theoretical knowlegde. This platform exposed me to
+                            practical knowledge from practising designers.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                      <div class="row">
+                        <div class="col-md-10 col-9">
+                          <h5 class="card-title">
+                            Somto Promise, <span>Rivers</span>
+                          </h5>
+                          <p class="fs-14">
+                            I really learnt a lot that would be helping me in my
+                            design journey.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="ml-md-3 card border-0">
+                    <div class="card-body">
+                      <p class="bold mb-2">As Rated By Students</p>
+                      <div class="">
+                        <h1 class="custom-bold py-2">4.5</h1>
+                        <p class="card-text mt-1">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span
+                          ><span class="bold">16</span>(Last Cohort)
+                        </p>
+                      </div>
+
+                      <div class="mt-3 ratings">
+                        <div class="d-flex align-items-center py-0 my-0 w-100">
+                          <div class="bar">
+                            <div class="percent w-100"></div>
+                          </div>
+                          <div class="w-60 ml-auto">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa mr-3 fa-star"></span
+                            ><span class=" bold">75%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center py-0 my-0 w-100">
+                          <div class="bar">
+                            <div class="percent w-20"></div>
+                          </div>
+                          <div class="w-60 ml-auto">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa mr-3 fa-star"></span
+                            ><span class=" bold">20%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center py-0 my-0 w-100">
+                          <div class="bar">
+                            <div class="percent w-5"></div>
+                          </div>
+                          <div class="w-60 ml-auto">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa mr-3 fa-star"></span
+                            ><span class=" bold">5%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center py-0 my-0 w-100">
+                          <div class="bar">
+                            <div class="percent"></div>
+                          </div>
+                          <div class="w-60 ml-auto">
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa mr-3 fa-star"></span
+                            ><span class=" bold">0%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center py-0 my-0 w-100">
+                          <div class="bar">
+                            <div class="percent"></div>
+                          </div>
+                          <div class="w-60 ml-auto">
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa mr-3 fa-star"></span
+                            ><span class=" bold">0%</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
               </div>
-      
+            </section>
+          </div>
+        </div>
+
         <!-- FAQ section -->
         <div
           class="tab-pane fade"
@@ -1678,9 +1760,17 @@
             </section>
             <div class="row mb-md-4">
               <div class="col-lg-7 col-md-9">
-                <div id="accordianId" role="tablist" aria-multiselectable="true">
+                <div
+                  id="accordianId"
+                  role="tablist"
+                  aria-multiselectable="true"
+                >
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section1HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section1HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1692,7 +1782,10 @@
                             aria-expanded="true"
                             aria-controls="section1ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
                             <i class="fa fa-plus mr-2" aria-hidden="true"></i>
                             Can I take more than one class at a time?
                           </a>
@@ -1707,23 +1800,29 @@
                     >
                       <div class="card-body">
                         <p>
-                          Yes, you can take all the courses you would like at the same
-                          time and move from one to the other as you please.
+                          Yes, you can take all the courses you would like at
+                          the same time and move from one to the other as you
+                          please.
                         </p>
                         <p>
                           Each class ranges in prices.
                         </p>
                         <p>
-                          Please note: If you have a student membership, you can take
-                          a maximum of three classes at the same time. As a student,
-                          you can thus still take all the courses you would like –
-                          -20% will be applied to every class you enroll .
+                          Please note: If you have a student membership, you can
+                          take a maximum of three classes at the same time. As a
+                          student, you can thus still take all the courses you
+                          would like – -20% will be applied to every class you
+                          enroll .
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section2HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section2HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1735,9 +1834,13 @@
                             aria-expanded="true"
                             aria-controls="section2ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>I missed
-                            a class, will I have access to the materials and videos?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>I
+                            missed a class, will I have access to the materials
+                            and videos?
                           </a>
                         </h5>
                       </div>
@@ -1750,8 +1853,8 @@
                     >
                       <div class="card-body">
                         <p>
-                          Yes you can, our classes are online with stored data to
-                          acommodate all your classes.
+                          Yes you can, our classes are online with stored data
+                          to acommodate all your classes.
                         </p>
                         <p>
                           We are built for you to learn at your pace.
@@ -1760,7 +1863,11 @@
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section20HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section20HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1772,11 +1879,14 @@
                             aria-expanded="true"
                             aria-controls="section20ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>I missed
-                            the class enrollment date and now the course is closed.
-                            Will I have any opportunity to take the course in the
-                            future?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>I
+                            missed the class enrollment date and now the course
+                            is closed. Will I have any opportunity to take the
+                            course in the future?
                           </a>
                         </h5>
                       </div>
@@ -1789,24 +1899,29 @@
                     >
                       <div class="card-body">
                         <p>
-                          Certainly yes. We will re-run another opening shortly. One
-                          of the reasons we continually open and close classes is to
-                          be able to control the classroom size.
+                          Certainly yes. We will re-run another opening shortly.
+                          One of the reasons we continually open and close
+                          classes is to be able to control the classroom size.
                         </p>
                         <p>
-                          Networking is a large part of our value proposition, so we
-                          want just the right number of people inside the courses.
+                          Networking is a large part of our value proposition,
+                          so we want just the right number of people inside the
+                          courses.
                         </p>
                         <p>
-                          We’ll re-schedule and make it available. The actual start
-                          date of the course will be a few weeks after sign-ups begin
-                          too.
+                          We’ll re-schedule and make it available. The actual
+                          start date of the course will be a few weeks after
+                          sign-ups begin too.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section3HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section3HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1818,9 +1933,12 @@
                             aria-expanded="true"
                             aria-controls="section3ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> Will I
-                            get a certificate?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            Will I get a certificate?
                           </a>
                         </h5>
                       </div>
@@ -1833,21 +1951,26 @@
                     >
                       <div class="card-body">
                         <p>
-                          Yes. Every time you complete a course, you get our verified
-                          course Certificate. There is no limit to how many Course
-                          Certificates you can earn.
+                          Yes. Every time you complete a course, you get our
+                          verified course Certificate. There is no limit to how
+                          many Course Certificates you can earn.
                         </p>
                         <p>
                           There is no specified time that certificates will be
-                          awarded, they are given to participants as and when they
-                          have answered all questions, assignments and final project
-                          even if this is long after the official end date.
+                          awarded, they are given to participants as and when
+                          they have answered all questions, assignments and
+                          final project even if this is long after the official
+                          end date.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section4HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section4HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1859,9 +1982,12 @@
                             aria-expanded="true"
                             aria-controls="section4ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> When
-                            does my assignment/work get graded?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            When does my assignment/work get graded?
                           </a>
                         </h5>
                       </div>
@@ -1873,13 +1999,17 @@
                       aria-labelledby="section4HeaderId"
                     >
                       <div class="card-body">
-                        Every assignments and test will be graded within a week of
-                        submission by your tutor.
+                        Every assignments and test will be graded within a week
+                        of submission by your tutor.
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section5HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section5HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1891,9 +2021,12 @@
                             aria-expanded="true"
                             aria-controls="section5ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> How are
-                            assignments/work graded?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            How are assignments/work graded?
                           </a>
                         </h5>
                       </div>
@@ -1906,13 +2039,17 @@
                     >
                       <div class="card-body">
                         Your assigmnets and final projects will be graded by our
-                        superstar tutors and also our experts who has vast experience
-                        and not by robots.
+                        superstar tutors and also our experts who has vast
+                        experience and not by robots.
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section6HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section6HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1924,9 +2061,12 @@
                             aria-expanded="true"
                             aria-controls="section6ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> Can I
-                            have the class in another language?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            Can I have the class in another language?
                           </a>
                         </h5>
                       </div>
@@ -1943,7 +2083,11 @@
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section8HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section8HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1955,9 +2099,12 @@
                             aria-expanded="true"
                             aria-controls="section8ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> Do I
-                            have to pay when registering another class?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            Do I have to pay when registering another class?
                           </a>
                         </h5>
                       </div>
@@ -1975,7 +2122,11 @@
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section9HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section9HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -1987,9 +2138,12 @@
                             aria-expanded="true"
                             aria-controls="section9ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>Is the
-                            course for masters or beginner level?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>Is
+                            the course for masters or beginner level?
                           </a>
                         </h5>
                       </div>
@@ -2001,17 +2155,21 @@
                       aria-labelledby="section9HeaderId"
                     >
                       <div class="card-body">
-                        We provide courses for all levels of mastery and accross the
-                        various classes. If you’re new to design, or already in your
-                        design career you can start with our classes and progress all
-                        the way up. If you’re an established designer, on the other
-                        hand, you will find some of our lower-level courses provide a
-                        good refresher.
+                        We provide courses for all levels of mastery and accross
+                        the various classes. If you’re new to design, or already
+                        in your design career you can start with our classes and
+                        progress all the way up. If you’re an established
+                        designer, on the other hand, you will find some of our
+                        lower-level courses provide a good refresher.
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section10HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section10HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -2023,9 +2181,12 @@
                             aria-expanded="true"
                             aria-controls="section9ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> How
-                            long does it take to finish a class?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            How long does it take to finish a class?
                           </a>
                         </h5>
                       </div>
@@ -2038,14 +2199,18 @@
                     >
                       <div class="card-body">
                         Our classes starts from 4 to 6 weeks. Once enrolled in a
-                        course, you will gain access to a new lesson video three times
-                        a week with PDF/Doc files every day which you are free to
-                        complete at your convinience.
+                        course, you will gain access to a new lesson video three
+                        times a week with PDF/Doc files every day which you are
+                        free to complete at your convinience.
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section11HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section11HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -2057,9 +2222,12 @@
                             aria-expanded="true"
                             aria-controls="section11ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> How can
-                            I apply coupon code?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            How can I apply coupon code?
                           </a>
                         </h5>
                       </div>
@@ -2071,14 +2239,18 @@
                       aria-labelledby="section9HeaderId"
                     >
                       <div class="card-body">
-                        If you won any of our coupon code for a particular class,
-                        visit the class and click on the "Apply Coupon" button to
-                        recieve our discount.
+                        If you won any of our coupon code for a particular
+                        class, visit the class and click on the "Apply Coupon"
+                        button to recieve our discount.
                       </div>
                     </div>
                   </div>
                   <div class="card my-1">
-                    <div class="card-header altBg" role="tab" id="section12HeaderId">
+                    <div
+                      class="card-header altBg"
+                      role="tab"
+                      id="section12HeaderId"
+                    >
                       <div class="mb-0 pb-0">
                         <h5 class="mb-0 pb-0 custom-bold">
                           <a
@@ -2090,9 +2262,12 @@
                             aria-expanded="true"
                             aria-controls="section12ContentId"
                           >
-                            <i class="fa d-none fa-minus mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-plus mr-2" aria-hidden="true"></i> Are
-                            there scholarships?
+                            <i
+                              class="fa d-none fa-minus mr-2"
+                              aria-hidden="true"
+                            ></i>
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            Are there scholarships?
                           </a>
                         </h5>
                       </div>
@@ -2105,12 +2280,12 @@
                     >
                       <div class="card-body">
                         <p>
-                          Yes, we grant a 20% reduction for aall students and NYSC
-                          members with valid means of identification.
+                          Yes, we grant a 20% reduction for aall students and
+                          NYSC members with valid means of identification.
                         </p>
                         <p>
-                          Our scholarships apply to all the classes but you can only
-                          have scholarship to maximum of 3 classes.
+                          Our scholarships apply to all the classes but you can
+                          only have scholarship to maximum of 3 classes.
                         </p>
                       </div>
                     </div>
@@ -2160,12 +2335,34 @@
           </div>
         </div>
         <div class=" icons-foot my-3 d-flex justify-content-between text-white">
-          <span class=""><a class="noDeco textWhite" href="https://facebook.com/uxtheclass"><i class="fa mr-2 fa-facebook-square"></i></a></span>
-          <span class=""><a class="noDeco textWhite" href="https://instagram.com/uxtheclass"><i class="fa mr-2 fa-instagram"></i></a></span>
-          <span class=""><a class="noDeco textWhite" href="https://www.youtube.com/channel/UC4qItphHJP2gqj6QVxQo3EA"><i class="fa mr-2 fa-youtube"></i></a></span>
-          <span class=""><a class="noDeco textWhite" href="https://twitter.com/uxtheclass"><i class="fa mr-2 fa-twitter"></i></a></span>
-          <span class=""><a class="noDeco textWhite" href="https://linkedIn.com/company/uxtheclass"><i class="fa mr-2 fa-linkedin"></i></a></span>
-          <span class=""><a class="noDeco textWhite" href="https://medium.com/@uxtheclass"><i class="fa mr-2 fa-medium"></i></a></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://facebook.com/uxtheclass"
+              ><i class="fa mr-2 fa-facebook-square"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://instagram.com/uxtheclass"
+              ><i class="fa mr-2 fa-instagram"></i></a
+          ></span>
+          <span class=""
+            ><a
+              class="noDeco textWhite"
+              href="https://www.youtube.com/channel/UC4qItphHJP2gqj6QVxQo3EA"
+              ><i class="fa mr-2 fa-youtube"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://twitter.com/uxtheclass"
+              ><i class="fa mr-2 fa-twitter"></i></a
+          ></span>
+          <span class=""
+            ><a
+              class="noDeco textWhite"
+              href="https://linkedIn.com/company/uxtheclass"
+              ><i class="fa mr-2 fa-linkedin"></i></a
+          ></span>
+          <span class=""
+            ><a class="noDeco textWhite" href="https://medium.com/@uxtheclass"
+              ><i class="fa mr-2 fa-medium"></i></a
+          ></span>
         </div>
         <div class="copy d-flex justify-content-end text-white">
           <p>&copy; 2019 | Lagos, Nigeria</p>
@@ -2177,16 +2374,14 @@
           <div class="right d-flex justify-content-between">
             <a class="mx-1" href="/terms.html">Terms & Condition</a>
             <a class="mx-1" href="/privacy.html">Privacy Policy</a>
-            
           </div>
         </div>
       </div>
     </footer>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -2202,6 +2397,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-<script src="./index.js"></script>   
+    <script src="./index.js"></script>
+    <script src="./chart.js"></script>
+
   </body>
 </html>

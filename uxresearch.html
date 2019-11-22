@@ -18,11 +18,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"/>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <link rel="stylesheet" href="landingPage.css" />
     <link rel="stylesheet" href="classes.css" />
   </head>
@@ -325,9 +326,9 @@
         <ul class="nav nav-tabs mb-3 border-0" id="tabs-tab" role="tablist">
           <li class="nav-item border-0">
             <a
-              class="nav-link px-1 mx-2 active text-dark border-0 font-weight-bolder custom-bold"
+              class="nav-link px-1 active mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-about-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-about"
               role="tab"
               aria-controls="tabs-about"
@@ -339,7 +340,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-curriculum-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-curriculum"
               role="tab"
               aria-controls="tabs-curriculum"
@@ -351,7 +352,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-instructor-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-instructor"
               role="tab"
               aria-controls="tabs-instructor"
@@ -363,7 +364,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-requirement-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-requirement"
               role="tab"
               aria-controls="tabs-requirement"
@@ -375,7 +376,7 @@
             <a
               class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
               id="tabs-reviews-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-reviews"
               role="tab"
               aria-controls="tabs-reviews"
@@ -387,7 +388,7 @@
             <a
               class="custom-bold nav-link px-1 mx-2 border-0 text-dark font-weight-bolder"
               id="tabs-faq-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#tabs-faq"
               role="tab"
               aria-controls="tabs-faq"
@@ -400,7 +401,7 @@
       <div class="tab-content" id="tabs-tabContent">
         <!-- About Class Section -->
         <div
-          class="tab-pane fade show active"
+          class="tab-pane active show fade"
           id="tabs-about"
           role="tabpanel"
           aria-labelledby="tabs-about-tab"
@@ -1707,27 +1708,21 @@
                   </ul>
                 </div>
 
-                <div class="col-md-4 ml-auto">
+                <div class="col-md-5 col-lg-4 ml-auto">
                   <div class="ml-auto h-100 card border-0">
                     <div
                       class="d-flex flex-column flex-md-row justify-content-between align-items-md-center"
                     >
-                      <div class="my-2 donut-chart chart2">
-                        <div class="slice one"></div>
-                        <div class="slice two"></div>
-                        <div class="chart-center">
-                          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-                            <p class="font-weight-bold p-0 m-0">82.0%</p>
-                        <small class="text-center">More like you</small>
-                          </div>
-                        </div>
-                      </div>
+                      <div
+                      id="chart1"
+                      class="card-chart ct-chart ct-perfect-fourth img-fluid"
+                    ></div>
                       <div
                         class="d-flex h-50 my-2 flex-column justify-content-between align-items-md-center"
                       >
                         <div class="d-flex">
                           <div
-                            class="squareBall bg-primary rounded-circle text-primary"
+                            class="squareBall ct-series-a rounded-circle text-primary"
                           ></div>
                           <div class="ml-3">
                             <small>Percentage of no prior design skill.</small>
@@ -1735,7 +1730,7 @@
                         </div>
                         <div class="d-flex">
                           <div
-                            class="squareBall bg-info rounded-circle text-info"
+                            class="squareBall ct-series-b rounded-circle text-info"
                           ></div>
                           <div class="ml-3">
                             <small>Percentage with prior design skill. </small>
@@ -2566,6 +2561,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./chart.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
