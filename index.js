@@ -8,7 +8,7 @@ const msgModal = ` <div class="modal fade" id="exampleLoginModal" tabindex="-1" 
       </button>
     </div>
     <div class="modal-body ">
-        <span class="text-center bold redText">Enrollment begins January 13th 2020</span>
+        <span class="text-center bold redText">Enrollment begins March 2nd 2020</span>
     </div>
   </div>
 </div>
@@ -66,8 +66,6 @@ for (i = 0; i < dropdown.length; i++) {
 $("#openBtn").click(function() {
   $(".sidebar").toggleClass("d-none");
   $("#openBtn").toggleClass("openBtn");
-  
-  
 });
 $(".card-header a").click(function() {
     // console.log(this.id);
