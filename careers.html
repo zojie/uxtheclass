@@ -1,152 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+        <title>UXTHECLASS | Launch your design career</title>
 
-<head>
-      <title>UXTHECLASS | Launch your design career</title>
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <link rel="shortcut icon" href="favicon.png" type="image/png" />
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="landingPage.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/d9a8436209.js"></script> -->
+  </head>
+  <body>
+    <!-- top -->
+    <div class="d-flex py-1 d-md-none align-items-center fixed-top bg-light  pr-2">
+      <button class="btn d-block d-md-none z-10" id="openBtn">
+        <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class=" d-block ml-2 ml-sm-3 ml-md-5 mr-auto" href="#home">
+        <a href="./index.html" class=""
+          ><img class="iconImg" src="" data-src="./images/uxtc-black.png" alt=""
+        /></a>
+      </div>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="landingPage.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="select.css" />
-  <!-- <script src="https://kit.fontawesome.com/d9a8436209.js"></script> -->
-</head>
-
-<body>
-  <!-- top -->
-  <div class="d-flex py-1 d-md-none align-items-center fixed-top bg-light  pr-2">
-    <button class="btn d-block d-md-none z-10" id="openBtn">
-      <i style="font-size: 1.5em;" class="fa fa-bars" aria-hidden="true"></i>
-    </button>
-    <div class=" d-block ml-2 ml-sm-3 ml-md-5 mr-auto" href="#home">
-      <a href="./index.html" class=""><img class="iconImg" src="" data-src="./images/uxtc-black.png" alt="" /></a>
+      <div class="d-inline-block">
+      
+        <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
+              class=" navLinks text-white btn redBg"
+              ><span><i class="fa fa-user"></i></span> Login</button
+            >
+      </div>
     </div>
 
-    <div class="d-inline-block">
-       <a class=" navLinks text-white btn redBg" href="#"><span><i class="fa fa-user"></i></span> Login</a>
-    </div>
-  </div>
+    <div
+      class="sidebar d-none d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto"
+    >
+      <a class="p-3 d-block" href="./index.html">Home</a><a class="p-3 d-block" href="./about.html">About Us</a>
+      <button
+        class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block"
+      >
+        Our Classes
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container bg-white redText">
+        <a class="p-3 d-block" href="./uxresearch.html"
+          >UX Research</a
+        >
+        <a class="p-3 d-block" href="./graphicdesign.html"
+          >Branding & Graphic Design</a
+        >
+        <a class="p-3 d-block" href="./uidesign.html"
+          >UI & Interaction Design</a
+        >
+        <a class="p-3 d-block" href="./designbusiness.html"
+          >Business of Design</a
+        >
+      </div>
+      <a class="p-3 d-block" href="./careers.html">Career</a>
+      <a class="p-3 d-block" href="https://medium.com/@uxtheclass">Our Blog</a>
+      <a class="p-3 d-block" href="./faq.html">FAQ & Help</a>
+      <a class="p-3 d-block" href="./contact.html">Contact</a>
 
-  <div class="sidebar d-none d-md-none bg-white pt-3 m-0 p-0 position-fixed h-100 overflow-auto">
-    <a class="p-3 d-block" href="./index.html">Home</a><a class="p-3 d-block" href="./about.html">About Us</a>
-    <button class=" dropdown-btn border-0 w-100 text-left bg-white p-3 d-block">
-      Our Classes
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container bg-white redText">
-      <a class="p-3 d-block" href="./uxresearch.html">UX Research</a>
-      <a class="p-3 d-block" href="./graphicdesign.html">Branding & Graphic Design</a>
-      <a class="p-3 d-block" href="./uidesign.html">UI & Interaction Design</a>
-      <a class="p-3 d-block" href="./designbusiness.html">Business of Design</a>
+      <div class="justify-content-end">
+     
+        <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
+              class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
+              ><span><i class="fa fa-user"></i></span> Login</button
+            >
+      </div>
     </div>
-    <a class="p-3 d-block" href="./career.html">Career</a>
-    <a class="p-3 d-block" href="https://medium.com/@uxtheclass">Our Blog</a>
-    <a class="p-3 d-block" href="./faq.html">FAQ & Help</a>
-    <a class="p-3 d-block" href="./contact.html">Contact</a>
 
-    <div class="justify-content-end">
-      <a class="py-2 d-none d-md-inline-block navLinks text-white btn redBg" href="#"><span><i
-            class="fa fa-user"></i></span> Login</a>
-    </div>
-  </div>
-
-  <div class="position-relative mt-5 mt-md-0 hero-image careerBg overflow-hidden text-center">
-    <nav class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header" id="bgWhite">
-      <div class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center">
+    <div class="position-relative hero-image overflow-hidden mt-5 mt-md-0 text-center">
+      <nav
+      class="position-absolute w-100 d-none d-md-block show-800Up py-1 site-header"
+      id="bgWhite"
+    >
+      <div
+        class="container-lg d-flex flex-column flex-md-row justify-content-around align-items-md-center"
+      >
         <a href="./index.html">
-          <img id="whiteLogo" class="" src="" data-src="./images/uxtc-white.png" alt="White logo" />
-          <img id="blackLogo" class="d-none" src="" data-src="./images/uxtc-black.png" alt="Black logo" />
+          <img
+            id="whiteLogo"
+            class=""
+            src=""
+            data-src="./images/uxtc-white.png"
+            alt="White logo"
+          />
+          <img
+            id="blackLogo"
+            class="d-none"
+            src=""
+            data-src="./images/uxtc-black.png"
+            alt="Black logo"
+          />
         </a>
         <div class="justify-content-between">
-          <a class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./about.html">About Us</a>
+          <a
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="./about.html"
+            >About Us</a
+          >
           <div class="dropdownDiv py-2 mx-1 ml-lg-2 d-none d-md-inline-block">
-            <button class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link">
+            <button
+              class="textWhite mx-0 px-0 navLinks dropdownBtn btn btn-link"
+            >
               Our Classes
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
               <div class="container py-3">
                 <div class="dropdownRow row h-100">
-                  <div class="column col-md-3 flex-column align-items-start h-100">
+                  <div
+                    class="column col-md-3 flex-column align-items-start h-100"
+                  >
                     <div class="d-block my-1">
-                      <img class="d-block" src="" data-src="./images/DropDownIcons/UXDropDown.png" alt="UX logo"
-                        srcset="" />
+                      <img
+                        class="d-block"
+                        src=""
+                        data-src="./images/DropDownIcons/UXDropDown.png"
+                        alt="UX logo"
+                        srcset=""
+                      />
                     </div>
                     <div class="mt-2 text-left">
                       <p class="Gilroy fw-900">UX Research</p>
                       <p class="small p-0 m-0">
                         Research Process, Wireframing ...
                       </p>
-                      <a href="./uxresearch.html" class="mt-2 float-none d-block text-left py-2 redText">View Class <i
-                          class="fa fa-caret-right"></i></a>
+                      <a
+                        href="./uxresearch.html"
+                        class="mt-2 float-none d-block text-left py-2 redText"
+                        >View Class <i class="fa fa-caret-right"></i
+                      ></a>
                     </div>
                   </div>
-                  <div class="column col-md-3 flex-column align-items-start h-100">
+                  <div
+                    class="column col-md-3 flex-column align-items-start h-100"
+                  >
                     <div class="d-block my-1">
-                      <img class="d-block" src="" data-src="./images/DropDownIcons/BrandingDropDown.png"
-                        alt="Branding and Graphic design logo" srcset="" />
+                      <img
+                        class="d-block"
+                        src=""
+                        data-src="./images/DropDownIcons/BrandingDropDown.png"
+                        alt="Branding and Graphic design logo"
+                        srcset=""
+                      />
                     </div>
                     <div class="mt-2 text-left">
                       <p class="Gilroy fw-900">Branding & Graphic Design</p>
                       <p class="small p-0 m-0">
                         Illustrations, Typography, Colors ...
                       </p>
-                      <a href="./graphicdesign.html" class="mt-2 float-none d-block text-left py-2 redText">View Class
-                        <i class="fa fa-caret-right"></i></a>
+                      <a
+                        href="./graphicdesign.html"
+                        class="mt-2 float-none d-block text-left py-2 redText"
+                        >View Class <i class="fa fa-caret-right"></i
+                      ></a>
                     </div>
                   </div>
-                  <div class="column col-md-3 flex-column align-items-start h-100">
+                  <div
+                    class="column col-md-3 flex-column align-items-start h-100"
+                  >
                     <div class="d-block my-1">
-                      <img class="d-block" src="" data-src="./images/DropDownIcons/UIDropDown.png" alt="UI logo"
-                        srcset="" />
+                      <img
+                        class="d-block"
+                        src=""
+                        data-src="./images/DropDownIcons/UIDropDown.png"
+                        alt="UI logo"
+                        srcset=""
+                      />
                     </div>
                     <div class="mt-2 text-left">
                       <p class="Gilroy fw-900">UI & Interaction Design</p>
                       <p class="small p-0 m-0">
                         Responsive web, Mobile design ...
                       </p>
-                      <a href="./uidesign.html" class="mt-2 float-none d-block text-left py-2 redText">View Class <i
-                          class="fa fa-caret-right"></i></a>
+                      <a
+                        href="./uidesign.html"
+                        class="mt-2 float-none d-block text-left py-2 redText"
+                        >View Class <i class="fa fa-caret-right"></i
+                      ></a>
                     </div>
                   </div>
-                  <div class="column col-md-3 flex-column align-items-start h-100">
+                  <div
+                    class="column col-md-3 flex-column align-items-start h-100"
+                  >
                     <div class="d-block my-1">
-                      <img class="d-block" src="" data-src="./images/DropDownIcons/BusinessDropDown.png"
-                        alt="Business of Design logo" srcset="" />
+                      <img
+                        class="d-block"
+                        src=""
+                        data-src="./images/DropDownIcons/BusinessDropDown.png"
+                        alt="Business of Design logo"
+                        srcset=""
+                      />
                     </div>
                     <div class="mt-2 text-left">
                       <p class="Gilroy fw-900">Business of Design</p>
                       <p class="small p-0 m-0">
                         Pricing Design brief, Portfolio ...
                       </p>
-                      <a href="./designbusiness.html" class="mt-2 float-none d-block text-left py-2 redText">View Class
-                        <i class="fa fa-caret-right"></i></a>
+                      <a
+                        href="./designbusiness.html"
+                        class="mt-2 float-none d-block text-left py-2 redText"
+                        >View Class <i class="fa fa-caret-right"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./career.html">Career</a>
-          <a class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="https://medium.com/@uxtheclass">Our Blog</a>
-          <a class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./faq.html">FAQ & Help</a>
-          <a class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
-            href="./contact.html">Contact</a>
+          <a
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="./careers.html"
+            >Career</a
+          >
+          <a
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="https://medium.com/@uxtheclass"
+            >Our Blog</a
+          >
+          <a
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="./faq.html"
+            >FAQ & Help</a
+          >
+          <a
+            class="py-2 mx-1 ml-lg-3 d-none d-md-inline-block justify-content-between navLinks textWhite"
+            href="./contact.html"
+            >Contact</a
+          >
         </div>
 
         <div class="justify-content-end">
+      
             <button type="button" data-toggle="modal" data-target="#exampleLoginModal"
               class="py-2 d-none d-md-inline-block navLinks text-white btn redBg"
               ><span><i class="fa fa-user"></i></span> Login</button
@@ -154,215 +257,500 @@
         </div>
       </div>
     </nav>
-    <img class="position-absolute heroOverlay" src="" data-src="./images/patternOverlay.png" alt="Image Overlay" />
-    <!-- <div class="position-absolute" id="particles-js"></div> -->
-    <!-- <img
+      <!-- <div class="position-absolute" id="particles-js"></div> -->
+      <img
         class="position-absolute heroOverlay"
-        src="" data-src="./images/.png"
+        src="" data-src="./images/AboutCareer/AboutUs.png"
         alt="Image Overlay"
-      /> -->
-    <!-- <div class="position-absolute particles-js"></div> -->
+      />
+      <!-- <div class="position-absolute particles-js"></div> -->
 
-    <div class="cta-text col-md-7 p-lg-5">
+      <div class="cta-text col-md-7 p-lg-5">
       <!-- <div class="col-md-6 p-lg-5 mx-auto my-1 my-md-5"> -->
-      <!-- <span class="textWhite">Online design academy</span> -->
-      <small class="text-muted">Hey There!</small>
-      <h1 class="customBold small-header textWhite">
-        Partner With Us
-      </h1>
-      <p class="mb-3 font-weight-normal textWhite">
-        Join us lets build the world class academy for digital designers
-      </p>
-    </div>
-  </div>
-
-  <div class="my-5 container">
-    <a href="./career.html" class="noDeco"><img src="" data-src="images/AboutCareer/right-arrow_2019-10-03/right-arrow.png" alt="right-arrow" />
-      &nbsp; &nbsp; <span class="customBold text-dark">Back To Career</span></a>
-    <div class="row flex-column-reverse flex-md-row">
-      <div class="mt-5 col-md-7">
-        <p>
-          UXTHECLASS is an online design academy aimed at impacting our
-          knowledge to the next gen of designers. We are a fully remote team
-          spread all over. Growth is deep rooted into our culture but most
-          importantly, we just want a regular person come in and after
-          completing our class becomes a pro designer.
+        <!-- <span class="textWhite">Online design academy</span> -->
+        <small class="text-muted">Hey There!</small>
+        <h1 class="customBold small-header textWhite">
+          This Is Who We Are
+        </h1>
+        <p class="mb-3 font-weight-normal textWhite">
+          We are a community of designers passionate about impacting knowledge
         </p>
-        <p class="mb-5">
-          Fill the form below and we will get back with you shortly!
-        </p>
-
-        <div class="px-0 col-md-9">
-          <form action="./success.html" name="careers" method="POST" data-netlify="true">
-            <div class="form-group">
-              <!-- <label for="role" class="customBold">Role</label> -->
-              <input required type="text" name="Role" class="form-control d-none" id="role" aria-describedby="job Role"
-                placeholder="" />
-            </div>
-            <div class="form-group">
-              <label for="fullname" class="customBold">Full Name</label>
-              <input required type="text" name="Full name" class="form-control" id="fullname" aria-describedby="emailHelp"
-                placeholder="John Doe" />
-            </div>
-            <div class="form-group">
-              <label for="email" class="customBold">Email</label>
-              <input required type="email" name="Email" class="form-control" id="email" placeholder="Enter your email" />
-            </div>
-            <div class="form-group">
-              <label for="resume" class="customBold">Resume/CV</label>
-              <input required type="file" name="Resume" class="form-control" id="resume" aria-describedby="emailHelp"
-                placeholder="Attach Resume/CV" />
-            </div>
-            <div class="form-group">
-              <label for="phone" class="customBold">Phone</label>
-              <input required type="text" name="Phone" class="form-control" id="phone" placeholder="0000-0000-0000" />
-            </div>
-            <div class="form-group">
-              <label for="company" class="customBold">Current or Immediate Past Company</label>
-              <input required type="text" name="Past Company" class="form-control" id="company" aria-describedby="emailHelp" placeholder="" />
-            </div>
-            <div class="form-group">
-              <label for="portfolio" class="customBold">Please provide a link to your portfolio</label>
-              <input required type="text" name="Portfolio Link" class="form-control" id="portfolio" placeholder="" />
-            </div>
-              <div class="form-group">
-                <label for="discover" class="customBold">How did you discover us?</label>
-                <select class="custom-selct form-control" name="Discovery Platform" id="discoveryPlatform" required>
-                <option id="" class="py-3" value="" selected>Select options</option>
-                <option id="" class="py-3" value="Instagram">Instagram</option>
-                <option id="" class="py-3" value="Twitter">Twitter</option>
-                <option id="" class="py-3" value="LinkedIn">LinkedIn</option>
-                <option id="" class="py-3" value="Facebook">Facebook</option>
-                <option id="" class="py-3" value="Others">Others</option>
-              </select>
-            </div>
-            <div class="form-group">
-    <label for="message" class="customBold">What company do you admire most for their design and why?</label>
-    <textarea name="Admired company and Why" class="form-control" id="message" rows="5"></textarea>
-  </div>
-            <div class="form-group">
-              <label for="state-country" class="customBold">State & Country</label>
-              <input required type="text" name="State&Country" class="form-control" id="state-country" placeholder="" />
-            </div>
-
-            <div class="form-group">
-              <label class="customBold">Have you had any experience tutoring?</label>
-                <fieldset class="border pt-2 rounded border-gray">
-                    <p class="ml-3">
-                      <label>
-                        <input  type="radio" name="Tutoring Experience" value="Yes"> Yes
-                      </label>
-                    </p>
-                    <p class="ml-3 pb-0">
-                      <label>
-                        <input  type="radio" name="Tutoring Experience" value="No"> No
-                      </label>
-                    </p>
-                  </fieldset>
-                </div>
-
-            <div class="form-group">
-              <label for="message2" class="customBold w-100">Tell us why UXTHECLASS
-              <textarea name="Why UXTHECLASS" class="mt-2 form-control" rows="5" placeholder="Type message here" required></textarea>
-            </label>
-            </div>
-            <button type="submit" class="mt-5 btn btn-danger">
-              Join us
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="mt-5 col-md-4">
-        <h5 class="mb-3 customBold" id="careerPath">UI & Interaction design Tutor</h5>
-        <p class="mb-1"><strong>Experience</strong>: 3 - 5 years</p>
-        <p><strong>Location</strong>: Anywhere</p>
       </div>
     </div>
-  </div>
 
-  <!-- footer -->
-  <footer class="bg-dark">
-    <div class="pt-2 pb-3 container">
-      <div class="d-flex justify-content-between flex-column flex-sm-row end">
-        <div class="brand textWhite py-2">
-          <img class="" src="" data-src="./images/uxtc-white.png" alt="" />
+      <div class="mt-sm-5 mt-3">
+      <div class="px-0 container">
+        <ul class="nav nav-tabs mb-3 border-0" id="tabs-tab" role="tablist">
+          <li class="nav-item border-0">
+            <a
+              class="nav-link px-1 mx-2 text-dark border-0 font-weight-bolder custom-bold"
+              id="tabs-team-tab"
+              href="./about.html"
+              role="link"
+              aria-selected="false"
+              >Team</a
+            >
+          </li>
+          <li class="nav-item border-0">
+            <a
+              class="nav-link px-1 mx-2 active text-dark border-0 font-weight-bolder custom-bold"
+              id="tabs-career-tab"
+              data-toggle="pill"
+              href="#tabs-career"
+              role="tab"
+              aria-controls="tabs-career"
+              aria-selected="false"
+              >Career</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="tabs-tabContent">
+        <!-- Careers Section -->
+        <div
+          class="tab-pane active fade show"
+          id="tabs-career"
+          role="tabpanel"
+          aria-labelledby="tabs-career-tab"
+        >
+        <section class="pt-1 pb-5 container">
+          <div class="mb-md-5 my-5">
+        <small class="text-muted">What's your strong point?</small>
+        <h3 class="customBold">Select Your Fit</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-5 d-flex">
+              <img class="align-self-start" src="" data-src="./images/AboutCareer/3DTutor.png" alt="3dtutor">
+              <div class="mx-3">
+                <h5 class="mb-3 customBold">3D Modelling, VR/AR Design Tutor
+                </h5>
+                <p class="">We are looking for skilled VR designers who can simulate the UX and complex object interaction in an immersive VR/AR enviroment using the lastest technology software. Experience with Cinema 4D, Unity, Unreal Engine 4 and other tools is a bonus.
+                </p>
+
+                <p class="mb-1"><strong>Experience</strong>: 2 - 5 years</p>
+          <p><strong>Location</strong>: Remote</p>
+          <a href="./career.html?3dTutor" class="btn btn-danger">Apply</a>
+              </div>
+          </div>
         </div>
-        <div class="nav-links-below my-2 py-2">
-          <a href="./about.html" class="">About Us</a>
-          <a href="#section-classes" class="ml-2">Classes</a>
-          <a href="./career.html" class="ml-2">Career</a>
-          <a href="./faq.html" class="ml-2">FAQ</a>
-          <a href="./contact.html" class="ml-2">Contact</a>
-          <a href="https://medium.com/@uxtheclass" class="ml-2 mr-0">Blog</a>
+   
+        <div class="col-md-6">
+          <div class="mb-5 d-flex">
+              <img class="align-self-start" src="" data-src="./images/AboutCareer/UITutor.png" alt="UITutor">
+              <div class="mx-3">
+                <h5 class="mb-3 customBold">Motion Design tutor</h5>
+                <p class="">We are looking for passionate motion designers and artists who use video and animation to give the impression of action through images, illustration, video, texts for multimedia and digital projects
+                  .</p>
+
+                <p class="mb-1"><strong>Experience</strong>:> 3 years</p>
+          <p><strong>Location</strong>: Remote</p>
+          <a href="./career.html?motionDesign" class="btn btn-danger">Apply</a>
+              </div>
+          </div>
         </div>
       </div>
-      <div class=" icons-foot my-3 d-flex justify-content-between text-white">
-        <span class=""><a class="noDeco textWhite" href="https://facebook.com/uxtheclass"><i
-              class="fa mr-2 fa-facebook-square"></i></a></span>
-        <span class=""><a class="noDeco textWhite" href="https://instagram.com/uxtheclass"><i
-              class="fa mr-2 fa-instagram"></i></a></span>
-        <span class=""><a class="noDeco textWhite" href="https://www.youtube.com/channel/UC4qItphHJP2gqj6QVxQo3EA"><i
-              class="fa mr-2 fa-youtube"></i></a></span>
-        <span class=""><a class="noDeco textWhite" href="https://twitter.com/uxtheclass"><i
-              class="fa mr-2 fa-twitter"></i></a></span>
-        <span class=""><a class="noDeco textWhite" href="https://linkedIn.com/company/uxtheclass"><i
-              class="fa mr-2 fa-linkedin"></i></a></span>
-        <span class=""><a class="noDeco textWhite" href="https://medium.com/@uxtheclass"><i
-              class="fa mr-2 fa-medium"></i></a></span>
+      <div class="mb-md-5 my-5">
+        <small class="text-muted">How May We Help</small>
+        <h3 class="customBold">Have Any Questions?</h3>
       </div>
-      <div class="copy d-flex justify-content-end text-white">
-        <p>&copy; 2019 | Lagos, Nigeria</p>
-      </div>
-      <div class="lowest d-flex justify-content-between">
-        <div class="left">
-          <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
+          <div class="row mb-md-4">
+        <div class="col-lg-7 col-md-9">
+                    <div
+                      id="accordianId"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section1HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section1Id"
+                                  href="#section1ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section1ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                 Do I get paid as a tutor?
+                                </a>
+                              </h5>
+                            </div>
+                      
+                        </div>
+                        <div
+                          id="section1ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section1HeaderId"
+                        >
+                          <div class="card-body">
+                            Yes, our tutors and insitution has an agreement.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section2HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section2Id"
+                                  href="#section2ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section2ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >What soft skills do I need?
+                                </a>
+                              </h5>
+                          
+                          </div>
+                        </div>
+                        <div
+                          id="section2ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section2HeaderId"
+                        >
+                          <div class="card-body">
+                            People communication, flexibility, organisation, time management, passion for teching among others.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section3HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section3Id"
+                                  href="#section3ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section3ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  > Is it onsite or remote?
+                                </a>
+                              </h5>
+                          </div>
+                        </div>
+                        <div
+                          id="section3ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section3HeaderId"
+                        >
+                          <div class="card-body">
+                            The posoition is remote.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section4HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section4Id"
+                                  href="#section4ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section4ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  > Do I get to own my class?
+                                </a>
+                              </h5>
+                            </div>
+                           
+                        </div>
+                        <div
+                          id="section4ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section4HeaderId"
+                        >
+                          <div class="card-body">
+                            Yes, you will own your classes but will be reporting to the class head or the insitutions principal.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section5HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section5Id"
+                                  href="#section5ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section5ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  > How many hours do I have to be available?
+                                </a>
+                              </h5>
+                           
+                          </div>
+                        </div>
+                        <div
+                          id="section5ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section5HeaderId"
+                        >
+                          <div class="card-body">
+                            About  4 hours per day and sometimes more on a class day.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card my-1">
+                        <div
+                          class="card-header altBg"
+                          role="tab"
+                          id="section6HeaderId"
+                        >
+                            <div class="mb-0 pb-0">
+                              <h5 class="mb-0 pb-0 custom-bold">
+                                <a
+                                  data-toggle="collapse"
+                                  class="text-dark"
+                                  data-parent="#accordianId"
+                                  id="section6Id"
+                                  href="#section6ContentId"
+                                  aria-expanded="true"
+                                  aria-controls="section6ContentId"
+                                >
+                                 <i
+                                    class="fa d-none fa-minus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  >
+                                  <i
+                                    class="fa fa-plus mr-2"
+                                    aria-hidden="true"
+                                  ></i
+                                  > Whats the teaching preferred language?
+                                </a>
+                              </h5>
+                          </div>
+                        </div>
+                        <div
+                          id="section6ContentId"
+                          class="collapse in"
+                          role="tabpanel"
+                          aria-labelledby="section6HeaderId"
+                        >
+                          <div class="card-body">
+                            English is the only teaching language.
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
         </div>
-        <div class="right d-flex justify-content-between">
-          <a class="mx-1" href="/terms.html">Terms & Condition</a>
-          <a class="mx-1" href="/privacy.html">Privacy Policy</a>
-          
-        </div>
       </div>
-    </div>
-  </footer>
+        </section>
+        </div>
+        </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- what makes us stand out -->
+        <section class="py-md-5 py-3 Bg-aboveFooter">
+      <div class="container">
+        <div class="mb-md-5 mb-3">
+          <small class="text-muted">What's the magic?</small>
+          <h4 class="customBold">What Makes Us Stand Out</h4>
+        </div>
+        <div class="card-group">
+          <div class="row">
+            <!-- <div class="card-deck"> -->
+            <div class="col-md-4 pad">
+                <div class="card h-100">
+               
+               <!-- <span style="color:#1081d8;text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.3em;"><i class="py-2 rounded-circle fas fa-comment-dots iconDesc d-flex justify-content-center align-items-center"></i></span> -->
+               <div class="card-body">
+                 <span><img src="" data-src="./images/AboutCareer/RadicalCandor.png" alt="Radical"></span>
+                 <h5 class="mt-3 customBold card-title">Radical candor feedback</h5>
+                 <p class="card-text">
+                   Clear, specific and sincere mode of communication between our
+                   students and tutors in improving better understanding and honest
+                   feedbacks.
+                 </p>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-4 pad">
+             <div class="card  h-100">
+               
+               <!-- <span style="color:#11ac59;text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.3em;"><i class="py-2 rounded-circle fas fa-users iconDesc d-flex justify-content-center align-items-center"></i></span> -->
+               <div class="card-body">
+                 <span><img src="" data-src="./images/AboutCareer/CollaborativeLearning.png" alt="collaborate"></span>
+                 <h5 class="mt-3 customBold card-title">Collaborative learning</h5>
+                 <p class="card-text">
+                   Learn with your class mates with pair projects, assignments or
+                   coming up with a concept in improving your design skill and also
+                   learning co-working and healthy team collaboration.
+                 </p>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-4 pad">
+             <div class="card h-100">
+               
+               <!-- <span style="color:#dc0a0a;text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.3em;"><i class="py-2 rounded-circle fas fa-bullseye iconDesc d-flex justify-content-center align-items-center"></i></span> -->
+               <div class="card-body">
+                 <span><img src="" data-src="./images/AboutCareer/Simplicity.png" alt="Simplicity"></span>
+                 <h5 class="mt-3 customBold card-title">Simplicity & Specificity</h5>
+                 <p class="card-text">
+                   Our program is focused driven to give our students complete
+                   knowledge on a class and not complicating the process to
+                   learning design.
+                 </p>
+               </div>
+             </div>
+            </div>
+            <!-- </div> -->
+          </div>
+      </div>
+      </div>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="./index.js"></script>
-  <script>
-    let links = [
-      ['graphicDesign', 'Branding & Graphic design Tutor'],
-      ['uxResearch', 'UX Research Tutor'],
-      ['3dTutor', '3D & VFX Tutor'],
-      ['uiDesign', 'UI & Interaction design Tutor'],
-      ['designBusiness', 'Business of design Tutor'],
-      ['frontendTutor', 'Front End Developer Tutor']];
-    const careerPath = document.querySelector('#careerPath');
-    const role = document.querySelector('#role');
-    const link = window.location.href;
+        <!-- footer -->
+        <footer class="bg-dark">
+          <div class="pt-2 pb-3 container">
+            <div class="d-flex justify-content-between flex-column flex-sm-row end">
+              <div class="brand textWhite py-2">
+                <img class="" src="" data-src="./images/uxtc-white.png" alt="" />
+              </div>
+              <div class="nav-links-below my-2 py-2">
+                <a href="./about.html" class="">About Us</a>
+                <a href="#section-classes" class="ml-2">Classes</a>
+                <a href="./careers.html" class="ml-2">Career</a>
+                <a href="./faq.html" class="ml-2">FAQ</a>
+                <a href="./contact.html" class="ml-2">Contact</a>
+                <a href="https://medium.com/@uxtheclass" class="ml-2 mr-0">Blog</a>
+              </div>
+            </div>
+            <div class=" icons-foot my-3 d-flex justify-content-between text-white">
+              <span class=""><a class="noDeco textWhite" href="https://facebook.com/uxtheclass"><i class="fa mr-2 fa-facebook-square"></i></a></span>
+              <span class=""><a class="noDeco textWhite" href="https://instagram.com/uxtheclass"><i class="fa mr-2 fa-instagram"></i></a></span>
+              <span class=""><a class="noDeco textWhite" href="https://www.youtube.com/channel/UC4qItphHJP2gqj6QVxQo3EA"><i class="fa mr-2 fa-youtube"></i></a></span>
+              <span class=""><a class="noDeco textWhite" href="https://twitter.com/uxtheclass"><i class="fa mr-2 fa-twitter"></i></a></span>
+              <span class=""><a class="noDeco textWhite" href="https://linkedIn.com/company/uxtheclass"><i class="fa mr-2 fa-linkedin"></i></a></span>
+              <span class=""><a class="noDeco textWhite" href="https://medium.com/@uxtheclass"><i class="fa mr-2 fa-medium"></i></a></span>
+            </div>
+            <div class="copy d-flex justify-content-end text-white">
+              <p>&copy; 2019 | Lagos, Nigeria</p>
+            </div>
+            <div class="lowest d-flex justify-content-between">
+              <div class="left">
+                <p><a href="#">hello@uxtheclass.com</a>, +234 810 6711 036</p>
+              </div>
+              <div class="right d-flex justify-content-between">
+                <a class="mx-1" href="/terms.html">Terms & Condition</a>
+                <a class="mx-1" href="/privacy.html">Privacy Policy</a>
+                
+              </div>
+            </div>
+          </div>
+        </footer>
 
-    let target = link.split('?')[1];
-    console.log(link, target)
 
-    links.map((link) => {
-      if (link[0] == target) {
-        role.value = link[1];
-        careerPath.innerHTML = link[1];
-        console.log(link + 'Form')
-      }
-    })
-  </script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="./index.js"></script>
+  
+  </body>
 </html>
